@@ -1,9 +1,13 @@
 
-<H1> SVO: Полупрямая визуальная одометрия для систем с одной или несколькими камерами</H1>
 
-## Christian Forster, Zichao Zhang, Michael Gassner, Manuel Werlberger, Davide Scaramuzza
+## Авторы
+```
+Christian Forster, Zichao Zhang, Michael Gassner, Manuel Werlberger, Davide Scaramuzza
+```
 
-Кратко—Direct methods for Visual Odometry (VO) have
+## Краткое описание
+
+Direct methods for Visual Odometry (VO) have
 gained popularity due to their capability to exploit information
 from all intensity gradients in the image. However, low com-
 putational speed as well as missing guarantees for optimality
@@ -25,10 +29,8 @@ faster than the state of the art while achieving highly competitive
 accuracy.
 
 ## Дополнительный материал
+[Видео экспериментов](https://youtu.be/hR8uq1RTUfA)
 
-```
-Video of the experiments: https://youtu.be/hR8uq1RTUfA
-```
 # I. Введение
 
 Estimating the six degrees-of-freedom motion of a camera
