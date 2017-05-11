@@ -4,6 +4,10 @@
 ```
 Christian Forster, Zichao Zhang, Michael Gassner, Manuel Werlberger, Davide Scaramuzza
 ```
+Авторы входят в Группу робототехники и восприятия университета Цюриха, Швейцария. Информация для связи:{forster, zzhang, gassner, werlberger, sdavide}@ifi.uzh.ch. Эта разработка частично профинансирована
+Швейцарским Национальным Фондом (номер проекта 200021-143607, Swarm of Flying
+Cameras), the National Center of Competence in Research Robotics (NCCR),
+the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 
 ## Краткое описание
 
@@ -32,22 +36,16 @@ accuracy.
 # I. Введение
 
 Оценка движения камеры с шестью степенями свободы напрямую из потока изображений была активным полем исследования на протяжении нескольких десятилетий [1–6]. На сегодняшний день, самые современные алгоритмы
-визуальной навигации с построением карты (V-SLAM) и визуальной одометрии (VO) работают в реальном времени на процессорах смартфонов и достигают точности, надёжности и эффективности, необходимой для многих практических применений. Примеры можно найти в робототехнической и автомобильной промышленностях, где для автономной работы необходимо знать собственное движение аппарата. Другие применения - это виртуальная и дополненая реальности, для которых требуется точное и быстрое определение позиции мобильного устройства. 
-The central requirement for the successful adoption of
-vision-based methods for such challenging applications is
-to obtain highest accuracy and robustness with a limited
-computational budget. The most accurate camera motion esti-
-mate is obtained through joint optimization of structure (i.e.,
-landmarks) and motion (i.e.,camera poses). Forfeature-based
-methods, this is an established problem that is commonly
-known as bundle adjustment [7] and many solvers exist,
+визуальной навигации с построением карты (V-SLAM) и визуальной одометрии (VO) работают в реальном времени на процессорах смартфонов и достигают точности, надёжности и эффективности, необходимой для многих практических применений. Примеры можно найти в робототехнической и автомобильной промышленностях, где для автономной работы необходимо знать собственное движение аппарата. Другие применения - это виртуальная и дополненая
+реальности, для которых требуется точное и быстрое определение позиции мобильного устройства. 
+Центральным условием успешного применения визуальных методов
+для таких challenging применений явлается достижнение
+высочайших точности и надёжности при ограниченных вычислительных возможностях.
+Наиболее точная оценка движения камеры достигаетсяя через совместную оптимизацию структуры 
+(то есть, расположения ключевых точек) и движения (то есть, положений камеры). Для методов, базирующихся на особенностях,
+эта затронутая проблема обычно известна как
+"bundle adjustment" [7] и по ней наработано множество решений,
 
-The authors are with with the Robotics and Perception Group, University
-of Zurich, Switzerland. Contact information:{forster, zzhang, gassner,
-werlberger, sdavide}@ifi.uzh.ch. This research was partially funded by the
-Swiss National Foundation (project number 200021-143607, Swarm of Flying
-Cameras), the National Center of Competence in Research Robotics (NCCR),
-the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 
 ```
 which address the underlying non-linear least-squares problem
