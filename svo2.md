@@ -45,35 +45,32 @@ accuracy.
 эта затронутая проблема обычно известна как
 "bundle adjustment" [7] и по ней наработано множество решений,
 which address the underlying non-linear least-squares problem
-efficiently [8–11]. Для получения высокой точнностиThree aspects are key to obtain highest
-accuracy when using sparse feature correspondence and bundle
-adjustment: 
+efficiently [8–11]. Три аспекта являются ключевыми для получения высокой точности при использовании разрежённого соответствия особенностей и совместной оптимизации: 
 1. Долгое отслеживание особенности с минимальным смещением,
 2. Большое количество равномерно распределённых особенностей на изображении, и
-3. Достоверное association of new features to
-old landmarks (i.e., loop-closures).
-The probability that many pixels are tracked reliably,e.g.,
-in scenes with little or high frequency texture (such as sand
-[12] or asphalt [13]), is increased when the algorithm is not
-restricted to use local point features (e.g.,corners or blobs)
-but may track edges [14] or more generally, all pixels with
-gradients in the image, such as in dense [15] or semi-dense
-approaches [16]. Dense or semi-dense algorithms that operate
-directly on pixel-level intensities are also denoted asdirect
-methods[17]. Direct methods minimize thephotometric error
-between corresponding pixels in contrast to feature-based
-methods, which minimize thereprojection error. The great
-advantage of this approach is that there is no prior step of
+3. Достоверное соответствие новых особенностей старым местам (то есть, замыкание циклов).
+Вероятность того, что множество пикселей будет отслежено достоверно, например,
+в сценах со слабой или высокочастотной текстурой (такой, как песок
+[12] или асфальт [13]), возрастает, когда алгоритм не ограничен
+использованием локальных особенностей точек (например, углов или пятен),
+и может отслеживать края [14] или более обще - все пиксели изображения с
+градинентами, например при плотном [15] или полуплотном
+подходе [16]. Плотные или полуплотные алгоритмы, которые на прямую оперируют
+интенсивностями пикселей также называются прямыми
+методами[17]. Прямые методы минимизируют фотометричческую ошибку
+между соответствующими пикселами, в отличие от методов, основанных на особенностях,
+которые минимизируют ошибку репроекции. Значительным
+преимуществом данного подхода является отсутствие предварительного шага
 data association: this is implicitly given through the geometry
-of the problem. However, joint optimization of dense structure
-and motion in real-time is still an open research problem, as
-is the optimal andconsistent[18, 19] fusion of direct methods
-with complementary measurements (e.g.,inertial). In terms
-of efficiency, previous direct methods are computationally
-expensive as they require a semi-dense [16] or dense [15]
-reconstruction of the environment, while the dominant cost
-of feature-based methods is the extraction of features and
-descriptors, which incurs a high constant cost per frame.
+of the problem. Однако,совместная оптимизация плотной структуры
+и движения в реальном времени всё ещё остаётся открытой исследовательской проблемой,
+равно как и оптимальное и and consistent[18, 19] слияние прямых методов
+со вспомогательными измерениями (например инерционными). В терминах
+эффективности, предыдущие прямые методы вычислительно
+дороги, поскольку требуют полу-плотную [16] или плотную [15]
+реконструкцию окружения, в то время, как основными затратами
+методов, основанных на особеннностях, являются поиск особенностей и
+извлечение дескрипторов, что выливается в высокие посттоянные затраты на каждый кадр.
 In this work, we propose a VO algorithm that combines
 the advantages of direct and feature-based methods. We in-
 troduce thesparse image alignment algorithm (Sec. V), an
