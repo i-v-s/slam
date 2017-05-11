@@ -18,3 +18,7 @@ $$
 # slam
 
 $$a^2 + b^2 = c^2$$
+
+<script type="text/javascript"
+   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
