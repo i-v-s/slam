@@ -7,11 +7,9 @@ Christian Forster, Zichao Zhang, Michael Gassner, Manuel Werlberger, Davide Scar
 
 ## Краткое описание
 
-Direct methods for Visual Odometry (VO) have
+Прямые методы визуальной одометрии (VO) have
 gained popularity due to their capability to exploit information
-from all intensity gradients in the image. However, low com-
-putational speed as well as missing guarantees for optimality
-and consistency are limiting factors of direct methods, where
+from all intensity gradients in the image. Однако, малая скорость вычислений, так же как и отсутствие гарантий оптимальности и consistency are limiting factors of direct methods, where
 established feature-based methods instead succeed at. Based on
 these considerations, we propose a Semi-direct VO (SVO) that
 uses direct methods to track and triangulate pixels that are
@@ -33,17 +31,8 @@ accuracy.
 
 # I. Введение
 
-Estimating the six degrees-of-freedom motion of a camera
-merely from its stream of images has been an active field
-of research for several decades [1–6]. Today, state-of-the-art
-visual SLAM (V-SLAM) and visual odometry (VO) algorithms
-run in real-time on smart-phone processors and approach
-the accuracy, robustness, and efficiency that is required to
-enable various interesting applications. Examples comprise the
-robotics and automotive industry, where the ego-motion of
-a vehicle must be known for autonomous operation. Other
-applications are virtual and augmented reality, which requires
-precise and low latency pose estimation of mobile devices.
+Оценка движения камеры с шестью степенями свободы напрямую из потока изображений была активным полем исследования на протяжении нескольких десятилетий [1–6]. На сегодняшний день, самые современные алгоритмы
+визуальной навигации с построением карты (V-SLAM) и визуальной одометрии (VO) работают в реальном времени на процессорах смартфонов и достигают точности, надёжности и эффективности, необходимой для многих практических применений. Примеры можно найти в робототехнической и автомобильной промышленностях, где для автономной работы необходимо знать собственное движение аппарата. Другие применения - это виртуальная и дополненая реальности, для которых требуется точное и быстрое определение позиции мобильного устройства. 
 The central requirement for the successful adoption of
 vision-based methods for such challenging applications is
 to obtain highest accuracy and robustness with a limited
