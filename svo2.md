@@ -9,7 +9,7 @@
 
 ## Christian Forster, Zichao Zhang, Michael Gassner, Manuel Werlberger, Davide Scaramuzza
 
-Abstract—Direct methods for Visual Odometry (VO) have
+Кратко—Direct methods for Visual Odometry (VO) have
 gained popularity due to their capability to exploit information
 from all intensity gradients in the image. However, low com-
 putational speed as well as missing guarantees for optimality
@@ -30,12 +30,12 @@ on benchmark datasets shows that the algorithm is significantly
 faster than the state of the art while achieving highly competitive
 accuracy.
 
-### SUPPLEMENTARYMATERIAL
+## Дополнительный материал
 
 ```
 Video of the experiments: https://youtu.be/hR8uq1RTUfA
 ```
-### I. INTRODUCTION
+## I. INTRODUCTION
 
 Estimating the six degrees-of-freedom motion of a camera
 merely from its stream of images has been an active field
