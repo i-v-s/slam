@@ -1,3 +1,4 @@
 theme: jekyll-theme-midnight
 markdown: kramdown
-
+customjs:
+ - //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?...
