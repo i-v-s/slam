@@ -5,8 +5,7 @@
 Christian Forster, Zichao Zhang, Michael Gassner, Manuel Werlberger, Davide Scaramuzza
 ```
 Авторы входят в Группу робототехники и восприятия университета Цюриха, Швейцария. Информация для связи:{forster, zzhang, gassner, werlberger, sdavide}@ifi.uzh.ch. Эта разработка частично профинансирована
-Швейцарским Национальным Фондом (номер проекта 200021-143607, Swarm of Flying
-Cameras), the National Center of Competence in Research Robotics (NCCR),
+Швейцарским Национальным Фондом (номер проекта 200021-143607, Рой летящих камер), Национальным центром компетенции в исследовательской робототехнике (NCCR),
 the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 
 ## Краткое описание
@@ -45,15 +44,13 @@ accuracy.
 (то есть, расположения ключевых точек) и движения (то есть, положений камеры). Для методов, базирующихся на особенностях,
 эта затронутая проблема обычно известна как
 "bundle adjustment" [7] и по ней наработано множество решений,
-
-
-```
 which address the underlying non-linear least-squares problem
-efficiently [8–11]. Three aspects are key to obtain highest
+efficiently [8–11]. Для получения высокой точнностиThree aspects are key to obtain highest
 accuracy when using sparse feature correspondence and bundle
-adjustment: (1) long feature tracks with minimal feature drift,
-(2) a large number of uniformly distributed features in the
-image plane, and (3) reliable association of new features to
+adjustment: 
+1. Долгое отслеживание особенности с минимальным смещением,
+2. Большое количество равномерно распределённых особенностей на изображении, и
+3. Достоверное association of new features to
 old landmarks (i.e., loop-closures).
 The probability that many pixels are tracked reliably,e.g.,
 in scenes with little or high frequency texture (such as sand
@@ -96,8 +93,6 @@ comparable accuracy with respect to the state of the art
 on benchmark datasets. The improved efficiency is due to
 three reasons: firstly, SVO extracts features only for selected
 keyframes in a parallel thread, hence, decoupled from hard
-```
-
 real-time constraints. Secondly, the proposed direct tracking
 algorithm removes the necessity for robust data association.
 Finally, contrarily to previous direct methods, SVO requires
