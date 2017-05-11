@@ -35,7 +35,7 @@ accuracy.
 ```
 Video of the experiments: https://youtu.be/hR8uq1RTUfA
 ```
-## I. Введение
+# I. Введение
 
 Estimating the six degrees-of-freedom motion of a camera
 merely from its stream of images has been an active field
@@ -127,7 +127,7 @@ priors (Sec. IX) and the use of edgelet features. Additionally,
 we present several new experimental results in Sec. XI with
 comparisons against previous works.
 
-## II. Связанные работы
+# II. Связанные работы
 
 Methods that simultaneously recover camera pose and scene
 structure, can be divided into two classes:
@@ -292,7 +292,7 @@ Fig. 1: Tracking and mapping pipeline
 inertial measurements as we have demonstrated in previous
 work [45].
 
-III. SYSTEMOVERVIEW
+# III. Обзор подхода
 Figure 1 provides an overview of the proposed approach.
 We use two parallel threads (as in [21]), one for estimating
 the camera motion, and a second one for mapping as the
@@ -319,7 +319,7 @@ update with every subsequent frame. When a depth filter’s
 uncertainty becomes small enough, a new 3D point is inserted
 in the map and is immediately used for motion estimation.
 
-IV. NOTATION
+# IV. Принятая нотация
 The intensity image recorded from a moving camera C at
 timestepkis denoted withICk: ΩC⊂R^2 7→R, whereΩCis
 the image domain. Any 3D pointρ∈R^3 maps to the image
