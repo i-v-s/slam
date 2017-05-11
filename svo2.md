@@ -127,7 +127,7 @@ priors (Sec. IX) and the use of edgelet features. Additionally,
 we present several new experimental results in Sec. XI with
 comparisons against previous works.
 
-## II. RELATEDWORK
+## II. Связанные работы
 
 Methods that simultaneously recover camera pose and scene
 structure, can be divided into two classes:
