@@ -2,3 +2,4 @@ theme: jekyll-theme-leap-day
 markdown: kramdown
 customjs:
  - //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?...
+site.title: SVO: Полупрямая визуальная одометрия для систем с одной или несколькими камерами
