@@ -5,7 +5,7 @@
 </script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML-full"></script>
 
-# SVO: Полупрямая визуальная одометрия для систем с одной или несколькими камерами
+<H1> SVO: Полупрямая визуальная одометрия для систем с одной или несколькими камерами</H1>
 
 ## Christian Forster, Zichao Zhang, Michael Gassner, Manuel Werlberger, Davide Scaramuzza
 
@@ -35,7 +35,7 @@ accuracy.
 ```
 Video of the experiments: https://youtu.be/hR8uq1RTUfA
 ```
-## I. INTRODUCTION
+## I. Введение
 
 Estimating the six degrees-of-freedom motion of a camera
 merely from its stream of images has been an active field
@@ -127,7 +127,7 @@ priors (Sec. IX) and the use of edgelet features. Additionally,
 we present several new experimental results in Sec. XI with
 comparisons against previous works.
 
-### II. RELATEDWORK
+## II. RELATEDWORK
 
 Methods that simultaneously recover camera pose and scene
 structure, can be divided into two classes:
