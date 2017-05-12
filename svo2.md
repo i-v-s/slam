@@ -305,11 +305,10 @@ T_{kk-1}^{\star} = arg \: \min_{T_{kk-1}} \sum_{u \in \bar{R}_{k-1}^{C}} \frac{1
 \end{equation} 
 $$
 
-where the photometric residualrICuis defined by the intensity
-difference of pixels in subsequent imagesICk andICk− 1 that
-observe the same 3D pointρu:
-```
-```
+где фотометрическая невязка $$r_{I_{u}^{C}}$$ определяется как разница
+интенсивности пикселей в соседствующих кадрах $$I_{k}^{C}$$ и $$I_{k-1}^{C}$$, которые
+отображают одну и ту же точку $$\rho_{u}$$:
+
 rICu(Tkk− 1 )
 ```
 ### .
