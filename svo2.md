@@ -272,15 +272,18 @@ work [45].
 Предлагаемый подход кратко отражён на рис. 1.
 Мы используем два параллельных потока (как в [21]), один для оценки движения камеры, 
 и второй для построения карты
-исследуемого пространства. Это разделение позволяет быстро,
+исследуемого пространства. Это разделение позволяет быстро
 (затрачивая с постоянное время) осуществлять слежение в одном потоке, в то время,
 как второй поток, отвязанный от жёстких ограничений работы в реальном времени, расширяет карту.
-The motion-estimation thread implements the proposed
-semi-direct approach to motion estimation. Our approach is
-divided into three steps: sparse image alignment, relaxation,
-and refinement (Fig. 1). Sparse image alignment estimates
-frame-to-frame motion by minimizing the intensity difference
-of features that correspond to the projected location of the
+Поток оценки движения реализует предлагаемый
+полупрямой подход к оценке движения. Наш алгоритм разделяется
+на три шага: 
+- разрежённое совмещение изображений, 
+- расслабление, и 
+- оптимизация. 
+Алгориитм разрежённого совмещения изображений оценивает
+движение от кадра к кадру, минимизируя разницу интенсивностей
+особенностей, которые соотвветствуют to the projected location of the
 same 3D points. A subsequent step relaxes the geometric
 constraint to obtain sub-pixel feature correspondence. This
 step introduces a reprojection error, which we finally refine
