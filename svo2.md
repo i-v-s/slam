@@ -276,7 +276,7 @@ The position and orientation of the world frame W with
 respect to thekthcamera frame is described by the rigid body
 transformationTkW ∈SE(3) [47]. Точка в трёхмерном пространстве $$_{W}\rho$$, которая
 expressed in world coordinates, может быть спроецирована на $$k$$-тый кадр,
-используя: $$ _{k}\rho = T_{kW} _{W}\rho $$.
+используя: $$ _{k} \rho = T_{kW} \;  _{W} \rho $$.
 
 # V. Оценка движения
 
