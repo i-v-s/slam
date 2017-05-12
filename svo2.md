@@ -2179,9 +2179,9 @@ To summarize, the Jacobians of the residuals are:
 
 ## Список литературы
 
-[1]. S. Ullman. The Interpretation of Visual Motion. MIT
+1. S. Ullman. The Interpretation of Visual Motion. MIT
 Press: Cambridge, MA, 1979.
-[2]. C. Tomasi and T. Kanade. Shape and motion from image
+2. C. Tomasi and T. Kanade. Shape and motion from image
 streams: a factorization method. Int. J. Comput. Vis.,
 (7597):137–154, 1992.
 [3] A. Chiuso, P. Favaro, H. Jin, and S. Soatto. Structure
