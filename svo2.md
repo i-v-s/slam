@@ -267,7 +267,11 @@ Fig. 1: Tracking and mapping pipeline
 inertial measurements as we have demonstrated in previous
 work [45].
 
-# III. Обзор подхода
+# III. Обзор программной архитектуры
+
+![Потоки отслеживания и построения карты]({{site.baseurl}}/SVO2/fig1.svg)
+
+
 Figure 1 provides an overview of the proposed approach.
 We use two parallel threads (as in [21]), one for estimating
 the camera motion, and a second one for mapping as the
