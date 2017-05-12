@@ -298,8 +298,10 @@ transformationTkW ∈SE(3) [47]. Выраженная в мировых коор
 при котором фотометрическая ошибка минимальна:
 
 $$
-T_{kk − 1}^{*} = arg min
-$$(1)
+\begin{equation}
+a + b = c \tag{abc}\label{eq:one}
+\end{equation} 
+$$
 
 where the photometric residualrICuis defined by the intensity
 difference of pixels in subsequent imagesICk andICk− 1 that
