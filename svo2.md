@@ -296,11 +296,10 @@ transformationTkW ∈SE(3) [47]. Выраженная в мировых коор
 Наша цель &mdash; определить относительное смещение
 локальной системы координат платформы $$ T_{k k − 1} \doteq T_{B_{k}B_{k − 1}} $$,
 при котором фотометрическая ошибка минимальна:
-$$\begin
-T?kk− 1 = arg min
-Tkk− 1
 
-\end$$
+$$
+T_{kk − 1}^{*} = arg min
+$$
 
 where the photometric residualrICuis defined by the intensity
 difference of pixels in subsequent imagesICk andICk− 1 that
