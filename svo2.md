@@ -324,7 +324,7 @@ use every pixel in the image, semi-dense (b) use just the pixels with high
 intensity gradient, and the proposed sparse approach (a) uses selected pixels
 at corners or along intensity gradient edges.
 
-Однако, оптимизация уравнения (1) включает только подмножество
+Однако, оптимизация уравнения [(1)](#e1) включает только подмножество
 таких пикселей R ̄Ck− 1 ⊆ RCk− 1 , namely those for which the
 back-projected points are also visible in the imageICk:
 
