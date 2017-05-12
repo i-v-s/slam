@@ -78,7 +78,7 @@ of the problem. Однако,совместная оптимизация пло�
 извлечение дескрипторов, что выливается в высокие посттоянные затраты на каждый кадр.
 In this work, we propose a VO algorithm that combines
 the advantages of direct and feature-based methods. We in-
-troduce thesparse image alignment algorithm (Sec. V), an
+troduce thesparse image alignment algorithm ([раздел V](#v-Оценка-движения "Оценка движения")), an
 efficient direct approach to estimate frame-to-frame motion
 by minimizing the photometric error of features lying on
 intensity corners and edges. The 3D points corresponding to
@@ -1673,7 +1673,8 @@ Acknowledgments The authors gratefully acknowledge
 Henri Rebecq for creating the “Urban Canyon” datasets that
 can be accessed here: [http://rpg.ifi.uzh.ch/fov.html](http://rpg.ifi.uzh.ch/fov.html)
 
-# APPENDIX
+# Приложение
+
 In this section, we derive the analytic solution to the multi-
 camera sparse-image-alignment problem with motion prior.
 Given a rig ofMcalibrated camerasc∈C with known
