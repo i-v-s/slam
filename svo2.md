@@ -260,7 +260,7 @@ along intensity gradient edges. Фильтры инициализируются 
 фотометрическую разницу между кусочками изображений, соответствующих одной и той же
 точке (синие квадраты). Отметим,  что на всех рисунках, оптимизируемые параметры
 отмечены <span style="color:red">красным</span>,
-а цена оптимизации - <span style="color:blue">синим</span>.*
+а цена оптимизации &mdash; <span style="color:blue">синим</span>.*
 
 
 Изображение интенсивностей, записанное движущейся камерой $$C$$ на
@@ -274,9 +274,9 @@ RCk⊆Ωthose pixels for which the depth is known at time
 kin camera C. Модели проецирования известны из предварительной калибровки [46].
 The position and orientation of the world frame W with
 respect to thekthcamera frame is described by the rigid body
-transformationTkW ∈SE(3) [47]. A 3D pointWρthat is
-expressed in world coordinates can be transformed to thekth
-camera frame using:kρ=TkW Wρ.
+transformationTkW ∈SE(3) [47]. Точка в трёхмерном пространстве $$_{W}\rho$$, которая
+expressed in world coordinates, может быть спроецирована на $$k$$-тый кадр,
+используя: $$_{k}\rho = T_{kW} _{W}\rho$$.
 
 # V. Оценка движения
 
