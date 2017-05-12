@@ -248,8 +248,8 @@ along intensity gradient edges. Фильтры инициализируются 
 # IV. Принятая нотация
 Изображение интенсивностей, записанное движущейся камерой $$C$$ на
 временном шаге $$k$$ обозначается как $$I_{k}^{C}: \Omega^{C} \subset \mathbb{R}^{2} \mapsto \mathbb{R}$$, где $$\Omega^{C}$$ - пространство изображения.
-Любая точка в трёхмерном прострранстве $$\rho \in \mathbb{R}^{3}$$ maps to the image
-coordinatesu ∈R^2 through the camera projection model:
+Любая точка в трёхмерном пространстве $$\rho \in \mathbb{R}^{3}$$ отображается на изображение
+с координатами $$u \in \mathbb{R}^{3}$$ через модель проекции камеры:
 u =π(ρ). Given the inverse scene depthρ > 0 at pixel
 
 ```
