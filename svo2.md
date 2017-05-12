@@ -250,7 +250,7 @@ along intensity gradient edges. Фильтры инициализируются 
 временном шаге $$k$$ обозначается как $$I_{k}^{C}: \Omega^{C} \subset \mathbb{R}^{2} \mapsto \mathbb{R}$$, где $$\Omega^{C}$$ - пространство изображения.
 Любая точка в трёхмерном пространстве $$\rho \in \mathbb{R}^{3}$$ отображается на изображение
 с координатами $$u \in \mathbb{R}^{3}$$ через модель проекции камеры:
-u =π(ρ). Given the inverse scene depthρ > 0 at pixel
+$$u = \pi(\rho)$$. Given the inverse scene depthρ > 0 at pixel
 
 ```
 ρ 3
