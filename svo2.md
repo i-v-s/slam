@@ -908,20 +908,21 @@ refer the optimizations to a central body frame, which requires
 us to include the extrinsic calibrationTCBin the Jacobians as
 shown in the Appendix.
 
-### IX. MOTIONPRIORS
+### IX. Использование кинематических предсказаний
 
-In feature-poor environments, during rapid motions, or in
-case of dynamic obstacles it can be very helpful to employ
-a motion prior. A motion prior is an additional term that is
-added to the cost function in Eq. (11), which penalizes motions
-that are not in agreement with the prior estimate. Thereby,
-“jumps” in the motion estimate due to unconstrained degrees
-of freedom or outliers can be suppressed. In a car scenario for
-instance, a constant velocity motion model may be assumed
-as the inertia of the car prohibits sudden changes from one
-frame to the next. Other priors may come from additional
-sensors such as gyroscopes, which allow us to measure the
-incremental rotation between two frames.
+В окружениях, не изобилующих деталями, во время резких движений, или в случае
+движущихся препятствий может оказаться очень полезным использование
+кинематических предсказаний. Кинематические предсказания &mdash; это дополнительный член,
+который добавляется в функцию цены (11), он накладывает штраф на
+движения, идущие в разрез с предварительной оценкой. Тем самым,
+“прыжки” оценки движения из-за неограниченных степеней свободы
+или ложных совпадений могут быть уменьшены. Например, при применении в автомобиле,
+может быть использована модель постоянной скорости,
+поскольку инерция автомобиля не позволяет резких изменений скорости
+за время между кадрами. Другие предсказания могут приходить от дополнительных
+датчиков, таких как гироскопы, которые позволяют измерять
+относительное вращение между кадрами.
+
 Let us assume that we are given a relative translation
 prior ̃pkk− 1 (e.g., from a constant velocity assumption) and
 a relative rotation prior ̃Rkk− 1 (e.g., from integrating a gyro-
@@ -932,55 +933,15 @@ additional terms to the cost of the sparse image alignment step:
 T?kk− 1 = arg min
 Tkk− 1
 ```
-### ∑
 
-```
-C∈C
-```
-### ∑
-
-```
-u∈R ̄Ck− 1
-```
-### 1
-
-### 2
-
-```
-‖rICu(Tkk− 1 )‖^2 ΣI (12)
-```
-### +
-
-### 1
-
-### 2
-
-```
-‖pkk− 1 − ̃pkk− 1 ‖^2 Σp
-```
-```
-+
-```
-### 1
-
-### 2
-
-```
-‖log( ̃RTkk− 1 Rkk− 1 )∨‖^2 ΣR,
-```
 where the covariancesΣp,ΣRare set according to the uncer-
 tainty of the motion prior and the variables(pkk− 1 ,Rkk− 1 )
-
-### .
-
-### =
-
 Tkk− 1 are the current estimate of the relative position and
 orientation (expressed in body coordinates B). Thelogarithm
 mapmaps a rotation matrix to its rotation vector (see Eq. (18)).
 Note that the same cost function can be added to the bundle
-adjustment step. For further details on solving Eq. (12), we
-refer the interested reader to the Appendix.
+adjustment step. За дополнительными деталями по решению уравнения (12),
+мы отправляем интересующихся читателей в Приложение.
 
 ### X. IMPLEMENTATIONDETAILS
 
