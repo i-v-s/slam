@@ -259,7 +259,7 @@ drawn in red and the optimization cost is highlighted in blue.*
 временном шаге $$k$$ обозначается как $$I_{k}^{C}: \Omega^{C} \subset \mathbb{R}^{2} \mapsto \mathbb{R}$$, где $$\Omega^{C}$$ - пространство изображения.
 Любая точка в трёхмерном пространстве $$\rho \in \mathbb{R}^{3}$$ отображается на изображение
 с координатами $$u \in \mathbb{R}^{3}$$ через модель проекции камеры:
-$$u = \pi(\rho)$$. Given the inverse scene depth ρ > 0 at pixel
+$$u = \pi(\rho)$$. Given the inverse scene depth $$\rho > 0$$ at pixel
 u∈ RCk, the position of a 3D point is obtained using the
 back-projection modelρ=π−ρ^1 (u). Where we denote with
 RCk⊆Ωthose pixels for which the depth is known at time
