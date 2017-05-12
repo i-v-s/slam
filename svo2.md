@@ -213,7 +213,7 @@ work [45].
 # III. Обзор программной архитектуры
 
 ![Потоки отслеживания и построения карты]({{site.baseurl}}/svo2/fig1.svg)
-*Рис. 1: Конвеер слежения и построения карты*
+*Рис. 1. Конвеер слежения и построения карты*
 
 Предлагаемый подход кратко отражён на рис. 1.
 Мы используем два параллельных потока (как в [21]), один для оценки движения камеры, 
@@ -247,12 +247,12 @@ along intensity gradient edges. Фильтры инициализируются 
 
 # IV. Принятая нотация
 
-Fig. 2: Changing the relative poseTk,k− 1 between the current and the
+*Рис. 2. Changing the relative poseTk,k− 1 between the current and the
 previous frame implicitly moves the position of the reprojected points in the
 new imageu′i. Sparse image alignment seeks to findTk,k− 1 that minimizes
 the photometric difference between image patches corresponding to the same
 3D point (blue squares). Note, in all figures, the parameters to optimize are
-drawn in red and the optimization cost is highlighted in blue.
+drawn in red and the optimization cost is highlighted in blue.*
 
 
 Изображение интенсивностей, записанное движущейся камерой $$C$$ на
