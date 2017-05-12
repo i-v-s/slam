@@ -222,7 +222,7 @@ work [45].
 (затрачивая с постоянное время) осуществлять слежение в одном потоке, в то время,
 как второй поток, отвязанный от жёстких ограничений работы в реальном времени, расширяет карту.
 Поток оценки движения реализует предлагаемый
-полупрямой подход к оценке движения. Алгоритм состоит из трёх
+полупрямой подход к оценке движения и состоит из трёх
 шагов: 
 - разрежённое совмещение изображений, 
 - расслабление, и 
@@ -247,7 +247,7 @@ along intensity gradient edges. Фильтры инициализируются 
 
 # IV. Принятая нотация
 The intensity image recorded from a moving camera C at
-timestep k is denoted withICk: ΩC⊂R^2 7→R, whereΩCis
+timestep $$k$$ is denoted withICk: ΩC⊂R^2 7→R, whereΩCis
 the image domain. Any 3D pointρ∈R^3 maps to the image
 coordinatesu ∈R^2 through the camera projection model:
 u =π(ρ). Given the inverse scene depthρ > 0 at pixel
