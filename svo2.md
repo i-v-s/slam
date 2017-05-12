@@ -246,74 +246,39 @@ along intensity gradient edges. Фильтры инициализируются 
 для непосредственного использования при оценке движения.
 
 # IV. Принятая нотация
-Изображение интенсивностей, записанное движущейся камерой $$C$$ на
-временном шаге $$k$$ обозначается как $$I_{k}^{C}: \Omega^{C} \subset \mathbb{R}^{2} \mapsto \mathbb{R}$$, где $$\Omega^{C}$$ - пространство изображения.
-Любая точка в трёхмерном пространстве $$\rho \in \mathbb{R}^{3}$$ отображается на изображение
-с координатами $$u \in \mathbb{R}^{3}$$ через модель проекции камеры:
-$$u = \pi(\rho)$$. Given the inverse scene depthρ > 0 at pixel
 
-```
-ρ 3
-```
-```
-Tk,k− 1
-```
-```
-I u′ 3
-c
-k− 1
-```
-```
-Ikc
-u 3
-```
-```
-ρ 2
-```
-```
-ρ 1
-```
-```
-u 1
-u 2
-```
-```
-u′ 1
-u′ 2
-```
-```
-TCB
-TCB
-```
-```
 Fig. 2: Changing the relative poseTk,k− 1 between the current and the
 previous frame implicitly moves the position of the reprojected points in the
 new imageu′i. Sparse image alignment seeks to findTk,k− 1 that minimizes
 the photometric difference between image patches corresponding to the same
 3D point (blue squares). Note, in all figures, the parameters to optimize are
 drawn in red and the optimization cost is highlighted in blue.
-```
-```
+
+
+Изображение интенсивностей, записанное движущейся камерой $$C$$ на
+временном шаге $$k$$ обозначается как $$I_{k}^{C}: \Omega^{C} \subset \mathbb{R}^{2} \mapsto \mathbb{R}$$, где $$\Omega^{C}$$ - пространство изображения.
+Любая точка в трёхмерном пространстве $$\rho \in \mathbb{R}^{3}$$ отображается на изображение
+с координатами $$u \in \mathbb{R}^{3}$$ через модель проекции камеры:
+$$u = \pi(\rho)$$. Given the inverse scene depth ρ > 0 at pixel
 u∈ RCk, the position of a 3D point is obtained using the
 back-projection modelρ=π−ρ^1 (u). Where we denote with
 RCk⊆Ωthose pixels for which the depth is known at time
-kin camera C. The projection models are known from prior
-calibration [46].
+kin camera C. Модели проецирования известны из предварительной калибровки [46].
 The position and orientation of the world frame W with
 respect to thekthcamera frame is described by the rigid body
 transformationTkW ∈SE(3) [47]. A 3D pointWρthat is
 expressed in world coordinates can be transformed to thekth
 camera frame using:kρ=TkW Wρ.
-```
-```
-V. MOTIONESTIMATION
-In this section, we describe the proposed semi-direct ap-
-proach to motion estimation, which assumes that the position
-of some 3D points corresponding to features in previous
-frames are known from prior depth estimation.
-```
-```
-A. Sparse Image Alignment
+
+# V. Оценка движения
+
+В этом разделе мы описываем предлагаемый полупрямой подход к оценке движения,
+который предполагает, что позиции
+некоторых трёхмерных точек, соответствующих особенностям в предыдущих кадрах
+известны из прошлой оценки глубины.
+
+## A. Разрежённое совмещение изображений
+
 Image to model alignment estimates the incremental camera
 motion by minimizing the intensity difference (photometric
 error) of pixels that observe the same 3D point.
@@ -444,27 +409,27 @@ aggregate the photometric cost in a small patch centered at
 the feature pixel. Since the depth for neighboring pixels is
 unknown, we approximate it with the same depth that was
 estimated for the feature.
-To summarize, sparse image alignment solves the non-linear
+Суммируя, разрежённое совмещение изображений решает the non-linear
 least squares problem in Eq. (1) withRCk− 1 corresponding
 to small patches centered at corner and edgelet features with
-known depth. This optimization can be solved efficiently using
-standard iterative non-linear least squares algorithms such
+known depth. Эта задача эффективно решается
+стандартными итеративными алгоритмами для non-linear least squares algorithms such
 as Levenberg-Marquardt. More details on the optimization,
-including the analytic Jacobians, are provided in the Appendix.
+including the analytic Jacobians, are provided в приложении.
 
-B. Relaxation and Refinement
+## B. Расслабление и оптимизация
 
-Sparse image alignment is an efficient method to estimate
-the incremental motion between subsequent frames. However,
-to minimize drift in the motion estimate, it is paramount
-to register a new frame to the oldest frame possible. One
-approach is to use an older frame as reference for image
-alignment [16]. However, the robustness of the alignment
-cannot be guaranteed as the distance between the frames in
-the alignment increases (see experiment in Section XI-A). We
-therefore propose to relax the geometric constraints given by
-the reprojection of 3D points and to perform an individual
-2D alignment of corresponding feature patches. The alignment
+Разрежённое совмещение изображений - это эффективный метод оценки
+относительного движения между последовательными кадрами. Однако,
+для уменьшения ошибки (дрифта) оценки движения, очень важно
+сравнить новый кадр с как можно более ранним. Один из вариантов - 
+использовать старый кадр как эталонный для
+совмещения изображений [16]. Однако, когда расстояние между кадрами
+возрастает, корректность совмещения не может быть гарантирована,
+ (см. эксперименты в разделе XI-A). Поэтому,
+мы предлагаем расслабить геометрические ограничения, заданные репроекцией
+точек в трёхмерном пространстве, и осуществить индивидуальное
+двухмерное совмещение соответствующих участков с особенностями. The alignment
 
 ```
 n
