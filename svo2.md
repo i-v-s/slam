@@ -207,60 +207,6 @@ inertial) is currently not possible. In the proposed work, we
 use direct methods only to establish feature correspondence.
 Subsequently, bundle adjustment is used for joint optimization
 of structure and motion where it is also possible to include
-
-
-```
-Sparse Model-based
-Image Alignment
-```
-```
-Feature Alignment
-```
-```
-Pose & Structure
-Refinement
-```
-```
-Motion Estimation Thread
-New Image
-```
-```
-Last Frame
-Map
-```
-```
-Frame
-Queue
-```
-```
-Feature
-Extraction
-```
-```
-Initialize
-Depth-Filters
-```
-```
-Mapping Thread
-```
-```
-Is
-Keyframe?
-yes
-Update
-Depth-Filters
-```
-```
-yes:
-insert
-new Point
-```
-```
-no
-```
-```
-Converged?
-```
 inertial measurements as we have demonstrated in previous
 work [45].
 
@@ -301,7 +247,7 @@ along intensity gradient edges. Фильтры инициализируются 
 
 # IV. Принятая нотация
 The intensity image recorded from a moving camera C at
-timestepkis denoted withICk: ΩC⊂R^2 7→R, whereΩCis
+timestep k is denoted withICk: ΩC⊂R^2 7→R, whereΩCis
 the image domain. Any 3D pointρ∈R^3 maps to the image
 coordinatesu ∈R^2 through the camera projection model:
 u =π(ρ). Given the inverse scene depthρ > 0 at pixel
