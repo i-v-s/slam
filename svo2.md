@@ -10,24 +10,23 @@ the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 
 ## Краткое описание
 
-Прямые методы визуальной одометрии (VO) have
-gained popularity due to their capability to exploit information
-from all intensity gradients in the image. Однако, малая скорость вычислений, так же как и отсутствие гарантий оптимальности и consistency are limiting factors of direct methods, where
-established feature-based methods instead succeed at. Based on
-these considerations, we propose a Semi-direct VO (SVO) that
-uses direct methods to track and triangulate pixels that are
-characterized by high image gradients but relies on proven
-feature-based methods for joint optimization of structure and
-motion. Together with a robust probabilistic depth estimation
-algorithm, this enables us to efficiently track pixels lying on weak
-corners and edges in environments with little or high-frequency
-texture. We further demonstrate that the algorithm can easily be
-extended to multiple cameras, to track edges, to include motion
-priors, and to enable the use of very large field of view cameras,
-such as fisheye and catadioptric ones. Experimental evaluation
-on benchmark datasets shows that the algorithm is significantly
-faster than the state of the art while achieving highly competitive
-accuracy.
+Прямые методы визуальной одометрии (VO)
+стали весьма популярны, поскольку способны использовать информацию
+всех градиентов интенсивности изображения. Однако, малая скорость вычислений, так же как и отсутствие гарантий оптимальности и consistency ограничивают их, в то время, как
+общепринятые, использующие особенности методы выигрывают. Основываясь на данных предпосылках, 
+мы предлагаем полупрямую VO (SVO), которая
+использует прямые методы для отслеживания и триангуляции пикселей, которые
+имеют сильный градиент, но полагается на проверенные временем,
+использующие особенности методы для совместной оптимизации структуры и
+движения. В совокупности с надёжным алгоритмом вероятностной оценки глубины, 
+это позволяет нам эффективно отслеживать пикселы, находящиеся на слабо выраженных
+углах и краях в окружениях со слабой или высокочастотной
+текстурой. Далее, мы продемонстрируем, как этот алгоритм может быть легко
+расширен на множество камер, способен отслеживать края, использовать кинематические
+предсказания, а также допускать использование камер с очень широким углом обзора,
+например - рыбий глаз или катадиоптрических. В конце, мы приведём результаты экспериментльной проверки
+на наборах данных, которая покажет, что алгоритм значительно
+быстрее, чем современные аналоги, и в то же время показывает сравнительно высокую точность.
 
 ## Дополнительный материал
 [Видео экспериментов](https://youtu.be/hR8uq1RTUfA)
