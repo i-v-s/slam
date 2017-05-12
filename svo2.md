@@ -299,7 +299,7 @@ transformationTkW ∈SE(3) [47]. Выраженная в мировых коор
 
 $$
 \begin{equation}
-T_{kk-1}^{\star} = arg \min_{T_{kk-1}} \sum_{} \tag{1}\label{eq:one}
+T_{kk-1}^{\star} = arg \: \min_{T_{kk-1}} \sum_{u \in } \frac{1}{2} \tag{1}\label{eq:one}
 \end{equation} 
 $$
 
