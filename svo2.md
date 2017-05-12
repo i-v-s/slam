@@ -246,8 +246,8 @@ along intensity gradient edges. Фильтры инициализируются 
 для непосредственного использования при оценке движения.
 
 # IV. Принятая нотация
-Изображение интенсивностей, записанное движущейся камерой C на
-временном шаге $$k$$ обозначается как $$I_{k}^{C}: \Omega^{C} \subset \mathbb{R}^{2} \mapsto \mathbb{R}$$ ICk: ΩC⊂R^2 7→R, whereΩCis
+Изображение интенсивностей, записанное движущейся камерой $$C$$ на
+временном шаге $$k$$ обозначается как $$I_{k}^{C}: \Omega^{C} \subset \mathbb{R}^{2} \mapsto \mathbb{R}$$, где $$\Omega^{C}$$ is
 the image domain. Any 3D pointρ∈R^3 maps to the image
 coordinatesu ∈R^2 through the camera projection model:
 u =π(ρ). Given the inverse scene depthρ > 0 at pixel
