@@ -28,8 +28,10 @@ the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 на наборах данных, которая покажет, что алгоритм значительно
 быстрее, чем современные аналоги, и в то же время показывает сравнительно высокую точность.
 
-*[VO]: Visual Odometry
+*[VO]: Visual Odometry - визуальная одометрия
 *[SVO]: Semi-direct Visual Odometry
+*[SLAM]: Simultaneous Localization and Mapping - навигация с одновременным составлением карты
+*[V-SLAM]: Visual Simultaneous Localization and Mapping - навигация по изображению с одновременным составлением карты
 
 ## Дополнительный материал
 [Видео экспериментов](https://youtu.be/hR8uq1RTUfA)
