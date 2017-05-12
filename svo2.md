@@ -274,9 +274,9 @@ RCk⊆Ωthose pixels for which the depth is known at time
 kin camera C. Модели проецирования известны из предварительной калибровки [46].
 The position and orientation of the world frame W with
 respect to thekthcamera frame is described by the rigid body
-transformationTkW ∈SE(3) [47]. Точка в трёхмерном пространстве $$_{W}\rho$$, которая
-expressed in world coordinates, может быть спроецирована на $$k$$-тый кадр,
-используя: $$ _{k} \rho = T_{kW} \;  _{W} \rho $$.
+transformationTkW ∈SE(3) [47]. Точка в трёхмерном пространстве $$_{W}\rho$$,
+выраженная в мировых координатах, может быть спроецирована на $$k$$-тый кадр,
+с помощью выражения $$ _{k} \rho = T_{kW} \;  _{W} \rho $$.
 
 # V. Оценка движения
 
