@@ -247,12 +247,14 @@ along intensity gradient edges. Фильтры инициализируются 
 
 # IV. Принятая нотация
 ![Изменение относительной позы]({{site.baseurl}}/svo2/fig2.png)
-*Рис. 2. Changing the relative poseTk,k− 1 between the current and the
-previous frame implicitly moves the position of the reprojected points in the
-new imageu′i. Sparse image alignment seeks to findTk,k− 1 that minimizes
-the photometric difference between image patches corresponding to the same
-3D point (blue squares). Note, in all figures, the parameters to optimize are
-drawn in red and the optimization cost is highlighted in blue.*
+
+*Рис. 2. Изменение относительного положения $$ T_{k, k − 1} $$ между текущим и предыдущим
+кадрами неявно смещает позиции перепроецируемых точек на
+новом изображении $${u}'_{i}$$. Алгоритм разрежённого совмещения пытается найти такое $$T_{k, k − 1},
+которое минимизирует
+фотометрическую разницу между кусочками изображений, соответствующих одной и той же
+точке (синие квадраты). Отметим,  что на всех рисунках, оптимизируемые параметры
+отмечены красным, а цена оптимизации отмечена синим.*
 
 
 Изображение интенсивностей, записанное движущейся камерой $$C$$ на
