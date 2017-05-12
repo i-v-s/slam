@@ -259,7 +259,8 @@ along intensity gradient edges. Фильтры инициализируются 
 которое минимизирует
 фотометрическую разницу между кусочками изображений, соответствующих одной и той же
 точке (синие квадраты). Отметим,  что на всех рисунках, оптимизируемые параметры
-отмечены красным{: style="color: red"}, а цена оптимизации - синим{: style="color: blue"}.*
+отмечены <span style="color:red">красным</span>,
+а цена оптимизации - <span style="color:blue">синим</span>.*
 
 
 Изображение интенсивностей, записанное движущейся камерой $$C$$ на
@@ -1749,7 +1750,7 @@ comparable performance as semi-dense and dense alignment
 in terms of robustness of frame-to-frame motion estimation.
 ```
 ```
-XIII. CONCLUSION
+# XIII. CONCLUSION
 In this paper, we proposed the semi-direct VO pipeline
 “SVO” that is significantly faster than the current state-of-the-
 art VO algorithms while achieving highly competitive accu-
@@ -1777,7 +1778,7 @@ Acknowledgments The authors gratefully acknowledge
 Henri Rebecq for creating the “Urban Canyon” datasets that
 can be accessed here: [http://rpg.ifi.uzh.ch/fov.html](http://rpg.ifi.uzh.ch/fov.html)
 
-APPENDIX
+# APPENDIX
 In this section, we derive the analytic solution to the multi-
 camera sparse-image-alignment problem with motion prior.
 Given a rig ofMcalibrated camerasc∈C with known
