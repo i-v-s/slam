@@ -317,42 +317,18 @@ $$B_{k−1}$$) может быть вычислена для пикселов с
 ρu=TBCπ−ρ^1 (u), ∀u∈RCk− 1 , (3)
 
 (a) Sparse (b) Semi-Dense (c) Dense
-```
-Fig. 3: An image from theICL-NUIMdataset (Sec. XI-B3) with pixels used
+Рис. 3. An image from theICL-NUIMdataset (Sec. XI-B3) with pixels used
 for image-to-model alignment (marked in green for corners and magenta for
 edgelets) for sparse, semi-dense, and dense methods. Dense approaches (c)
 use every pixel in the image, semi-dense (b) use just the pixels with high
 intensity gradient, and the proposed sparse approach (a) uses selected pixels
 at corners or along intensity gradient edges.
 
-However, the optimization in Eq. (1) includes only a subset
-of those pixelsR ̄Ck− 1 ⊆ RCk− 1 , namely those for which the
+Однако, оптимизация уравнения (1) включает только подмножество
+таких пикселей R ̄Ck− 1 ⊆ RCk− 1 , namely those for which the
 back-projected points are also visible in the imageICk:
 
 R ̄Ck− 1 =
-
-### {
-
-```
-u
-```
-### ∣
-
-```
-∣u∈RCk− 1 ∧ π
-```
-### (
-
-```
-TCBTkk− 1 TBCπ−ρ^1 (u)
-```
-### )
-
-### ∈ΩC
-
-### }
-
-### .
 
 Image to model alignment has previously been used in
 the literature to estimate camera motion. Apart from minor
@@ -363,16 +339,18 @@ As discussed in Section II, we denote methods that know
 and exploit the depth for all pixels in the reference view
 as densemethods [15]. Converseley, approaches that only
 perform the alignment for pixels with high image gradients
-are denotedsemi-dense[41]. In this paper, we propose a novel
-sparseimage alignment approach that assumes known depth
-only for corners and features lying on intensity edges. Fig. 3
-summarizes our notation of dense, semi-dense, and sparse
-approaches.
-To make the sparse approach more robust, we propose to
-aggregate the photometric cost in a small patch centered at
-the feature pixel. Since the depth for neighboring pixels is
-unknown, we approximate it with the same depth that was
-estimated for the feature.
+are denotedsemi-dense[41]. В данной работе изложен новый
+метод разрежённого совмещения изображений, который предполагает известную глубину
+только для углов и особенностей, находящихся на краях интенсивности. На рис. 3
+отражено наше представление о плотных, полуплотных, и разрежённых
+методах.
+
+Для увеличения надёжности работы разрежённого метода, мы предлагаем
+aggregate(накапливать) фотометрическую цену в малых кусочках, имеющих середину
+в месте особенности. Поскольку глубина соседних пикселов
+неизвестна, мы предполагаем что они имеют ту же глубину, что и особенность,
+глубина которой была оценена ранее.
+
 Суммируя, разрежённое совмещение изображений решает the non-linear
 least squares problem in Eq. (1) withRCk− 1 corresponding
 to small patches centered at corner and edgelet features with
