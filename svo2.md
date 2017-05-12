@@ -295,8 +295,8 @@ transformationTkW ∈SE(3) [47]. Выраженная в мировых коор
 вводим a body frame $$B$$, который жёстко соединён с камера
 frame $$C$$ with known extrinsic calibrationTCB∈SE(3)(see
 Fig. 2). Наша цель &mdash; оценить относительное смещение
-body frame $$ T_{k k − 1} \doteq T_{B_{k}B{k − 1}} $$ such that the photometric error
-is minimized:
+body frame $$ T_{k k − 1} \doteq T_{B_{k}B_{k − 1}} $$, при котором фотометрическая ошибка
+минимальна:
 ```
 ```
 T?kk− 1 = arg min
