@@ -299,7 +299,7 @@ transformationTkW ∈SE(3) [47]. Выраженная в мировых коор
 
 $$
 T_{kk − 1}^{*} = arg min
-$$
+$$(1)
 
 where the photometric residualrICuis defined by the intensity
 difference of pixels in subsequent imagesICk andICk− 1 that
