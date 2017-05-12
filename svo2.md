@@ -261,23 +261,20 @@ no
 ```
 Converged?
 ```
-```
-Fig. 1: Tracking and mapping pipeline
-```
 inertial measurements as we have demonstrated in previous
 work [45].
 
 # III. Обзор программной архитектуры
 
 ![Потоки отслеживания и построения карты]({{site.baseurl}}/SVO2/fig1.svg)
+Рис. 1: Конвеер слежения и построения карты
 
-
-Figure 1 provides an overview of the proposed approach.
-We use two parallel threads (as in [21]), one for estimating
-the camera motion, and a second one for mapping as the
-environment is being explored. This separation allows fast and
-constant-time tracking in one thread, while the second thread
-extends the map, decoupled from hard real-time constraints.
+Предлагаемый подход кратко отражён на рис. 1.
+Мы используем два параллельных потока (как в [21]), один для оценки движения камеры, 
+и второй для построения карты
+исследуемого пространства. Это разделение позволяет быстро,
+(затрачивая с постоянное время) осуществлять слежение в одном потоке, в то время,
+как второй поток, отвязанный от жёстких ограничений работы в реальном времени, расширяет карту.
 The motion-estimation thread implements the proposed
 semi-direct approach to motion estimation. Our approach is
 divided into three steps: sparse image alignment, relaxation,
