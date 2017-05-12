@@ -281,22 +281,23 @@ work [45].
 - разрежённое совмещение изображений, 
 - расслабление, и 
 - оптимизация. 
+
 Алгориитм разрежённого совмещения изображений оценивает
 движение от кадра к кадру, минимизируя разницу интенсивностей
-особенностей, которые соотвветствуют to the projected location of the
-same 3D points. A subsequent step relaxes the geometric
-constraint to obtain sub-pixel feature correspondence. This
-step introduces a reprojection error, which we finally refine
-by means of bundle adjustment.
-In the mapping thread, a probabilistic depth-filter is initial-
-ized for each feature for which the corresponding 3D point is
-to be estimated. New depth-filters are initialized whenever a
-new keyframe is selected for corner pixels as well as for pixels
-along intensity gradient edges. The filters are initialized with
-a large uncertainty in depth and undergo a recursive Bayesian
-update with every subsequent frame. When a depth filter’s
-uncertainty becomes small enough, a new 3D point is inserted
-in the map and is immediately used for motion estimation.
+особенностей, которые соответствуют проецируемомоу положению тех же
+точек в пространстве. Следующий шаг расслабляет геометрические
+ограничения для получения суб-пиксельных соответствий особенностей. Этот шаг
+вводит ошибку репроекции, которыю мы минимизируем на завершающем шаге
+с помощью совместной оптимизации.
+В потоке построения карты вероятностные фильтры глубины инициализируются
+для каждой особенности, чтобы далее оценить соответствующую точку в пространстве.
+Новые фильтры глубины инициализируются всякий раз при получении
+нового ключевого кадра is selected for corner pixels as well as for pixels
+along intensity gradient edges. Фильтры инициализируются большой
+неопределённостью по глубине и постоянно обновляются в Баесовской
+манере при каждом последующем кадре. Когда неопределённость фильтра глубины
+становится достаточно мала, происходит вставка в карту новой трёхмерной точки
+для непосредственного использования при оценке движения.
 
 # IV. Принятая нотация
 The intensity image recorded from a moving camera C at
