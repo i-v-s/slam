@@ -246,7 +246,7 @@ along intensity gradient edges. Фильтры инициализируются 
 для непосредственного использования при оценке движения.
 
 # IV. Принятая нотация
-
+![Изменение относительной позы]({{site.baseurl}}//fig2.png)
 *Рис. 2. Changing the relative poseTk,k− 1 between the current and the
 previous frame implicitly moves the position of the reprojected points in the
 new imageu′i. Sparse image alignment seeks to findTk,k− 1 that minimizes
