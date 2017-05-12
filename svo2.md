@@ -300,8 +300,8 @@ transformationTkW ∈SE(3) [47]. Выраженная в мировых коор
 $$
 \begin{equation}
 T_{kk-1}^{\star} = arg \: \min_{T_{kk-1}} \sum_{u \in } \frac{1}{2} 
-{\left \|  \right \|}_{\sum_{I}}^{2} 
-\tag{1}\label{eq:one}
+{\left \| r_{I_{u}^{C}}(T_{kk-1}) \right \|}_{\sum_{I}}^{2} 
+,\tag{1}\label{eq:one}
 \end{equation} 
 $$
 
