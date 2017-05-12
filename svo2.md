@@ -291,16 +291,11 @@ transformationTkW ∈SE(3) [47]. Выраженная в мировых коор
 одной и той же точке в пространстве, можно произвести сопоставление изображения с моделью,
 что позволяет оценить относительное движение камеры.
 
-To simplify a later generalization to multiple cameras, we
-introduce abody frameB that is rigidly attached to the camera
-frame C with known extrinsic calibrationTCB∈SE(3)(see
-Fig. 2). Our goal is to estimate the incremental motion of the
-body frameTkk− 1
-```
-### .
-
-```
-=TBkBk− 1 such that the photometric error
+Для облегчения последующего обобщения на случай с множеством камер, мы
+вводим a body frame $$B$$, который жёстко соединён с камера
+frame $$C$$ with known extrinsic calibrationTCB∈SE(3)(see
+Fig. 2). Наша цель &mdash; оценить относительное смещение
+body frame $$ T_{k k − 1} \doteq T_{B_{k}B{k − 1}} $$ such that the photometric error
 is minimized:
 ```
 ```
