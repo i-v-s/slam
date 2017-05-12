@@ -2176,85 +2176,9 @@ To summarize, the Jacobians of the residuals are:
 ∂rR
 ∂δφ
 ```
-```
-=J−r^1 (Log( ̃RTR)) (28)
-```
-```
-∂rp
-∂δp
-```
-### =R
 
-```
-∂rICi
-∂δφ
-```
-### =−
+## Список литературы
 
-```
-∂ICk− 1 (u)
-∂u
-```
-### ∣
-
-### ∣
-
-### ∣
-
-```
-u=π(cρi)
-```
-```
-∂π(ρ)
-∂ρ
-```
-### ∣
-
-### ∣
-
-### ∣
-
-```
-ρ=cρi
-```
-```
-RCBρ∧i
-∂rICi
-∂δp
-```
-### =
-
-```
-∂ICk− 1 (u)
-∂u
-```
-### ∣
-
-### ∣
-
-### ∣
-
-```
-u=π(cρi)
-```
-```
-∂π(ρ)
-∂ρ
-```
-### ∣
-
-### ∣
-
-### ∣
-
-```
-ρ=cρi
-```
-### RCB
-
-### REFERENCES
-
-```
 [1] S. Ullman. The Interpretation of Visual Motion. MIT
 Press: Cambridge, MA, 1979.
 [2] C. Tomasi and T. Kanade. Shape and motion from image
@@ -2278,13 +2202,9 @@ cember 2011. ISSN 1070-9932. doi: 10.1109/MRA.
 [7] B. Triggs, P. McLauchlan, R. Hartley, and A. Fitzgibbon.
 Bundle adjustment – a modern synthesis. In W. Triggs,
 A. Zisserman, and R. Szeliski, editors,Vision Algorithms:
-Theory and Practice, volume 1883 ofLNCS, pages 298–
-```
-372. Springer Verlag, 2000.
-[8] F. Dellaert and M. Kaess. Square Root SAM: Simultane-
-ous localization and mapping via square root information
-
-```
+Theory and Practice, volume 1883 ofLNCS, pages 298–372. Springer Verlag, 2000.
+[8] F. Dellaert and M. Kaess. Square Root SAM: Simultaneous
+localization and mapping via square root information
 smoothing. Int. J. of Robotics Research, 25(12):1181–
 1203, December 2006.
 [9] M. Kaess, H. Johannsson, R. Roberts, V. Ila, J.J. Leonard,
@@ -2343,8 +2263,6 @@ system.IEEE Trans. Robotics, 31(5):1147–1163, 2015.
 consensus: a paradigm for model fitting with applications
 to image analysis and automated cartography.Commun.
 ACM, 24(6):381–395, 1981. ISSN 0001-0782. doi:
-```
-
 [http://doi.acm.org/10.1145/358669.358692.](http://doi.acm.org/10.1145/358669.358692.)
 [24] K. MacTavish and T. D. Barfoot. At all costs: A compar-
 ison of robust cost functions for camera correspondence
@@ -2368,7 +2286,6 @@ single-viewpoint sensors. IEEE Trans. Robotics, 24(6):
 tional dense large-scale mapping and navigation based on
 meaningful triangulation. InIEEE Int. Conf. on Robotics
 and Automation (ICRA), pages 3289–3296. IEEE, May
-
 2011. ISBN 978-1-61284-386-5. doi: 10.1109/ICRA.
 2011.5980206.
 [30] N. D. Molton, A. J. Davison, and I. D. Reid. Locally
@@ -2404,8 +2321,6 @@ and Automation (ICRA), Hong Kong, China, May 2014.
 [38] T. Whelan, S. Leutenegger, R. F. Salas-Moreno,
 B. Glocker, and A. J. Davison. ElasticFusion: Dense
 SLAM without a pose graph. InRobotics: Science and
-
-```
 Systems (RSS), Rome, Italy, July 2015.
 [39] M. Pizzoli, C. Forster, and D. Scaramuzza. REMODE:
 Probabilistic, monocular dense reconstruction in real
@@ -2464,8 +2379,6 @@ Reality (ISMAR), pages 109–118, October 2006.
 [54] M. Faessler, F. Fontana, C. Forster, E. Mueggler, M. Piz-
 zoli, and D. Scaramuzza. Autonomous, vision-based
 flight and live dense 3D mapping with a quadrotor MAV.
-```
-
 J. of Field Robotics, pages 1556–4967, 2015. URL
 [http://dx.doi.org/10.1002/rob.21581.](http://dx.doi.org/10.1002/rob.21581.)
 [55] G. Vogiatzis and C. Hernandez. Video-based, real-time ́
@@ -2497,7 +2410,6 @@ etry. InIEEE Int. Conf. on Robotics and Automation
 [62] M. Burri, J. Nikolic, P. Gohl, T. Schneider, J. Re-
 hder, S. Omari, M. Achtelik, and R. Siegwart. The
 EuRoC MAV datasets. Int. J. of Robotics Research,
-
 2015. URL [http://projects.asl.ethz.ch/datasets/doku.php?](http://projects.asl.ethz.ch/datasets/doku.php?)
 id=kmavvisualinertialdatasets.
 [63] J. Sturm, N. Engelhard, F. Endres, W. Burgard, and
@@ -2525,8 +2437,6 @@ ICRA.2015.7138988.
 and W. Burgard. An evaluation of the RGB-D SLAM
 system. InIEEE Int. Conf. on Robotics and Automation
 (ICRA), 2012.
-
-```
 [69] B. D. Lucas and T. Kanade. An iterative image regis-
 tration technique with an application to stereo vision. In
 Int. Joint Conf. on Artificial Intelligence, pages 121–130,
@@ -2537,8 +2447,8 @@ Lie Group Approach. Cambridge University Press, 2015.
 ory, and Lie Groups, Volume 2: Analytic Methods and
 Modern Applications (Applied and Numerical Harmonic
 Analysis). Birkhauser, 2012.
-```
-```
+
+
 Christian Forster(1986, Swiss) obtained his Ph.D.
 in Computer Science (2016) at the University of
 Zurich under the supervision of Davide Scaramuzza.
