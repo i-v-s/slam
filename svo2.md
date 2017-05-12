@@ -274,8 +274,8 @@ RCk⊆Ωthose pixels for which the depth is known at time
 kin camera C. Модели проецирования известны из предварительной калибровки [46].
 The position and orientation of the world frame W with
 respect to thekthcamera frame is described by the rigid body
-transformationTkW ∈SE(3) [47]. Точка в трёхмерном пространстве $$_{W}\rho$$,
-выраженная в мировых координатах, может быть спроецирована на $$k$$-тый кадр,
+transformationTkW ∈SE(3) [47]. Выраженная в мировых координатах точка $$_{W}\rho$$
+может быть спроецирована на $$k$$-тый кадр
 с помощью выражения $$ _{k} \rho = T_{kW} \;  _{W} \rho $$.
 
 # V. Оценка движения
@@ -287,9 +287,10 @@ transformationTkW ∈SE(3) [47]. Точка в трёхмерном простр
 
 ## A. Разрежённое совмещение изображений
 
-Image to model alignment estimates the incremental camera
-motion by minimizing the intensity difference (photometric
-error) of pixels that observe the same 3D point.
+Минимизируя разницу интенсивностей пикселей (фотометрическую ошибку), принадлежащих
+одной и той же точке в пространстве, можно произвести сопоставление изображения с моделью,
+что позволяет оценить относительное движение камеры.
+
 To simplify a later generalization to multiple cameras, we
 introduce abody frameB that is rigidly attached to the camera
 frame C with known extrinsic calibrationTCB∈SE(3)(see
