@@ -431,54 +431,14 @@ alignment, we apply an affine warpingAto the reference
 patch, which is computed from the estimated relative pose
 Tkrbetween the reference frame and the current frame [21].
 For corner features, the optimization computes a correction
-δu?∈R^2 to the predicted feature positionu′that minimizes
+δu?∈R^2 to the predicted feature position u′that minimizes
 the photometric cost:
-```
-```
-u′
-?
+
 =u′+δu?, with u′=π
-```
-### (
-
-```
 TCBTkrTBCπρ−^1 (u)
-```
-### )
 
-### (4)
-
-```
-δu?= arg min
-δu
-```
-### ∑
-
-```
-∆u∈P
-```
-### 1
-
-### 2
-
-### ∥
-
-### ∥
-
-```
 ∥ICk(u′+δu+∆u)−ICr(u+A∆u)
-```
-### ∥
 
-### ∥
-
-### ∥
-
-```
-2
-,
-```
-```
 where∆uis the iterator variable that is used to compute the
 sum over the patchP. This alignment is solved using the
 inverse compositional Lucas-Kanade algorithm [48].
@@ -502,37 +462,11 @@ u′
 δu?= arg min
 δu
 ```
-### ∑
-
-```
 ∆u∈P
-```
-### 1
-
-### 2
-
-### ∥
-
-### ∥
-
-```
 ∥ICk(u′+δu·n+∆u)−ICr(u+A∆u)
-```
-### ∥
-
-### ∥
-
-### ∥
-
-```
-2
-.
-```
-```
 This is similar to previous work on VO with edgelets, where
 feature correspondence is found by sampling along the normal
 direction for abrupt intensity changes [14, 49–53]. However,
-```
 
 in our case, sparse image alignment provides a very good
 initialization of the feature position, which directly allows us
@@ -626,7 +560,7 @@ that for many applications (e.g.for state estimation of micro
 aerial vehicles [20, 54]) it suffices to only optimize the latest
 camera pose and the 3D points separately.
 
-### VI. MAPPING
+# VI. Построение карты
 
 In the previous section, we assumed that the depth at sparse
 feature locations in the image is known. In this section, we
@@ -836,22 +770,19 @@ Reference patch
 ```
 Outlier match
 ```
-```
 Fig. 7: Illustration of the epipolar search to estimate the depth of the pixel
 in the center of the reference patch in the left image. Given the extrinsic and
 intrinsic calibration of the two images, the epipolar line that corresponds to
 the reference pixel is computed. Due to self-similar texture, erroneous matches
 along the epipolar line are frequent.
-```
-```
+
 depth estimation in self-similar environments, where outlier
 matches are frequent.
 In [39] we demonstrate how the same depth filter can be
 used fordensemapping.
-```
-### VII. LARGEFIELD OFVIEWCAMERAS
 
-```
+# VII. Использование камер с широким углом обзора
+
 To model large optical distortion, such as fisheye and
 catadioptric (see Fig. 8), we use the camera model proposed
 in [57], which models the projectionπ(·)and unprojection
@@ -869,10 +800,9 @@ corresponds approximately to one pixel in the image plane.
 For each sample, we apply the camera projection modelπ(·)
 to obtain the corresponding pixel coordinate on the curved
 epipolar line.
-```
-### VIII. MULTI-CAMERASYSTEMS
 
-```
+# VIII. Использование нескольких камер
+
 The proposed motion estimation algorithm starts with an
 optimization of the relative poseTkk− 1. Since in Sec. V-A
 we have already introduced a body frame B, which is rigidly
@@ -921,13 +851,13 @@ are available to update the depth filters. To summarize, the
 ```
 ```
 Fig. 8: Different optical distortion models that are supported by SVO.
-```
+
 only modification to enable the use of multiple cameras is to
 refer the optimizations to a central body frame, which requires
 us to include the extrinsic calibrationTCBin the Jacobians as
 shown in the Appendix.
 
-### IX. Использование кинематических предсказаний
+# IX. Использование кинематических предсказаний
 
 В окружениях, не изобилующих деталями, во время резких движений, или в случае
 движущихся препятствий может оказаться очень полезным использование
