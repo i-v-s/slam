@@ -22,7 +22,14 @@
         d[x].id = 'r' + (x + 1);
         r[x] = d[x].textContent;
       }
-      var treeWalker = document.createTreeWalker(
+      
+      var ps = document.getElementsByTag('p');
+      for (var x = 0; x < d.length; x++) {
+        var s = ps[x].innerHTML;
+        var rp = s.replace(/\[(\d+)\]/g, '<a href="$1">[$1]</a>');
+        if (s !== rp) ps[x].innerHTML = rp;
+      }      
+      /*var treeWalker = document.createTreeWalker(
   	    document.body,
         NodeFilter.SHOW_TEXT
 	  );
@@ -31,9 +38,9 @@
         //nodeList.push(treeWalker.currentNode);
         var s = treeWalker.currentNode.nodeValue;
         var rp = s.replace(/\[(\d+)\]/g, '<a href="$1">[$1]</a>');
-        if (s !== rp) treeWalker.currentNode.wholeText = rp;
+        if (s !== rp) treeWalker.currentNode.nodeValue = rp;
         //console.log();
-      }
+      }*/
 	  //console.log(r);
     
     });
