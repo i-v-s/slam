@@ -25,11 +25,13 @@
       var treeWalker = document.createTreeWalker(
   	    document.body,
         NodeFilter.SHOW_TEXT
-	  );//.map(function(e){ return e;});
+	  );
       
       while(treeWalker.nextNode()) {
         //nodeList.push(treeWalker.currentNode);
-        console.log(treeWalker.currentNode.nodeValue);
+        var s = treeWalker.currentNode.nodeValue;
+        var rp = s.replace(/\[(\d+)\]/g, '<a href="$1">[$1]</a>');
+        //console.log();
       }
 	  //console.log(r);
     
