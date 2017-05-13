@@ -29,12 +29,12 @@
         var a = s.split('['), l = a.length;
         if (l <= 1) continue;
         for (var y = 1; y < l; y++) {
-          var m = a[y].match(/^([\d, ]+)\]/);
+          var m = a[y].match(/^([\d, -]+)\]/);
           if(!m) continue;
           var refs = m[1].split(',').map(function(i){
           	v = parseInt(i.trim());
             if (!v || v > r.length) return i;
-          	return '<a href="#r' + v + '" title="' + r[v - 1] + '">' + v + '</a>';
+          	return '<a href="#r' + v + '" title="' + r[v - 1] + '">' + i.trim() + '</a>';
           }).join(', ');
           a[y] = a[y].replace(/^[\d, ]+\]/, refs + ']');
         }
