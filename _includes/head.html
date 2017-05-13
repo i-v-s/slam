@@ -12,4 +12,13 @@
     });
   </script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML-full"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var d = document.getElementById('Список-литературы');
+      if(!d) return;
+      d = d.nextelementSibling.children.map(function(e){ return e;});
+	  console.log(d);      
+    
+    });
+  </script>
 </head>
