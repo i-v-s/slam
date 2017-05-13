@@ -38,7 +38,7 @@
               return '<a href="#r' + v + '" title="' + r[v - 1] + '">' + i.trim() + '</a>';            
             }).join('-');
           }).join(', ');
-          a[y] = a[y].replace(/^[\d, ]+\]/, refs + ']');
+          a[y] = a[y].replace(/^[\d, -]+\]/, refs + ']');
         }
         //var rp = s.replace(/\[(\d+)\]/g, '<a href="#r$1">[$1]</a>');
         ps[x].innerHTML = a.join('[');// rp;
