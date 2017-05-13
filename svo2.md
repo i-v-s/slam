@@ -109,33 +109,34 @@ comparisons against previous works.
 
 # II. Связанные работы
 
-Methods that simultaneously recover camera pose and scene
-structure, can be divided into two classes:
-a) Feature-based: The standard approach to solve this
-problem is to extract a sparse set of salient image features
-(e.g. corners, blobs) in each image; match them in successive
-frames using invariant feature descriptors; robustly recover
-both camera motion and structure using epipolar geometry;
-and finally, refine the pose and structure through reprojection
-error minimization. The majority of VO and V-SLAM algo-
-rithms [6] follow a variant of this procedure. A reason for the
-success of these methods is the availability of robust feature
-detectors and descriptors that allow matching images under
-large illumination and view-point changes. Feature descriptors
-can also be used to establish feature correspondences with
-old landmarks when closing loops, which increases both the
-accuracy of the trajectory after bundle adjustment [7, 21] and
-the robustness of the overall system due to re-localization
-capabilities. This is also where we draw the line between VO
-and V-SLAM: While VO is only about incremental estimation
-of the camera pose, V-SLAM algorithms, such as [22], detect
-loop-closures and subsequently refine large parts of the map.
-The disadvantage of feature-based approaches is their
-low speed due to feature extraction and matching at every
-frame, the necessity for robust estimation techniques that
-deal with erroneous correspondences (e.g.,RANSAC [23], M-
-estimators [24]), and the fact that most feature detectors are
-optimized for speed rather than precision. Furthermore, relying
+Методы, параллельно реализующие определение позиции камеры и воссоздание
+структуры сцены, могут быть условно разделены на два класса:
+1. Использующие особенности. Типичный подход к решению этой
+задачи состоит в том чтоб а) выделить разрежённое множество salient особенностей изображения
+(например углы, пятна) на каждом кадре; б) найти соответствие между ними на последовательных кадрах,
+используя invariant описатели особенностей; в) пользуясь эпиполярной геометрией,
+устойчивым к ошибкам способом восстановить движение камеры и структуру сцены;
+г) и наконец, оптимизировать положение камеры и структуру через минимизацию
+ошибки репроекции. Этой процедуре (с некоторыми изменениями) следует большинство
+алгоритмов VO и V-SLAM [6]. 
+Причиной
+успеха этих методов является доступность качественных 
+детекторов особенностей и описателей, которые позволяют находить соответствия при
+достаточно больших отличиях освещения и места съёмки. Описатели особенностей
+также могут быть использованы для поиска соответствий со
+старыми отметками при замыкании циклов, что увеличивает как
+точность определения траектории после совместной оптимизации (bundle adjustment) [7, 21], так и
+устойчивость к ошибкам всей системы из-за возможностей
+релокализации. Это также то место, где мы проводим черту между визуальной одометрией (VO)
+и V-SLAM: VO обычно только оценивает приращение положения
+камеры, а алгоритмы V-SLAM, такие как [22], обнаруживают
+замыкания циклов, после чего оптимизируют большие части карты.
+Недостатком методов, использующих особенности, является их низкая скорость 
+из-за необходимости искать в каждом кадре особенности и сопоставлять их,
+из-за требования использовать устойчивые к ошибкам техники оценки, которые
+способны работать с ложными совпадениями (например, RANSAC [23], M-
+estimators [24]), и тот факт, что большинство детекторов особенностей
+оптимизированы на максимальную скорость, а не на точность. Furthermore, relying
 only on well localized salient features (e.g.,corners), only a
 small subset of the information in the image is exploited.
 In SVO, features are extracted only for selected keyframes,
