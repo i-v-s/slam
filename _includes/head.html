@@ -26,8 +26,19 @@
       var ps = document.getElementsByTagName('p');
       for (var x = 0; x < d.length; x++) {
         var s = ps[x].innerHTML;
-        var rp = s.replace(/\[(\d+)\]/g, '<a href="#r$1">[$1]</a>');
-        if (s !== rp) ps[x].innerHTML = rp;
+        var a = s.split('['), l = a.length;
+        if (l <= 1) continue;
+        for (var y = 1; y < l; y++) {
+          var m = a[y].match(/^([\d, ]+)\]/);
+          if(!m) continue;
+          var refs = m[1].split(',').map(function(i){
+          	i = parseInt(i.trim());
+          	return '<a href="' + i + '">' + i + '</a>';
+          }).join(', ');
+          a[y] = a[y].replace(/^[\d, ]+\]/, refs + ']');
+        }
+        //var rp = s.replace(/\[(\d+)\]/g, '<a href="#r$1">[$1]</a>');
+        if (s !== rp) ps[x].innerHTML = a.join('[');// rp;
       }      
       /*var treeWalker = document.createTreeWalker(
   	    document.body,
