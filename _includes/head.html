@@ -26,7 +26,7 @@
       var ps = document.getElementsByTagName('p');
       for (var x = 0; x < d.length; x++) {
         var s = ps[x].innerHTML;
-        var rp = s.replace(/\[(\d+)\]/g, '<a href="$1">[$1]</a>');
+        var rp = s.replace(/\[(\d+)\]/g, '<a href="#r$1">[$1]</a>');
         if (s !== rp) ps[x].innerHTML = rp;
       }      
       /*var treeWalker = document.createTreeWalker(
