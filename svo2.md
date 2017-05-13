@@ -83,11 +83,13 @@ efficient direct approach to estimate frame-to-frame motion
 by minimizing the photometric error of features lying on
 intensity corners and edges. The 3D points corresponding to
 features are obtained by means of robust recursive Bayesian
-depth estimation (Sec. VI). Once feature correspondence is
-established, we use bundle adjustment for refinement of the
-structure and the camera poses to achieve highest accuracy
-(Sec. V-B). Consequently, we name the system semi-direct
-visual odometry (SVO).
+depth estimation (Sec. VI). Как только соответствие особенностей
+достоверно установлено, мы используем совместную оптимизацию для коррекции
+структуры карты и положений камеры, достигая этим высочайшей точности
+([раздел V-B](#b-Расслабление-и-оптимизация "Расслабление и оптимизация")).
+Поэтому, мы назвали эту систему &mdash; полупрямая
+визуальная одометрия (SVO).
+
 Our implementation of the proposed approach is exception-
 ally fast, requiring only 2.5 milliseconds to estimate the pose
 of a frame on a standard laptop computer, while achieving
