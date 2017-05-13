@@ -36,7 +36,7 @@
               v = parseInt(i.trim());
               if (!v || v > r.length) return i;
               return '<a href="#r' + v + '" title="' + r[v - 1] + '">' + i.trim() + '</a>';            
-            }).join('-');
+            }).join('&ndash;');
           }).join(', ');
           a[y] = a[y].replace(/^[\d, -]+\]/, refs + ']');
         }
