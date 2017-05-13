@@ -102,11 +102,11 @@ the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 Поэтому, мы назвали эту систему &mdash; полупрямая
 визуальная одометрия (SVO).
 
-Our implementation of the proposed approach is exception-
-ally fast, requiring only 2.5 milliseconds to estimate the pose
-of a frame on a standard laptop computer, while achieving
-comparable accuracy with respect to the state of the art
-on benchmark datasets. The improved efficiency is due to
+Наша реализация предложенного метода имеет исключительно
+высокое быстродействие, требуя всего 2.5 милисекунды на оценку положения
+платформы на обычном ноутбуке, при этом, на эталонных наборах данных, 
+достигается точность, сравнимая с новейшими аналогами.
+The improved efficiency is due to
 three reasons: firstly, SVO extracts features only for selected
 keyframes in a parallel thread, hence, decoupled from hard
 real-time constraints. Secondly, the proposed direct tracking
