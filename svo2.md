@@ -106,16 +106,18 @@ the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 высокое быстродействие, требуя всего 2.5 милисекунды на оценку положения
 платформы на обычном ноутбуке, при этом, на эталонных наборах данных, 
 достигается точность, сравнимая с новейшими аналогами.
-The improved efficiency is due to
-three reasons: firstly, SVO extracts features only for selected
-keyframes in a parallel thread, hence, decoupled from hard
-real-time constraints. Secondly, the proposed direct tracking
-algorithm removes the necessity for robust data association.
-Finally, contrarily to previous direct methods, SVO requires
-only a sparse reconstruction of the environment.
-This paper extends our previous work [20], which was also
-released as open source software.^1 The novelty of the present
-work is the generalization to wide FoV lenses (Sec. VII),
+Увеличение эффективности происходит по трём причинам:
+- во-первых, SVO извлекает особенности только для избранных
+ключевых кадров в параллельном потоке, отвязанном от
+ограничений работы в реальном времени. 
+- Во-вторых, предложенный алгоритм прямого слежения
+устраняет необходимость процедуры сопоставления данных, устойчивой к ложным совпадениям.
+- Наконец, в отличие от предшествующих прямых методов, SVO требует
+только разрежённую реконструкцию окружения.
+
+Данная работа расширяет предыдущую [20], которая была
+опубликована вместе с [открытым исходным кодом](http://github.com/uzh-rpg/rpg_svo) реализации. Новизна настоящей работы
+заключается в обобщении метода на wide FoV lenses (Sec. VII),
 multi-camera systems (Sec. VIII), the inclusion of motion
 priors (Sec. IX) and the use of edgelet features. Additionally,
 we present several new experimental results in Sec. XI with
