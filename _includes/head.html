@@ -32,13 +32,14 @@
           var m = a[y].match(/^([\d, ]+)\]/);
           if(!m) continue;
           var refs = m[1].split(',').map(function(i){
-          	i = parseInt(i.trim());
-          	return '<a href="' + i + '">' + i + '</a>';
+          	v = parseInt(i.trim());
+            if (!v || v > r.length()) return i;
+          	return '<a href="#r' + v + '">' + v + '</a>';
           }).join(', ');
           a[y] = a[y].replace(/^[\d, ]+\]/, refs + ']');
         }
         //var rp = s.replace(/\[(\d+)\]/g, '<a href="#r$1">[$1]</a>');
-        if (s !== rp) ps[x].innerHTML = a.join('[');// rp;
+        ps[x].innerHTML = a.join('[');// rp;
       }      
       /*var treeWalker = document.createTreeWalker(
   	    document.body,
