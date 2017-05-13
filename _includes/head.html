@@ -19,10 +19,19 @@
       d = d.nextElementSibling.children;
       var r = [];
       for (var x = 0; x < d.length; x++) {
+        d[x].id = 'r' + (x + 1);
         r[x] = d[x].textContent;
       }
-      //.map(function(e){ return e;});
-	  console.log(r);
+      var treeWalker = document.createTreeWalker(
+  	    document.body,
+        NodeFilter.SHOW_TEXT
+	  );//.map(function(e){ return e;});
+      
+      while(treeWalker.nextNode()) {
+        //nodeList.push(treeWalker.currentNode);
+        console.log(treeWalker.currentNode.nodeValue);
+      }
+	  //console.log(r);
     
     });
   </script>
