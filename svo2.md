@@ -2186,266 +2186,265 @@ Press: Cambridge, MA, 1979.
 2. C. Tomasi and T. Kanade. Shape and motion from image
 streams: a factorization method. Int. J. Comput. Vis.,
 (7597):137–154, 1992.
-[3] A. Chiuso, P. Favaro, H. Jin, and S. Soatto. Structure
+3. A. Chiuso, P. Favaro, H. Jin, and S. Soatto. Structure
 from motion causally integrated over time.IEEE Trans.
 Pattern Anal. Machine Intell., 24(4):523–535, Apr 2002.
-[4] D. Nister, O. Naroditsky, and J. Bergen. Visual odometry.
+4. D. Nister, O. Naroditsky, and J. Bergen. Visual odometry.
 InProc. IEEE Int. Conf. Computer Vision and Pattern
 Recognition, volume 1, pages 652–659, June 2004.
-[5] A. J. Davison, I. D. Reid, N. D. Molton, and O. Stasse.
+5. A. J. Davison, I. D. Reid, N. D. Molton, and O. Stasse.
 MonoSLAM: Real-time single camera SLAM. IEEE
 Trans. Pattern Anal. Machine Intell., 29(6):1052–1067,
 June 2007.
-[6] D. Scaramuzza and F. Fraundorfer. Visual odometry
+6. D. Scaramuzza and F. Fraundorfer. Visual odometry
 [tutorial]. Part I: The first 30 years and fundamentals.
 IEEE Robotics Automation Magazine, 18(4):80 –92, De-
 cember 2011. ISSN 1070-9932. doi: 10.1109/MRA.
 2011.943233.
-[7] B. Triggs, P. McLauchlan, R. Hartley, and A. Fitzgibbon.
+7. B. Triggs, P. McLauchlan, R. Hartley, and A. Fitzgibbon.
 Bundle adjustment – a modern synthesis. In W. Triggs,
 A. Zisserman, and R. Szeliski, editors,Vision Algorithms:
 Theory and Practice, volume 1883 ofLNCS, pages 298–372. Springer Verlag, 2000.
-[8] F. Dellaert and M. Kaess. Square Root SAM: Simultaneous
+8. F. Dellaert and M. Kaess. Square Root SAM: Simultaneous
 localization and mapping via square root information
 smoothing. Int. J. of Robotics Research, 25(12):1181–
 1203, December 2006.
-[9] M. Kaess, H. Johannsson, R. Roberts, V. Ila, J.J. Leonard,
+9. M. Kaess, H. Johannsson, R. Roberts, V. Ila, J.J. Leonard,
 and F. Dellaert. iSAM2: Incremental smoothing and
 mapping using the Bayes tree. Int. J. of Robotics
 Research, 31:217–236, February 2012.
-[10] A. Agarwal, K. Mierle, and Others. Ceres solver. http:
+10. A. Agarwal, K. Mierle, and Others. Ceres solver. http:
 //ceres-solver.org.
-[11] R. Kummerle, G. Grisetti, H. Strasdat, K. Konolige, and ̈
+11. R. Kummerle, G. Grisetti, H. Strasdat, K. Konolige, and ̈
 W. Burgard. g2o: A general framework for graph opti-
 mization. InIEEE Int. Conf. on Robotics and Automation
 (ICRA), Shanghai, China, May 2011.
-[12] M. Maimone, Y. Cheng, and L. Matthies. Two years of
+12. M. Maimone, Y. Cheng, and L. Matthies. Two years of
 visual odometry on the mars exploration rovers. J. of
 Field Robotics, 24(3):169–186, 2007. ISSN 1556-4967.
 doi: 10.1002/rob.20184. URL http://dx.doi.org/10.1002/
 rob.20184.
-[13] S. Lovegrove, A. J. Davison, and J. Ibanez Guzm ̃ an. ́
+13. S. Lovegrove, A. J. Davison, and J. Ibanez Guzm ̃ an. ́
 Accurate visual odometry from a rear parking camera.
 IEEE Intelligent Vehicles Symposium, Proceedings, pages
 788–793, 2011. ISSN 1931-0587. doi: 10.1109/IVS.
 2011.5940546.
-[14] G. Klein and D. Murray. Improving the agility of
+14. G. Klein and D. Murray. Improving the agility of
 keyframe-based SLAM. In Eur. Conf. on Computer
 Vision (ECCV), pages 802–815, 2008.
-[15] R. A. Newcombe, S. J. Lovegrove, and A. J. Davison.
+15. R. A. Newcombe, S. J. Lovegrove, and A. J. Davison.
 DTAM: Dense tracking and mapping in real-time. In
 Int. Conf. on Computer Vision (ICCV), pages 2320–2327,
 November 2011.
-[16] J. Engel, J. Schops, and D. Cremers. ̈ LSD-SLAM:
+16. J. Engel, J. Schops, and D. Cremers. ̈ LSD-SLAM:
 Large-scale direct monocular SLAM. InEur. Conf. on
 Computer Vision (ECCV), 2014.
-[17] M. Irani and P. Anandan. All about direct methods. In
+17. M. Irani and P. Anandan. All about direct methods. In
 Proc. Workshop Vis. Algorithms: Theory Pract., pages
 267–277, 1999.
-[18] Y. Bar-Shalom, X. R. Li, and T. Kirubarajan.Estimation
+18. Y. Bar-Shalom, X. R. Li, and T. Kirubarajan.Estimation
 with Applications To Tracking and Navigation. John
 Wiley and Sons, 2001.
-[19] G. P. Huang, A. I. Mourikis, and S. I. Roumeliotis.
+19. G. P. Huang, A. I. Mourikis, and S. I. Roumeliotis.
 Observability-based rules for designing consistent EKF
 SLAM estimators.Int. J. of Robotics Research, 29:502–
 528, May 2010.
-[20] C. Forster, M. Pizzoli, and D. Scaramuzza. SVO: Fast
+20. C. Forster, M. Pizzoli, and D. Scaramuzza. SVO: Fast
 semi-direct monocular visual odometry. InIEEE Int.
-Conf. on Robotics and Automation (ICRA), pages 15–
-22, 2014. URL http://dx.doi.org/10.1109/ICRA.2014.
-6906584.
-[21] G. Klein and D. Murray. Parallel tracking and mapping
+Conf. on Robotics and Automation (ICRA), pages 15–22, 2014. 
+URL http://dx.doi.org/10.1109/ICRA.2014.6906584.
+21. G. Klein and D. Murray. Parallel tracking and mapping
 for small AR workspaces. InIEEE and ACM Int. Sym. on
 Mixed and Augmented Reality (ISMAR), pages 225–234,
 Nara, Japan, November 2007.
-[22] R. Mur-Artal, J. M. M. Montiel, and J. D. Tardos. ́
+22. R. Mur-Artal, J. M. M. Montiel, and J. D. Tardos. ́
 ORB-SLAM: a versatile and accurate monocular SLAM
 system.IEEE Trans. Robotics, 31(5):1147–1163, 2015.
-[23] M. A. Fischler and R. C. Bolles. Random sample
+23. M. A. Fischler and R. C. Bolles. Random sample
 consensus: a paradigm for model fitting with applications
 to image analysis and automated cartography.Commun.
 ACM, 24(6):381–395, 1981. ISSN 0001-0782. doi:
 [http://doi.acm.org/10.1145/358669.358692.](http://doi.acm.org/10.1145/358669.358692.)
-[24] K. MacTavish and T. D. Barfoot. At all costs: A compar-
+24. K. MacTavish and T. D. Barfoot. At all costs: A compar-
 ison of robust cost functions for camera correspondence
 outliers. InConf. on Computer and Robot Vision (CRV),
 2015.
-[25] H. Jin, P. Favaro, and S. Soatto. A semi-direct approach
+25. H. Jin, P. Favaro, and S. Soatto. A semi-direct approach
 to structure from motion. The Visual Computer, 19(6):
 377–394, 2003.
-[26] S. Benhimane and E. Malis. Integration of euclidean con-
+26. S. Benhimane and E. Malis. Integration of euclidean con-
 straints in template based visual tracking of piecewise-
 planar scenes. In IEEE/RSJ Int. Conf. on Intelligent
 Robots and Systems (IROS), 2006.
-[27] G. Silveira, E. Malis, and P. Rives. An efficient direct
+27. G. Silveira, E. Malis, and P. Rives. An efficient direct
 approach to visual slam.IEEE Trans. Robotics, 2008.
-[28] C. Mei, S. Benhimane, E. Malis, and P. Rives. Efficient
+28. C. Mei, S. Benhimane, E. Malis, and P. Rives. Efficient
 homography-based tracking and 3-d reconstruction for
 single-viewpoint sensors. IEEE Trans. Robotics, 24(6):
 1352–1364, December 2008. ISSN 1552-3098. doi: 10.
 1109/TRO.2008.2007941.
-[29] A. Pretto, E. Menegatti, and E. Pagello. Omnidirec-
+29. A. Pretto, E. Menegatti, and E. Pagello. Omnidirec-
 tional dense large-scale mapping and navigation based on
 meaningful triangulation. InIEEE Int. Conf. on Robotics
 and Automation (ICRA), pages 3289–3296. IEEE, May
 2011. ISBN 978-1-61284-386-5. doi: 10.1109/ICRA.
 2011.5980206.
-[30] N. D. Molton, A. J. Davison, and I. D. Reid. Locally
+30. N. D. Molton, A. J. Davison, and I. D. Reid. Locally
 planar patch features for real-time structure from mo-
 tion. InBritish Machine Vision Conf. (BMVC). BMVC,
 September 2004.
-[31] A.I. Comport, E. Malis, and P. Rives. Real-time quadri-
+31. A.I. Comport, E. Malis, and P. Rives. Real-time quadri-
 focal visual odometry.Int. J. of Robotics Research, 29
 (2-3):245–266, January 2010. ISSN 0278-3649. doi:
 10.1177/0278364909356601.
-[32] M. Meilland, A. Comport, and P. Rives. Real-time dense
+32. M. Meilland, A. Comport, and P. Rives. Real-time dense
 visual tracking under large lighting variations. InBritish
 Machine Vision Conf. (BMVC), 2011. ISBN 1-901725-
 43-X. doi: 10.5244/C.25.45.
-[33] T. Tykkala, C. Audras, and A.I. Comport. Direct iterative
+33. T. Tykkala, C. Audras, and A.I. Comport. Direct iterative
 closest point for real-time visual odometry. InInt. Conf.
 on Computer Vision (ICCV), 2011.
-[34] C. Kerl, J. Sturm, and D. Cremers. Robust odometry
+34. C. Kerl, J. Sturm, and D. Cremers. Robust odometry
 estimation for rgb-d cameras. InIEEE Int. Conf. on
 Robotics and Automation (ICRA), 2013.
-[35] M. Meilland and A.I. Comport. On unifying key-frame
+35. M. Meilland and A.I. Comport. On unifying key-frame
 and voxel-based dense visual SLAM at large scales. In
 IEEE/RSJ Int. Conf. on Intelligent Robots and Systems
 (IROS), Tokyo, Japan, 3-8 November 2013. IEEE/RSJ.
-[36] T. Whelan, M. Kaess, H. Johannsson, M.F. Fallon, J.J.
+36. T. Whelan, M. Kaess, H. Johannsson, M.F. Fallon, J.J.
 Leonard, and J.B. McDonald. Real-time large scale dense
 RGB-D SLAM with volumetric fusion.Int. J. of Robotics
 Research, 2014.
-[37] A. Handa, T. Whelan, J.B. McDonald, and A.J. Davison.
+37. A. Handa, T. Whelan, J.B. McDonald, and A.J. Davison.
 A benchmark for RGB-D visual odometry, 3D recon-
 struction and SLAM. InIEEE Int. Conf. on Robotics
 and Automation (ICRA), Hong Kong, China, May 2014.
-[38] T. Whelan, S. Leutenegger, R. F. Salas-Moreno,
+38. T. Whelan, S. Leutenegger, R. F. Salas-Moreno,
 B. Glocker, and A. J. Davison. ElasticFusion: Dense
 SLAM without a pose graph. InRobotics: Science and
 Systems (RSS), Rome, Italy, July 2015.
-[39] M. Pizzoli, C. Forster, and D. Scaramuzza. REMODE:
+39. M. Pizzoli, C. Forster, and D. Scaramuzza. REMODE:
 Probabilistic, monocular dense reconstruction in real
 time. InIEEE Int. Conf. on Robotics and Automation
 (ICRA), pages 2609–2616, 2014. URL http://dx.doi.org/
 10.1109/ICRA.2014.6907233.
-[40] F. Dellaert and R. Collins. Fast image-based tracking by
+40. F. Dellaert and R. Collins. Fast image-based tracking by
 selective pixel integration. InICCV Workshop on Frame-
 Rate Vision, 1999.
-[41] J. Engel, J. Sturm, and D. Cremers. Semi-dense visual
+41. J. Engel, J. Sturm, and D. Cremers. Semi-dense visual
 odometry for a monocular camera. In Int. Conf. on
 Computer Vision (ICCV), 2013.
-[42] J. Engel, V. Koltun, and D. Cremers. Direct sparse odom-
+42. J. Engel, V. Koltun, and D. Cremers. Direct sparse odom-
 etry. 2016. URL http://arxiv.org/pdf/1607.02565.pdf.
-[43] P. Ondruska, P. Kohli, and S. Izadi. Mobilefusion:
+43. P. Ondruska, P. Kohli, and S. Izadi. Mobilefusion:
 Real-time volumetric surface reconstruction and dense
 tracking on mobile phones. InIEEE and ACM Int. Sym.
 on Mixed and Augmented Reality (ISMAR), Fukuoka,
 Japan, October 2015.
-[44] D. G. Kottas, J. A. Hesch, S. L. Bowman, and S. I.
+44. D. G. Kottas, J. A. Hesch, S. L. Bowman, and S. I.
 Roumeliotis. On the consistency of vision-aided inertial
 navigation. In Int. Sym. on Experimental Robotics
 (ISER), 2012.
-[45] C. Forster, L. Carlone, F. Dellaert, and D. Scaramuzza.
+45. C. Forster, L. Carlone, F. Dellaert, and D. Scaramuzza.
 On-manifold preintegration theory for fast and accurate
 visual-inertial navigation. December 2015. URL http:
 //arxiv.org/pdf/1512.02363v1.pdf.
-[46] P. Furgale, J. Rehder, and R. Siegwart. Unified temporal
+46. P. Furgale, J. Rehder, and R. Siegwart. Unified temporal
 and spatial calibration for multi-sensor systems. In
 IEEE/RSJ Int. Conf. on Intelligent Robots and Systems
 (IROS), 2013.
-[47] Y. Ma, S. Soatto, J. Kosecka, and S. S. Sastry. An
+47. Y. Ma, S. Soatto, J. Kosecka, and S. S. Sastry. An
 Invitation to 3-D Vision: From Images to Geometric
 Models. Springer Verlag, 2005.
-[48] S. Baker and I. Matthews. Lucas-kanade 20 years on: A
+48. S. Baker and I. Matthews. Lucas-kanade 20 years on: A
 unifying framework.Int. J. Comput. Vis., 56(3):221–255,
 2004.
-[49] C. Harris and C. Stennett. RAPiD - a video-rate object
+49. C. Harris and C. Stennett. RAPiD - a video-rate object
 tracker. InBritish Machine Vision Conf. (BMVC), pages
 73–78, 1990.
-[50] T. Drummond and R. Cipolla. Real-time visual track-
+50. T. Drummond and R. Cipolla. Real-time visual track-
 ing of complex structures. IEEE Trans. Pattern Anal.
 Machine Intell., 24:932–946, 2002.
-[51] A. I. Comport, E. Marchand, and F. Chaumette. A real-
+51. A. I. Comport, E. Marchand, and F. Chaumette. A real-
 time tracker for markerless augmented reality. InIEEE
 and ACM Int. Sym. on Mixed and Augmented Reality
 (ISMAR), 2003.
-[52] L. Vacchetti, V. Lepetit, and P. Fua. Combining edge
+52. L. Vacchetti, V. Lepetit, and P. Fua. Combining edge
 and texture information for real-time accurate 3d camera
 tracking. InIEEE and ACM Int. Sym. on Mixed and
 Augmented Reality (ISMAR), 2004.
-[53] G. Reitmayr and T.W. Drummond. Going out: robust
+53. G. Reitmayr and T.W. Drummond. Going out: robust
 model-based tracking for outdoor augmented reality. In
 IEEE and ACM Int. Sym. on Mixed and Augmented
 Reality (ISMAR), pages 109–118, October 2006.
-[54] M. Faessler, F. Fontana, C. Forster, E. Mueggler, M. Piz-
+54. M. Faessler, F. Fontana, C. Forster, E. Mueggler, M. Piz-
 zoli, and D. Scaramuzza. Autonomous, vision-based
 flight and live dense 3D mapping with a quadrotor MAV.
 J. of Field Robotics, pages 1556–4967, 2015. URL
 [http://dx.doi.org/10.1002/rob.21581.](http://dx.doi.org/10.1002/rob.21581.)
-[55] G. Vogiatzis and C. Hernandez. Video-based, real-time ́
+55. G. Vogiatzis and C. Hernandez. Video-based, real-time ́
 multi view stereo.Image Vision Comput., 29(7):434–441,
 2011.
-[56] J. Civera, A.J. Davison, and J. Montiel. Inverse depth
+56. J. Civera, A.J. Davison, and J. Montiel. Inverse depth
 parametrization for monocular slam. IEEE Trans.
 Robotics, 24(5), 2008.
-[57] D. Scaramuzza, A. Martinelli, and R. Siegwart. A flexible
+57. D. Scaramuzza, A. Martinelli, and R. Siegwart. A flexible
 technique for accurate omnidirectional camera calibration
 and structure from motion. InInt. Conf. on Computer
 Vision Systems (ICVS), pages 45–45, 2006.
-[58] D. Nister. An efficient solution to the five-point relative
+58. D. Nister. An efficient solution to the five-point relative
 pose problem.IEEE Trans. Pattern Anal. Machine Intell.,
 26(6):756–777, 2004.
-[59] H. Jin, P. Favaro, and S. Soatto. Real-time feature track-
+59. H. Jin, P. Favaro, and S. Soatto. Real-time feature track-
 ing and outlier rejection with changes in illumination.
 Int. Conf. on Computer Vision (ICCV), 1, 2001. doi:
 10.1109/ICCV.2001.937588.
-[60] E. Rosten, R. Porter, and T. Drummond. Faster and
+60. E. Rosten, R. Porter, and T. Drummond. Faster and
 better: A machine learning approach to corner detec-
 tion. IEEE Trans. Pattern Anal. Machine Intell., 32
 (1):105–119, January 2010. ISSN 0162-8828. doi:
 10.1109/TPAMI.2008.275.
-[61] Z. Zhang, H. Rebecq, C. Forster, and D Scaramuzza.
+61. Z. Zhang, H. Rebecq, C. Forster, and D Scaramuzza.
 Benefit of large field-of-view cameras for visual odom-
 etry. InIEEE Int. Conf. on Robotics and Automation
 (ICRA), 2016.
-[62] M. Burri, J. Nikolic, P. Gohl, T. Schneider, J. Re-
+62. M. Burri, J. Nikolic, P. Gohl, T. Schneider, J. Re-
 hder, S. Omari, M. Achtelik, and R. Siegwart. The
 EuRoC MAV datasets. Int. J. of Robotics Research,
 2015. URL [http://projects.asl.ethz.ch/datasets/doku.php?](http://projects.asl.ethz.ch/datasets/doku.php?)
 id=kmavvisualinertialdatasets.
-[63] J. Sturm, N. Engelhard, F. Endres, W. Burgard, and
+63. J. Sturm, N. Engelhard, F. Endres, W. Burgard, and
 D. Cremers. A benchmark for the evaluation of rgb-
 d slam systems. InIEEE/RSJ Int. Conf. on Intelligent
 Robots and Systems (IROS), Oct. 2012.
-[64] J. Nikolic, J. Rehder, M. Burri, P. Gohl, S. Leutenegger,
+64. J. Nikolic, J. Rehder, M. Burri, P. Gohl, S. Leutenegger,
 P. Furgale, and R. Siegwart. A synchronized visual-
 inertial sensor system with FPGA pre-processing for
 accurate real-time SLAM. InIEEE Int. Conf. on Robotics
 and Automation (ICRA), 2014.
-[65] S. Umeyama. Least-squares estimation of transformation
+65. S. Umeyama. Least-squares estimation of transformation
 parameters between two point patterns. IEEE Trans.
 Pattern Anal. Machine Intell., 13(4), 1991.
-[66] Ra ́ul Mur-Artal, J. M. M. Montiel, and Juan D. Tardos. ́
+66. Ra ́ul Mur-Artal, J. M. M. Montiel, and Juan D. Tardos. ́
 ORB-SLAM: a versatile and accurate monocular SLAM
 system.arXiv:1502.00956, February 2015.
-[67] C. Forster, M. Faessler, F. Fontana, M. Werlberger, and
+67. C. Forster, M. Faessler, F. Fontana, M. Werlberger, and
 D. Scaramuzza. Continuous on-board monocular-vision–
 based aerial elevation mapping for quadrotor landing. In
 IEEE Int. Conf. on Robotics and Automation (ICRA),
 pages 111–118, 2015. URL [http://dx.doi.org/10.1109/](http://dx.doi.org/10.1109/)
 ICRA.2015.7138988.
-[68] F. Endres, J. Hess, N. Engelhard, J. Sturm, D. Cremers,
+68. F. Endres, J. Hess, N. Engelhard, J. Sturm, D. Cremers,
 and W. Burgard. An evaluation of the RGB-D SLAM
 system. InIEEE Int. Conf. on Robotics and Automation
 (ICRA), 2012.
-[69] B. D. Lucas and T. Kanade. An iterative image regis-
+69. B. D. Lucas and T. Kanade. An iterative image regis-
 tration technique with an application to stereo vision. In
 Int. Joint Conf. on Artificial Intelligence, pages 121–130,
 1981.
-[70] T. D. Barfoot.State Estimation for Robotics - A Matrix
+70. T. D. Barfoot.State Estimation for Robotics - A Matrix
 Lie Group Approach. Cambridge University Press, 2015.
-[71] G. S. Chirikjian. Stochastic Models, Information The-
+71. G. S. Chirikjian. Stochastic Models, Information The-
 ory, and Lie Groups, Volume 2: Analytic Methods and
 Modern Applications (Applied and Numerical Harmonic
 Analysis). Birkhauser, 2012.
