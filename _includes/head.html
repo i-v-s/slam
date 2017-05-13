@@ -31,6 +31,7 @@
         //nodeList.push(treeWalker.currentNode);
         var s = treeWalker.currentNode.nodeValue;
         var rp = s.replace(/\[(\d+)\]/g, '<a href="$1">[$1]</a>');
+        if (s !== rp) treeWalker.currentNode.nodeValue = rp;
         //console.log();
       }
 	  //console.log(r);
