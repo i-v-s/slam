@@ -117,11 +117,12 @@ the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 
 Данная работа расширяет предыдущую [20], которая была
 опубликована вместе с [открытым исходным кодом](http://github.com/uzh-rpg/rpg_svo) реализации. Новизна настоящей работы
-заключается в обобщении метода на wide FoV lenses (Sec. VII),
-multi-camera systems (Sec. VIII), the inclusion of motion
-priors (Sec. IX) and the use of edgelet features. Additionally,
-we present several new experimental results in Sec. XI with
-comparisons against previous works.
+заключается в обобщении метода на объективы с широким углом обзора ([раздел VII]),
+многокамерные системы (раздел VIII), подключение кинематических
+предсказаний (раздел IX) и использование краевых особенностей. 
+Дополнительно, в разделе XI,
+мы представляем некоторые новые результаты экспериментов со сравнением
+относительно предшествующих работ.
 
 # II. Связанные работы
 
