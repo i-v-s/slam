@@ -16,8 +16,13 @@
     document.addEventListener('DOMContentLoaded', function(){
       var d = document.getElementById('Список-литературы');
       if(!d) return;
-      d = d.nextElementSibling.children.map(function(e){ return e;});
-	  console.log(d);      
+      d = d.nextElementSibling.children;
+      var r = [];
+      for (var x = 0; x < d.length; x++) {
+        r[x] = d[x].textContent;
+      }
+      //.map(function(e){ return e;});
+	  console.log(r);
     
     });
   </script>
