@@ -23,7 +23,7 @@
         r[x] = d[x].textContent;
       }
       
-      var ps = document.getElementsByTag('p');
+      var ps = document.getElementsByTagName('p');
       for (var x = 0; x < d.length; x++) {
         var s = ps[x].innerHTML;
         var rp = s.replace(/\[(\d+)\]/g, '<a href="$1">[$1]</a>');
