@@ -233,13 +233,14 @@ pixels at corners and along image intensity gradients.
 структуру [16]. Некоторые алгоритмы наоборот игнорируют
 положения камеры, и вместо этого позволяют нежёсткую деформацию
 трёхмерной сцены [36, 38]. Полученные результаты имеют хорошую точность и
-эффектно выглядят, однако, a thorough probabilistic treatment
-is missing when processing measurements, separating tracking
-and mapping, or fixating and removing states. To the best of
-our knowledge, it is therefore currently not possible to obtain
-accurate covariance estimates from dense VO. Следовательно,
-согласованное слияние [18, 44] со вспомогательными датчиками (например
-инерционными) на данный момент не возможно. В предлагаеммой работе, мы
+эффектно выглядят, однако отсутствует тщательная вероятностная фильтрация
+при обработке измерений, разделении слежения и
+построения карты, или фиксации и удалении состояний. По нашему
+мнению, на данный момент невозможно получить
+точную ковариационную оценку из плотной визуальной одомерии (VO).
+Следовательно, согласованное совместное использование [18, 44]
+со вспомогательными датчиками (например инерционными) пока не возможно.
+В предлагаеммой работе, мы
 используем прямые методы только для определения соответствия особенностей.
 Subsequently, bundle adjustment is used for joint optimization
 of structure and motion where it is also possible to include
