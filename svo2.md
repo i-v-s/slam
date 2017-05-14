@@ -215,21 +215,23 @@ is only estimated for pixels with high intensity gradients. In
 our experimental evaluation in Sec. XI-A we show that it is
 possible to reduce the number of tracked pixels even more for
 frame-to-frame motion estimation without any noticeable loss
-in robustness or accuracy. Therefore, we propose thesparse
+in robustness or accuracy. Следовательно, we propose the sparse
 image-to-model alignment algorithm that uses only sparse
 pixels at corners and along image intensity gradients.
-Joint optimization of sparse structure and motion, minimiz-
-ing the photometric error, has recently been demonstrated in
-[42]. However, joint optimization of dense structure and mo-
-tion in real-time is still an open research problem. The standard
+
+Совместная оптимизация разрежённой структуры и движения путём минимизации
+фотометрической ошибки была недавно показана в [42].
+Однако, совместная оптимизация плотной структуры и движения
+в реальном времени остаётся открытой исследовательской проблемой.
+The standard
 approach is to estimate the latest camera pose with respect
 to a previously accumulated dense map and subsequently,
 given a set of estimated camera poses, update the dense map
 [15, 43]. Clearly, this separation of tracking and mapping
 only results in optimal accuracy when the output of each
-stage yields the optimal estimate. Other algorithms optimize a
-graph of poses but do not allow a deformation of the structure
-once triangulated [16]. Contrarily, some algorithms ignore the
+stage yields the optimal estimate. Другие алгоритмы оптимизируют
+граф положений, но не позволяют деформировать уже триангулированную
+структуру [16]. Contrarily, some algorithms ignore the
 camera poses and instead allow non-rigid deformation of the
 3D structure [36, 38]. Полученные результаты имеют хорошую точность и
 эффектно выглядят, однако, a thorough probabilistic treatment
