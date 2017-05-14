@@ -343,7 +343,6 @@ $$</div>
 
 <div id="e2">$$
 \begin{equation}
-
 ,\tag{2}\label{eq:one}
 \end{equation} 
 $$</div>
