@@ -351,7 +351,7 @@ I_{k-1}^{C}(\pi(T_{CB} \, \rho_{u}))
 $$</div>
 
 Пространственная точка $$\rho_{u}$$ (определённая в локальной системе координат
-$$B_{k−1}$$) может быть вычислена для пикселов с известной глубиной с помощью
+$$B_{k−1}$$) может быть вычислена для пикселей с известной глубиной с помощью
 обратной проекции:
 
 <div id="e3">$$
@@ -363,17 +363,10 @@ $$B_{k−1}$$) может быть вычислена для пикселов с
 \end{equation} 
 $$</div>
 
-(a) Sparse (b) Semi-Dense (c) Dense
-Рис. 3. An image from theICL-NUIMdataset (Sec. XI-B3) with pixels used
-for image-to-model alignment (marked in green for corners and magenta for
-edgelets) for sparse, semi-dense, and dense methods. Dense approaches (c)
-use every pixel in the image, semi-dense (b) use just the pixels with high
-intensity gradient, and the proposed sparse approach (a) uses selected pixels
-at corners or along intensity gradient edges.
-
-Однако, оптимизация уравнения [(1)](#e1) включает только подмножество
-таких пикселей R ̄Ck− 1 ⊆ RCk− 1 , namely those for which the
-back-projected points are also visible in the imageICk:
+Однако, оптимизация [(1)](#e1) включает только подмножество
+пикселей $$\dash{R}_{k−1}^{C} \subseteq R_{k−1}^{C}$$,
+для которых обратно
+спроецированные точки также видимы на кадре $$I_{k}^{C}$$:
 
 R ̄Ck− 1 =
 
@@ -405,6 +398,14 @@ are denotedsemi-dense[41]. В данной работе изложен новы�
 стандартными итеративными алгоритмами для non-linear least squares algorithms such
 as Levenberg-Marquardt. Больше подробностей по оптимизации,
 включая аналитически найденные Якобианы, содержится в [приложении](#Приложение).
+
+(a) Sparse (b) Semi-Dense (c) Dense
+Рис. 3. An image from theICL-NUIMdataset (Sec. XI-B3) with pixels used
+for image-to-model alignment (marked in green for corners and magenta for
+edgelets) for sparse, semi-dense, and dense methods. Dense approaches (c)
+use every pixel in the image, semi-dense (b) use just the pixels with high
+intensity gradient, and the proposed sparse approach (a) uses selected pixels
+at corners or along intensity gradient edges.
 
 ## B. Расслабление и оптимизация
 
