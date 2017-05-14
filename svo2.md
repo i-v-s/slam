@@ -372,10 +372,10 @@ $$
 \begin{equation}
 \bar{R}_{k−1}^{C} = \{ 
 u \mid 
-u \in R_{k−1}^{C} \wedge
+u \in R_{k−1}^{C} \, \wedge \,
 \pi(T_{CB} T_{kk-1} T_{BC}  \pi_{\rho}^{-1}(u))
 \in \Omega^{C}
-\}
+\}.
 \end{equation} 
 $$
 
