@@ -184,10 +184,10 @@ the need for robust data association techniques. Однако, this
 делает алгоритм зависимым от качества инициализации that
 must lie in the basin of attraction of the cost function.
 
-При использовании прямого подхода, the six degrees of freedom (DoF)
-motion of a camera can be recovered by image-to-model
-alignment, which is the process of aligning the observed
-image to a view synthesized from the estimated 3D map.
+При использовании прямого подхода, движение камеры с шестью степенями
+свободы может быть восстановлено через сопоставление изображения с моделью,
+которое, по сути, является сопоставлением видимого изображения
+с синтезированным из составленной трёхмерной карты.
 Ранние прямые методы визуальной одометрии (VO)
 отслеживали и хранили в карте несколько 
 (иногда выбираемых в ручную)
