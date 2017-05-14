@@ -165,11 +165,12 @@ the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 лишь очень малую часть доступной информации изображения.
 
 В SVO, особенности извлекаются лишь из некоторых ключевых кадров,
-что значительно сокращает время расчёта. Once ex-
-tracted, adirectmethod is used to track features from frame
-to frame with sub-pixel precision. Apart from well localized
-corner features, the proposed approach allows tracking any
-pixel with non-zero intensity gradient.
+что значительно сокращает время расчёта.
+Будучи однократно извлечёнными, особенности
+отслеживаются *прямым* методом от кадра
+к кадру с субпиксельной точностью. В отличие от легко локализуемых
+угловых особенностей, предложенный подход позволяет отслеживать любой
+пиксель с ненулевым градиентом интенсивности.
 
 *2) Прямые методы.* Direct methods estimate structure
 and motion directly by minimizing an error measure that is
