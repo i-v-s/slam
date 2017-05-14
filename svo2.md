@@ -384,11 +384,12 @@ the literature to estimate camera motion. Apart from minor
 variations in the formulation, the main difference among the
 approaches is the source of the depth information as well as
 the regionRCk− 1 in imageICkfor which the depth is known.
-As discussed in Section II, we denote methods that know
-and exploit the depth for all pixels in the reference view
-as densemethods [15]. Converseley, approaches that only
+Как сказано в [разделе II](#ii-Связанные-работы "Связанные работы"), 
+мы называем методы, которые вычисляют
+и используют глубину всех пикселей в the reference кадре
+*плотными* методами [15]. Converseley, approaches that only
 perform the alignment for pixels with high image gradients
-are denotedsemi-dense[41]. В данной работе изложен новый
+are denotedsemi-dense [41]. В данной работе изложен новый
 метод разрежённого совмещения изображений, который предполагает известную глубину
 только для углов и особенностей, находящихся на краях интенсивности. На рис. 3
 отражено наше представление о плотных, полуплотных, и разрежённых
