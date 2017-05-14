@@ -345,7 +345,7 @@ $$</div>
 \begin{equation}
 T_{kk-1}^{\star} = arg \: \min_{T_{kk-1}} \sum_{u \in \bar{R}_{k-1}^{C}} \frac{1}{2} 
 {\left \| r_{I_{u}^{C}}(T_{kk-1}) \right \|}_{\sum_{I}}^{2} 
-,\tag{2}\label{eq:one}
+,\tag{2}
 \end{equation} 
 $$</div>
 
