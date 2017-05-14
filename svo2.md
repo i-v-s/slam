@@ -172,9 +172,9 @@ the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 угловых особенностей, предложенный подход позволяет отслеживать любой
 пиксель с ненулевым градиентом интенсивности.
 
-*2) Прямые методы.* Direct methods estimate structure
-and motion directly by minimizing an error measure that is
-based on the image’s pixel-level intensities [17]. The local
+*2) Прямые методы.* Прямые методы оценивают структуру
+и движение напрямую, минимизируя величину ошибки,
+зависящую от the image’s pixel-level intensities [17]. The local
 intensity gradient magnitude and direction is used in the
 optimization compared to feature-based methods that consider
 only the distance to a feature-location. Pixel correspondence
