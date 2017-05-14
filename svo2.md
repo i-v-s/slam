@@ -399,13 +399,14 @@ the regionRCk− 1 in imageICkfor which the depth is known.
 методах.
 
 ![Разрежённая, полуплотная и плотная постановка]({{site.baseurl}}/svo2/fig3.png)
-(a) Sparse (b) Semi-Dense (c) Dense
-Рис. 3. An image from theICL-NUIMdataset (Sec. XI-B3) with pixels used
-for image-to-model alignment (marked in green for corners and magenta for
-edgelets) for sparse, semi-dense, and dense methods. Dense approaches (c)
+
+*(а) Разрежённая (б) Полупрямая (в) Плотная*
+*Рис. 3. Изображение из набора данных ICL-NUIM (раздел XI-B3)
+with pixels used for image-to-model alignment 
+(отмечено зелёным для углов and пурпурным для краёв) for sparse, semi-dense, and dense methods. Dense approaches (c)
 use every pixel in the image, semi-dense (b) use just the pixels with high
 intensity gradient, and the proposed sparse approach (a) uses selected pixels
-at corners or along intensity gradient edges.
+at corners or along intensity gradient edges.*
 
 Для увеличения надёжности работы разрежённого метода, мы предлагаем
 накапливать фотометрическую цену в малых областях изображения, имеющих середину
