@@ -364,11 +364,17 @@ $$B_{k−1}$$) может быть вычислена для пикселей с
 $$</div>
 
 Однако, оптимизация [(1)](#e1) включает только подмножество
-пикселей $$\dash{R}_{k−1}^{C} \subseteq R_{k−1}^{C}$$,
+пикселей $$\bar{R}_{k−1}^{C} \subseteq R_{k−1}^{C}$$,
 для которых обратно
 спроецированные точки также видимы на кадре $$I_{k}^{C}$$:
 
-R ̄Ck− 1 =
+$$
+\begin{equation}
+R_{k−1}^{C} = \{ 
+u
+\}
+\end{equation} 
+$$
 
 Image to model alignment has previously been used in
 the literature to estimate camera motion. Apart from minor
