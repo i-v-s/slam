@@ -345,7 +345,6 @@ $$</div>
 \begin{equation}
 r_{I_{u}^{C}}(T_{kk-1}) \doteq
 I_{k}^{C}(\pi(T_{CB}T_{kk-1}\rho_{u}))
-{\left \| r_{I_{u}^{C}}(T_{kk-1}) \right \|}_{\sum_{I}}^{2} 
 ,\tag{2}\label{eq:one}
 \end{equation} 
 $$</div>
