@@ -300,9 +300,9 @@ along intensity gradient edges. Фильтры инициализируются 
 с координатами $$u \in \mathbb{R}^{2}$$ через модель проекции камеры:
 $$u = \pi(\rho)$$. Учитывая обратную глубину сцены $$\rho > 0$$ около пикселя
 $$u \in R_{k}^{C} $$, положение точки в пространстве определяется с помощью
-модели обратной проекции $$ \rho =π_{\rho}^{−1} (u) $$. Where we denote with
-RCk⊆Ωthose pixels for which the depth is known at time
-kin camera C. Модели проецирования известны из предварительной калибровки [46].
+модели обратной проекции $$ \rho =π_{\rho}^{−1} (u) $$. Где мы обозначили с
+$$ R_{k}^{C} \subseteq \Omega $$ those pixels for which the depth известна на шаге времени
+$$k$$ в камере $$C$$. Модели проецирования известны из предварительной калибровки [46].
 The position and orientation of the world frame W with
 respect to thekthcamera frame is described by the rigid body
 transformationTkW ∈SE(3) [47]. Выраженная в мировых координатах точка $$_{W}\rho$$
