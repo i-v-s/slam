@@ -179,30 +179,32 @@ intensity gradient magnitude and direction is used in the
 optimization compared to feature-based methods that consider
 only the distance to a feature-location. Pixel correspondence
 is given directly by the geometry of the problem, eliminating
-the need for robust data association techniques. However, this
-
+the need for robust data association techniques. Однако, this
 (^1) [http://github.com/uzh-rpg/rpgsvo](http://github.com/uzh-rpg/rpgsvo)
-makes the approach dependent on a good initialization that
+делает алгоритм зависимым от качества инициализации that
 must lie in the basin of attraction of the cost function.
-Using a direct approach, the six degrees of freedom (DoF)
+
+При использовании прямого подхода, the six degrees of freedom (DoF)
 motion of a camera can be recovered by image-to-model
 alignment, which is the process of aligning the observed
 image to a view synthesized from the estimated 3D map.
-Early direct VO methods tracked and mapped few—sometimes
-manually selected—planar patches [25–29]. By estimating the
-surface normals of the patches [30], they could be tracked
-over a wide range of viewpoints. In [31], the local planarity
+Ранние прямые методы визуальной одометрии (VO)
+отслеживали и хранили в карте несколько 
+(иногда выбираемых в ручную)
+плоских поверхностей [25-29]. Оценивая
+перпендикуляры к поверхностям [30], они могли could be tracked
+over a wide range of viewpoints. В [31], the local planarity
 assumption was relaxed and direct tracking with respect to
 arbitrary 3D structures computed from stereo cameras was
 proposed. For RGB-D cameras, where a dense depth-map
 for each image is given by the sensor, dense image-to-
-model alignment was subsequently introduced in [32–34]. In
+model alignment was subsequently introduced in [32-34]. In
 conjunction with dense depth registration this has become
-the standard in camera tracking for RGB-D cameras [35–
-38]. With DTAM [15], a direct method was introduced that
+the standard in camera tracking for RGB-D cameras [35-38]. 
+With DTAM [15], a direct method was introduced that
 computes a dense depthmap from a single moving camera
-in real-time. The camera pose is found through direct whole
-image alignment using the depthmap. However, inferring a
+in real-time. Положение камеры определяется через прямое совмещение всего
+изображения с использованием карты глубины. However, inferring a
 dense depthmaps from monocular images is computationally
 intensive and is typically addressed using GPU parallelism,
 such as in the open-source REMODE algorithm [39]. Early
@@ -229,19 +231,18 @@ stage yields the optimal estimate. Other algorithms optimize a
 graph of poses but do not allow a deformation of the structure
 once triangulated [16]. Contrarily, some algorithms ignore the
 camera poses and instead allow non-rigid deformation of the
-3D structure [36, 38]. The obtained results are accurate and vi-
-sually impressive, however, a thorough probabilistic treatment
+3D structure [36, 38]. Полученные результаты имеют хорошую точность и
+эффектно выглядят, однако, a thorough probabilistic treatment
 is missing when processing measurements, separating tracking
 and mapping, or fixating and removing states. To the best of
 our knowledge, it is therefore currently not possible to obtain
-accurate covariance estimates from dense VO. Hence, the
-consistent fusion[18, 44] with complementary sensors (e.g.,
-inertial) is currently not possible. In the proposed work, we
-use direct methods only to establish feature correspondence.
+accurate covariance estimates from dense VO. Следовательно,
+согласованное слияние [18, 44] со вспомогательными датчиками (например
+инерционными) на данный момент не возможно. В предлагаеммой работе, мы
+используем прямые методы только для определения соответствия особенностей.
 Subsequently, bundle adjustment is used for joint optimization
 of structure and motion where it is also possible to include
-inertial measurements as we have demonstrated in previous
-work [45].
+inertial measurements, как мы показали в предыдущей работе [45].
 
 # III. Обзор программной архитектуры
 
