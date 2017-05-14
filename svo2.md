@@ -156,18 +156,22 @@ the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 Недостатком методов, использующих особенности, является их низкая скорость 
 из-за необходимости искать в каждом кадре особенности и сопоставлять их,
 из-за требования использовать устойчивые к ошибкам техники оценки, которые
-способны работать с ложными совпадениями (например, RANSAC [23], M-
-estimators [24]), и тот факт, что большинство детекторов особенностей
-оптимизированы на максимальную скорость, а не на точность. Furthermore, relying
-only on well localized salient features (e.g.,corners), only a
-small subset of the information in the image is exploited.
-In SVO, features are extracted only for selected keyframes,
-which reduces the computation time significantly. Once ex-
+способны работать с ложными совпадениями 
+(например, RANSAC [23], M-estimators [24]),
+и тот факт, что большинство детекторов особенностей
+больше оптимизированы на скорость, а не на точность. 
+Более того, опираясь только на легко обнаружимые,
+заметные особенности (например углы), можно использовать
+лишь очень малую часть доступной информации изображения.
+
+В SVO, особенности извлекаются лишь из некоторых ключевых кадров,
+что значительно сокращает время расчёта. Once ex-
 tracted, adirectmethod is used to track features from frame
 to frame with sub-pixel precision. Apart from well localized
 corner features, the proposed approach allows tracking any
 pixel with non-zero intensity gradient.
-b) Direct methods: Direct methods estimate structure
+
+*2) Прямые методы.* Direct methods estimate structure
 and motion directly by minimizing an error measure that is
 based on the image’s pixel-level intensities [17]. The local
 intensity gradient magnitude and direction is used in the
