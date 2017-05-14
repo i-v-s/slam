@@ -353,7 +353,14 @@ $$</div>
 Пространственная точка $$\rho_{u}$$ (определённая в локальной системе координат
 $$B_{k−1}$$) может быть вычислена для пикселов с известной глубиной с помощью
 обратной проекции:
-ρu=TBCπ−ρ^1 (u), ∀u∈RCk− 1 , (3)
+
+<div id="e2">$$
+\begin{equation}
+\rho_{u} = T_{BC}π_{\rho}^{−1} (u),
+∀u∈RCk− 1,
+\tag{3}
+\end{equation} 
+$$</div>
 
 (a) Sparse (b) Semi-Dense (c) Dense
 Рис. 3. An image from theICL-NUIMdataset (Sec. XI-B3) with pixels used
