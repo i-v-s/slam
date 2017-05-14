@@ -398,6 +398,7 @@ the regionRCk− 1 in imageICkfor which the depth is known.
 отражено наше представление о плотных, полуплотных, и разрежённых
 методах.
 
+![Разрежённая, полуплотная и плотная постановка]({{site.baseurl}}/svo2/fig3.png)
 (a) Sparse (b) Semi-Dense (c) Dense
 Рис. 3. An image from theICL-NUIMdataset (Sec. XI-B3) with pixels used
 for image-to-model alignment (marked in green for corners and magenta for
