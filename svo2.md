@@ -357,8 +357,8 @@ $$B_{k−1}$$) может быть вычислена для пикселов с
 <div id="e2">$$
 \begin{equation}
 \rho_{u} = T_{BC} \, \pi_{\rho}^{−1} (u),
-\bigskip
-∀u∈RCk− 1,
+\hspace{30}
+\forall u \in R_{k−1}^{C},
 \tag{3}
 \end{equation} 
 $$</div>
