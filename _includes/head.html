@@ -25,9 +25,12 @@
       
       var ps = document.getElementsByTagName('p');
       for (var x = 0; x < d.length; x++) {
-        var s = ps[x].innerHTML;
-        var a = s.split('['), l = a.length;
-        if (l <= 1) continue;
+        var s = ps[x].innerHTML, s1 = s.replace(/ \((\d+)\)/g, ' <a href="#e$1">($1)</a>');
+        var a = s1.split('['), l = a.length;
+        if (l <= 1) {
+          if (s !== s1) ps[x].innerHTML = s1;
+          continue;
+        }
         for (var y = 1; y < l; y++) {
           var m = a[y].match(/^([\d, -]+)\]/);
           if(!m) continue;
