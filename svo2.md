@@ -398,6 +398,14 @@ the regionRCk− 1 in imageICkfor which the depth is known.
 отражено наше представление о плотных, полуплотных, и разрежённых
 методах.
 
+(a) Sparse (b) Semi-Dense (c) Dense
+Рис. 3. An image from theICL-NUIMdataset (Sec. XI-B3) with pixels used
+for image-to-model alignment (marked in green for corners and magenta for
+edgelets) for sparse, semi-dense, and dense methods. Dense approaches (c)
+use every pixel in the image, semi-dense (b) use just the pixels with high
+intensity gradient, and the proposed sparse approach (a) uses selected pixels
+at corners or along intensity gradient edges.
+
 Для увеличения надёжности работы разрежённого метода, мы предлагаем
 накапливать фотометрическую цену в малых областях изображения, имеющих середину
 в месте особенности. Поскольку глубина соседних пикселов
@@ -411,14 +419,6 @@ the regionRCk− 1 in imageICkfor which the depth is known.
 стандартными итеративными алгоритмами для non-linear least squares algorithms such
 as Levenberg-Marquardt. Больше подробностей по оптимизации,
 включая аналитически найденные Якобианы, содержится в [приложении](#Приложение).
-
-(a) Sparse (b) Semi-Dense (c) Dense
-Рис. 3. An image from theICL-NUIMdataset (Sec. XI-B3) with pixels used
-for image-to-model alignment (marked in green for corners and magenta for
-edgelets) for sparse, semi-dense, and dense methods. Dense approaches (c)
-use every pixel in the image, semi-dense (b) use just the pixels with high
-intensity gradient, and the proposed sparse approach (a) uses selected pixels
-at corners or along intensity gradient edges.
 
 ## B. Расслабление и оптимизация
 
