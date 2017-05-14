@@ -344,7 +344,8 @@ $$</div>
 <div id="e2">$$
 \begin{equation}
 r_{I_{u}^{C}}(T_{kk-1}) \doteq
-,\tag{2}
+I_{k}^{C}(\pi(T_{CB} T_{kk-1} \rho_{u}))
+.\tag{2}
 \end{equation} 
 $$</div>
 
