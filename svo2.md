@@ -490,6 +490,7 @@ TCBTkrTBCπρ−^1 (u)
 where∆uis the iterator variable that is used to compute the
 sum over the patchP. This alignment is solved using the
 inverse compositional Lucas-Kanade algorithm [48].
+
 For features lying on intensity gradient edges, 2D feature
 alignment is problematic because of the aperture problem —
 features may drift along the edge. Therefore, we limit the
