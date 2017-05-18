@@ -430,7 +430,7 @@ the regionRCk− 1 in imageICkfor which the depth is known.
 Разрежённое сопоставление изображений &mdash; это эффективный способ оценки
 относительного движения между последовательными кадрами. С другой стороны,
 для уменьшения ошибки (дрифта) оценки движения, очень важно
-сравнить новый кадр с наиболее более ранним. Один из вариантов &mdash; 
+сравнивать новый кадр с наиболее более ранним. Один из вариантов &mdash; 
 сопоставлять с более старым кадром [16]. Однако, при увеличении расстояния между кадрами,
 невозможно гарантировать правильное совмещение
 (см. эксперименты в разделе XI-A). Поэтому,
@@ -449,8 +449,8 @@ the regionRCk− 1 in imageICkfor which the depth is known.
 пространственных точек и положений камеры на завершающем этапе.
 
 Ниже, мы изложим детали нашего подхода к совмещению особенностей
-и совместной оптимизации. Тем самым, мы take special care of
-features lying on intensity gradient edges.
+и совместной оптимизации. Тем самым, мы take special care об
+особенностях, лежащих на градиентных краях интенсивности.
 
 ```
 n
@@ -470,7 +470,6 @@ n
 ```
 Fig. 4: Different alignment strategies for corners and edgelets. The alignment
 of an edge feature is restricted to the normal directionnof the edge.
-
 
 2D feature alignment minimizes the intensity difference
 of a small image patchPthat is centered at the projected
