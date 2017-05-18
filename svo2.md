@@ -437,7 +437,21 @@ the regionRCk− 1 in imageICkfor which the depth is known.
  (см. эксперименты в разделе XI-A). Поэтому,
 мы предлагаем ослабить заданные репроекцией
 точек геометрические ограничения и осуществить индивидуальное
-двухмерное совмещение соответствующих участков с особенностями. The alignment
+двухмерное совмещение соответствующих участков с особенностями.
+Каждый участок в новом кадре сопоставляется с
+эталонным участком, взятым из того кадра, из которого особенность была извлечена
+первоначально; это позволяет использовать самый старый кадр, что должно
+максимально уменьшить смещение (дрейф) особенности. Однако,
+двухмерное сопоставление участков изображения
+создаёт ошибки репроекции, равные разнице между
+проекцией пространственной точки и позицией сопоставляемой ей особенности.
+Чтобы минимизировать эти ошибки,
+мы производим совместную оптимизацию позиций
+пространственных точек и положений камеры на завершающем этапе.
+
+Ниже, мы изложим детали нашего подхода к совмещению особенностей
+и совместной оптимизации. Тем самым, мы take special care of
+features lying on intensity gradient edges.
 
 ```
 n
@@ -457,18 +471,8 @@ n
 ```
 Fig. 4: Different alignment strategies for corners and edgelets. The alignment
 of an edge feature is restricted to the normal directionnof the edge.
-of each patch in the new frame is performed with respect
-to a reference patch from the frame where the feature was
-first extracted; hence, the oldest frame possible, which should
-maximally minimize feature drift. However, the 2D alignment
-generates a reprojection error that is the difference between the
-projected 3D point and the aligned feature position. Therefore,
-in a final step, we perform bundle adjustment to optimize both
-the 3D point’s position and the camera poses such that this
-reprojection error is minimized.
-In the following, we detail our approach to feature alignment
-and bundle adjustment. Thereby, we take special care of
-features lying on intensity gradient edges.
+
+
 2D feature alignment minimizes the intensity difference
 of a small image patchPthat is centered at the projected
 feature positionu′ in the newest framek with respect to
