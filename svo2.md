@@ -467,7 +467,6 @@ n
 ```
 (b) Corner alignment.
 ```
-```
 Fig. 4: Different alignment strategies for corners and edgelets. The alignment
 of an edge feature is restricted to the normal directionnof the edge.
 
@@ -510,20 +509,21 @@ u′
 ```
 δu?= arg min
 δu
-```
+
 ∆u∈P
 ∥ICk(u′+δu·n+∆u)−ICr(u+A∆u)
-This is similar to previous work on VO with edgelets, where
+Это похоже на предыдущую работу по визуальной одометрии с краевыми особенностями,
+where
 feature correspondence is found by sampling along the normal
-direction for abrupt intensity changes [14, 49–53]. However,
+direction for abrupt intensity changes [14, 49-53]. Однако,
+в нашем случае, разрежённое сопоставление изображений даёт очень хорошую
+начальную позицию особенности, которая позволяет нам, при оптимизации, напрямую
+следовать градиенту интенсивности.
 
-in our case, sparse image alignment provides a very good
-initialization of the feature position, which directly allows us
-to follow the intensity gradient in an optimization.
-After feature alignment, we have established feature corre-
-spondence with subpixel accuracy. However, feature alignment
+После сопоставления особенностей, мы получаем информацию об их соответствии
+с субпиксельной точностью. Однако, сопоставление особенностей
 violated the epipolar constraints and introduced a reprojection
-errorδu, which is typically well below 0.5 pixels. Therefore,
+error $$\delta u$$, which is typically well below 0.5 pixels. Therefore,
 in the last step of motion estimation, we refine the camera
 poses and landmark positionsX={TkW,ρi}by minimizing
 the squared sum of reprojection errors:
