@@ -949,7 +949,7 @@ the body frameTkk− 1.
 При инициализации алгоритма, для получения положения
 первых двух ключевых кадров и первичной карты
 используется пятиточечный алгоритм
-поиска относительного положения [58].
+расчёта относительного положения [58].
 При использовании нескольких камер,
 первичная карта создаётся путём сопоставления стереопар.
 
@@ -974,13 +974,15 @@ initialize feature alignment. To increase the robustness against
 dynamic obstacles, occlusions and reflections, we additionally
 employ a robust cost function [24, 34].
 
-## C. Feature Alignment
+## C. Сопоставление особенностей
 
-For feature alignment we use a patch-size of 8 × 8 pixels.
-Since the reference patch may be multiple frames old, we use
-an affine illumination model to cope with illumination changes
-[59]. For all experiments we limit the number of matched
-features to 180 in order to guarantee a constant cost per frame.
+Для сопоставления особенностей, мы используем
+области изображения размером 8 × 8 пикселей.
+Поскольку исходная область может быть взята достаточно давно,
+мы компенсируем изменения освещения
+с помощью аффинной модели освещения [59]. 
+Чтобы гарантировать постоянные затраты времени на кадр,
+во всех экспериментах количество сверяемых особенностей ограничено 180.
 
 ## D. Mapping
 
