@@ -931,28 +931,28 @@ Note that the same cost function can be added to the bundle
 adjustment step. За дополнительными деталями по решению уравнения (12),
 мы отправляем интересующихся читателей в Приложение.
 
-### X. IMPLEMENTATIONDETAILS
+# X. Подробности реализации
 
-In this section we provide additional details on various
-aspects of our implementation.
+В этом разделе мы дополнительно разъясняем различные
+особенности нашей реализации.
 
-```
 TBC 1 TBC 2
 Tkk− 1 Body Frame
-```
-```
-Fig. 9: Visual odometry with multiple rigidly attached and synchronized
+
+Рис. 9: Visual odometry with multiple rigidly attached and synchronized
 cameras. The relative pose of each camera to the body frameTBCjis known
 from extrinsic calibration and the goal is to estimate the relative motion of
 the body frameTkk− 1.
-A. Initialization
+
+## A. Запуск
+
 The algorithm is bootstrapped to obtain the pose of the first
 two keyframes and the initial map using the 5-point relative
 pose algorithm from [58]. In a multi-camera configuration, the
 initial map is obtained by means of stereo matching.
-```
-```
-B. Sparse Image Alignment
+
+## B. Разрежённое сопоставление изображения
+
 For sparse image alignment, we use a patch size of 4 × 4
 pixels. In the experimental section we demonstrate that the
 sparse approach with such a small patch size achieves com-
@@ -971,17 +971,17 @@ third level, at which stage the estimate is accurate enough to
 initialize feature alignment. To increase the robustness against
 dynamic obstacles, occlusions and reflections, we additionally
 employ a robust cost function [24, 34].
-```
-```
-C. Feature Alignment
+
+## C. Feature Alignment
+
 For feature alignment we use a patch-size of 8 × 8 pixels.
 Since the reference patch may be multiple frames old, we use
 an affine illumination model to cope with illumination changes
 [59]. For all experiments we limit the number of matched
 features to 180 in order to guarantee a constant cost per frame.
-```
-```
-D. Mapping
+
+## D. Mapping
+
 In the mapping thread, we divide the image in cells of fixed
 size (e.g., 32 × 32 pixels). For every keyframe a new depth-
 filter is initialized at the FAST corner [60] with highest score
@@ -1001,7 +1001,7 @@ search.
 ```
 ```
 (c) Sparse (d) Semi-Dense (e) Dense
-```
+
 Fig. 10: An image from theUrban Canyondataset [61] (Sec. XI-A) with
 pixels used for image-to-model alignment (marked in green) for sparse, semi-
 dense, and dense methods. Dense approaches use every pixel in the image,
@@ -1009,7 +1009,7 @@ semi-dense use just the pixels with high intensity gradient, and the proposed
 sparse approach uses selected pixels at corners or along intensity gradient
 edges.
 
-XI. EXPERIMENTALEVALUATION
+# XI. EXPERIMENTALEVALUATION
 We implemented the proposed VO system in C++ and
 tested its performance in terms of accuracy, robustness, and
 computational efficiency. We first compare the proposed sparse
