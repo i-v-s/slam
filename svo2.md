@@ -177,9 +177,9 @@ the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 зависящую от the image’s pixel-level intensities [17]. The local
 intensity gradient magnitude and direction is used in the
 optimization compared to feature-based methods that consider
-only the distance to a feature-location. Pixel correspondence
-is given directly by the geometry of the problem, eliminating
-the need for robust data association techniques. Однако, this
+only the distance to a feature-location. Соответствие пикселей
+рассчитывается напрямую из геометрии задачи, что делает ненужным
+использование трудоёмких техник слияния данных. Однако, this
 (^1) [http://github.com/uzh-rpg/rpgsvo](http://github.com/uzh-rpg/rpgsvo)
 делает алгоритм зависимым от качества инициализации that
 must lie in the basin of attraction of the cost function.
