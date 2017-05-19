@@ -946,10 +946,12 @@ the body frameTkk− 1.
 
 ## A. Запуск
 
-The algorithm is bootstrapped to obtain the pose of the first
-two keyframes and the initial map using the 5-point relative
-pose algorithm from [58]. In a multi-camera configuration, the
-initial map is obtained by means of stereo matching.
+При инициализации алгоритма, для получения положения
+первых двух ключевых кадров и первичной карты
+используется пятиточечный алгоритм
+поиска относительного положения [58].
+При использовании нескольких камер,
+первичная карта создаётся путём сопоставления стереопар.
 
 ## B. Разрежённое сопоставление изображения
 
