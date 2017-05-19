@@ -984,14 +984,15 @@ employ a robust cost function [24, 34].
 Чтобы гарантировать постоянные затраты времени на кадр,
 во всех экспериментах максимальное количество сверяемых особенностей &mdash; 180.
 
-## D. Mapping
+## D. Построение карты
 
-In the mapping thread, we divide the image in cells of fixed
-size (e.g., 32 × 32 pixels). For every keyframe a new depth-
-filter is initialized at the FAST corner [60] with highest score
-in the cell, unless there is already a 2D-to-3D correspondence
-present. In cells where no corner is found, we detect the pixel
-with highest gradient magnitude and initialize an edge feature.
+В потоке построения карты, мы делим изображение на ячейки заданного
+размера (например, 32 на 32 пикселя). Для каждого ключевого кадра,
+в каждой ячейке, где отсутствуют точки с известными координатами, 
+в углу FAST [60] с наибольшими очками по ячейке, 
+инициализируется новый фильтр глубины. 
+Если в ячейке не удалось найти угол, мы определяем пиксель
+с наибольшей величиной градиента и инициализируем особенность краевого типа.
 This results in evenly distributed features in the image.
 To speed up the depth-estimation we only sample a short
 range along the epipolar line; in our case, the range corre-
