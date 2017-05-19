@@ -380,11 +380,11 @@ u \in \mathcal{R}_{k−1}^{C} \, \wedge \,
 \end{equation} 
 $$
 
-Image to model alignment has previously been used in
-the literature to estimate camera motion. Apart from minor
-variations in the formulation, the main difference among the
-approaches is the source of the depth information as well as
-the region $$\mathcal{R}_{k−1}^{C}$$ in image $$I^{C}_{k}$$ for which the depth is known.
+В литературе ранее использовалось сравнение изображений
+с моделью для оценки движения камеры. Помимо незначительных
+изменений в формулировке, главное различие между
+подходами &mdash; источник информации о глубине, а так же
+область $$\mathcal{R}_{k−1}^{C}$$ изображения $$I^{C}_{k}$$ глубина которой известна.
 Как сказано в [разделе II](#ii-Связанные-работы "Связанные работы"), 
 мы называем методы, которые вычисляют
 и используют глубину всех пикселей в the reference кадре
