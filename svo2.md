@@ -359,21 +359,21 @@ $$B_{k−1}$$) может быть вычислена для пикселей с
 \begin{equation}
 \rho_{u} = T_{BC} \, \pi_{\rho}^{−1} (u),
 \hspace{20pt}
-\forall \, u \, \in \, R_{k−1}^{C},
+\forall \, u \, \in \, \mathcal{R}_{k−1}^{C},
 \tag{3}
 \end{equation} 
 $$</div>
 
 Однако, оптимизация [(1)](#e1) включает только подмножество
-пикселей $$\bar{R}_{k−1}^{C} \subseteq R_{k−1}^{C}$$,
+пикселей $$\bar{\mathcal{R}}_{k−1}^{C} \subseteq \mathcal{R}_{k−1}^{C}$$,
 для которых обратно
 спроецированные точки также видимы на кадре $$I_{k}^{C}$$:
 
 $$
 \begin{equation}
-\bar{R}_{k−1}^{C} = \{ 
+\bar{\mathcal{R}}_{k−1}^{C} = \{ 
 u \mid 
-u \in R_{k−1}^{C} \, \wedge \,
+u \in \mathcal{R}_{k−1}^{C} \, \wedge \,
 \pi(T_{CB} T_{kk-1} T_{BC}  \pi_{\rho}^{-1}(u))
 \in \Omega^{C}
 \}.
@@ -384,7 +384,7 @@ Image to model alignment has previously been used in
 the literature to estimate camera motion. Apart from minor
 variations in the formulation, the main difference among the
 approaches is the source of the depth information as well as
-the regionRCk− 1 in imageICkfor which the depth is known.
+the region $$\mathcal{R}_{k−1}^{C}$$ in image $$I^{C}_{k}$$ for which the depth is known.
 Как сказано в [разделе II](#ii-Связанные-работы "Связанные работы"), 
 мы называем методы, которые вычисляют
 и используют глубину всех пикселей в the reference кадре
@@ -418,7 +418,7 @@ the regionRCk− 1 in imageICkfor which the depth is known.
 глубина которой была оценена ранее.
 
 Таким образом, алгоритм разрежённого совмещения изображений решает нелинейную задачу
-наименьших квадратов [(1)](#e1) c областью $$R_{k−1}^{C}$$, соответствующей
+наименьших квадратов [(1)](#e1) c областью $$\mathcal{R}_{k−1}^{C}$$, соответствующей
 малым областям с центрами, совпадающими с центрами особенностей углового и краевого типа, для
 которых известна глубина. Эта задача эффективно решается
 стандартными итеративными алгоритмами для нелинейной
