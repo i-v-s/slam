@@ -471,7 +471,7 @@ Fig. 4: Different alignment strategies for corners and edgelets. The alignment
 of an edge feature is restricted to the normal directionnof the edge.
 
 2D feature alignment minimizes the intensity difference
-of a small image patchPthat is centered at the projected
+of a small image patch $$\mathcal{P}$$ that is centered at the projected
 feature positionu′ in the newest framek with respect to
 a reference patch from the framer where the feature was
 first observed (see Fig. 4). To improve the accuracy of the
