@@ -993,8 +993,10 @@ employ a robust cost function [24, 34].
 инициализируется новый фильтр глубины. 
 Если в ячейке не удалось найти угол, мы определяем пиксель
 с наибольшей величиной градиента и инициализируем особенность краевого типа.
-This results in evenly distributed features in the image.
-To speed up the depth-estimation we only sample a short
+Так достигается равномерное распределение
+отслеживаемых особенностей по изображению.
+
+Для ускорения оценки глубины we only sample a short
 range along the epipolar line; in our case, the range corre-
 sponds to twice the standard deviation of the current depth
 estimate. We use a 8 × 8 pixel patch size for the epipolar
