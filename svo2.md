@@ -452,23 +452,12 @@ $$
 и совместной оптимизации. Тем самым, мы take special care об
 особенностях, лежащих на градиентных краях интенсивности.
 
-```
-n
-```
-```
-δu
-```
-```
-(a) Edge alignment.
-```
-```
-δu
-```
-```
-(b) Corner alignment.
-```
-Fig. 4: Different alignment strategies for corners and edgelets. The alignment
-of an edge feature is restricted to the normal directionnof the edge.
+![Сопоставление краёв и углов]({{site.baseurl}}/svo2/fig4.png)
+
+*(а) Сопоставление краёв (б) Сопоставление углов.
+
+*Рис. 4. Различные стратегии сопоставления углов и краёв. Сопоставление
+особенности краевого типа ограничено направлением нормали $$n$$ к краю.*
 
 2D feature alignment minimizes the intensity difference
 of a small image patch $$\mathcal{P}$$ that is centered at the projected
