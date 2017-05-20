@@ -462,13 +462,13 @@ $$
 Алгоритм двухмерного совмещения особенностей минимизирует разницу интенсивностей
 маленьких кусочков изображения $$\mathcal{P}$$, с центром в проецируемой
 позиции особенности $$\mathbf{u}'$$ в новом кадре $$k$$ относительно
-эталонной области from the framer where the feature was
-first observed (см. рис. 4). 
+эталонной области из кадра $$r$$, в котором эта особенность была
+изначально обнаружена (см. рис. 4). 
 Для увеличения точности совмещения,
 мы накладываем на эталонную область аффинное преобразование $$A$$,
-которое вычисиляется из the estimated relative pose
-Tkr between the reference frame and the current frame [21].
-For corner features, the optimization computes a correction
+которое вычисляется из the estimated relative pose
+$$T_{kr}$$ between the reference frame and the current frame [21].
+Для особенностей углового типа, the optimization computes a correction
 δu?∈R^2 to the predicted feature position $$u′$$ that minimizes
 the photometric cost:
 
