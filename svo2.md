@@ -483,8 +483,11 @@ $$\delta \mathbf{u}^{\star} \in \mathbb{R}^{2}$$ &mdash; поправку
 \end{equation} 
 $$</div>
 
+$$\begin{equation}
+\delta \mathbf{u}^{\star} =
+arg \min_{\delta \mathbf{u}}
 
-∥ICk(u′+δu+∆u)−ICr(u+A∆u)
+\end{equation}$$
 
 где $$\Delta\mathbf{u}$$ &mdash; переменная,
 накапливающая сумму при проходе
