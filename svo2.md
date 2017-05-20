@@ -486,7 +486,8 @@ $$</div>
 $$\begin{equation}
 \delta \mathbf{u}^{\star} =
 arg \min_{\delta \mathbf{u}}
-
+\Sigma_{\Delta\mathbf{u} \in \mathcal{P}}
+\frac{1}{2}
 \end{equation}$$
 
 где $$\Delta\mathbf{u}$$ &mdash; переменная,
