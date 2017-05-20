@@ -1016,17 +1016,21 @@ semi-dense use just the pixels with high intensity gradient, and the proposed
 sparse approach uses selected pixels at corners or along intensity gradient
 edges.
 
-# XI. EXPERIMENTALEVALUATION
-We implemented the proposed VO system in C++ and
-tested its performance in terms of accuracy, robustness, and
-computational efficiency. We first compare the proposed sparse
-image alignment algorithm against semi-dense and dense im-
-age alignment algorithms and investigate the influence of the
-patch size used in the sparse approach. Finally, in Sec. XI-B
-we compare the full pipeline in different configurations against
-the state of the art on 22 different dataset sequences.
+# XI. Экспериментальная проверка
 
-A. Image Alignment: From Sparse to Dense
+Предлагаемая система визуальной одометрии была реализована на языке C++ и
+проверена по критериям точности, устойчивости к сбоям, и
+вычислительной эффективности. 
+Сначала, мы сравнили предлагаемый алгоритм
+разрежённого сопоставления изображения
+с алгоритмами полуплотного и плотного сопоставления
+и исследовали влияние размера сопоставляемых участков,
+используемых разрежённым алгоритмом.
+В конце раздела (XI-B)
+мы сравнили полную систему в различных конфигурациях с
+новейшими аналогами на 22-ух тестовых последовательностях.
+
+## A. Сопоставление изображения: от разрежённого к плотному
 
 In this section we evaluate the robustness of the proposed
 sparse image alignment algorithm (Sec. V-A) and compare
