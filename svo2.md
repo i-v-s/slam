@@ -611,11 +611,12 @@ camera pose and the 3D points separately.
 
 Глубина отдельного пикселя оценивается из множества
 наблюдений с помощью рекурсивного Баесовского *фильтра глубины*.
-New depth filters are initialized at intensity corners and along
-gradient edges when the number of tracked features falls below
-some threshold and, therefore, a keyframe is selected. Every
-depth filter is associated to a reference keyframer, where
-the initial depth uncertainty is initialized with a large value.
+Создание новых фильтров глубины происходит
+в местах углов интенсивности и вдоль градиентных краёв,
+когда количество отслеживаемых особенностей падает ниже определённого предела
+и, вследствие чего, выбирается новый ключевой кадр.
+Каждый фильтр глубины сопоставляется со своим ключевым кадром $$r$$,
+где начальная неопределённость глубины устанавливается большим значением.
 For a set of previous keyframes^2 as well as every subsequent
 frame with known relative pose{Ik,Tkr}, we search for a
 patch along the epipolar line that has the highest correlation
