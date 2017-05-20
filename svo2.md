@@ -469,8 +469,9 @@ $$
 которое вычисляется из предполагаемого смещения
 $$T_{kr}$$ между первичным кадром и текущим [21].
 Для особенностей углового типа, алгоритм оптимизации вычисляет поправку
-$$\delta^{\star} \mathbf{u}? \in \mathbb{R}^{2}$$ to the predicted feature position $$u′$$ that minimizes
-the photometric cost:
+$$\delta^{\star} \mathbf{u}? \in \mathbb{R}^{2}$$
+к предсказываемой позиции особенности $$\mathbf{u}′$$,
+которая уменьшает фотометрическую цену:
 
 =u′+δu?, with u′=π
 TCBTkrTBCπρ−^1 (u)
