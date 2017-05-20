@@ -488,6 +488,16 @@ $$\begin{equation}
 arg \min_{\delta \mathbf{u}}
 \Sigma_{\Delta\mathbf{u} \in \mathcal{P}}
 \frac{1}{2}
+{\left \|
+I_{k}^{C}(
+    \mathbf{u}' +
+    \delta \mathbf{u} + 
+    \Delta \mathbf{u}
+) -
+I_{r}^{C}(
+    \mathbf{u} + A \Delta \mathbf{u} 
+)
+\right \|}_{\sum_{I}}^{2}
 \end{equation}$$
 
 где $$\Delta\mathbf{u}$$ &mdash; переменная,
