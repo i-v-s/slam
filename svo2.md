@@ -466,10 +466,10 @@ $$
 изначально обнаружена (см. рис. 4). 
 Для увеличения точности совмещения,
 мы накладываем на эталонную область аффинное преобразование $$A$$,
-которое вычисляется из the estimated relative pose
-$$T_{kr}$$ between the reference frame and the current frame [21].
-Для особенностей углового типа, the optimization computes a correction
-δu?∈R^2 to the predicted feature position $$u′$$ that minimizes
+которое вычисляется из предполагаемого смещения
+$$T_{kr}$$ между первичным кадром и текущим [21].
+Для особенностей углового типа, алгоритм оптимизации вычисляет поправку
+$$\delta^{\star} \mathbf{u}? \in \mathbb{R}^{2}$$ to the predicted feature position $$u′$$ that minimizes
 the photometric cost:
 
 =u′+δu?, with u′=π
