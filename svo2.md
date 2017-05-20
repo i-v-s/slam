@@ -486,7 +486,7 @@ $$</div>
 $$\begin{equation}
 \delta \mathbf{u}^{\star} =
 arg \min_{\delta \mathbf{u}}
-\Sigma_{\Delta\mathbf{u} \in \mathcal{P}}
+\sum_{\Delta\mathbf{u} \in \mathcal{P}}
 \frac{1}{2}
 {\left \|
 I_{k}^{C}(
@@ -497,7 +497,7 @@ I_{k}^{C}(
 I_{r}^{C}(
     \mathbf{u} + A \Delta \mathbf{u} 
 )
-\right \|}_{\sum_{I}}^{2}
+\right \|}^{2},
 \end{equation}$$
 
 где $$\Delta\mathbf{u}$$ &mdash; переменная,
