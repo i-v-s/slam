@@ -589,15 +589,17 @@ of all edge features that were observed in thekthcamera frame.
 The reprojection error of edge features is projected along the
 edge normal because the component along the edge cannot be
 determined.
+
 The optimization problem in Eq. (6) is a standard bundle
 adjustment problem that can be solved in real-time using
 iSAM2 [9]. In [45] we further show how the objective function
 can be extended to include inertial measurements.
-While optimization over the whole trajectory in Eq. (6)
-results in the most accurate results (see Sec. XI-B), we found
-that for many applications (e.g.for state estimation of micro
-aerial vehicles [20, 54]) it suffices to only optimize the latest
-camera pose and the 3D points separately.
+
+Хотя оптимизация по всей траектории in Eq. (6)
+приводит к наиболее точным результатам (см. раздел XI-B), мы находим,
+что для многих применений (*например*, для оценки положения миниатюрных
+летательных аппаратов [20, 54]) достаточно оптимизировать раздельно
+последнее положение камеры и пространственные точки.
 
 # VI. Построение карты
 
