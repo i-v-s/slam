@@ -503,16 +503,21 @@ I_{r}^{C}(
 где $$\Delta\mathbf{u}$$ &mdash; переменная,
 накапливающая сумму при проходе
 по области $$\mathcal{P}$$.
-This alignment is solved using the
-inverse compositional Lucas-Kanade algorithm [48].
+Это совмещение рассчитывается с помощью
+обратного композиционного алгоритма 
+Лукаса-Канаде (Lucas-Kanade) [48].
 
-For features lying on intensity gradient edges, 2D feature
-alignment is problematic because of the aperture problem —
-features may drift along the edge. Therefore, we limit the
-degrees of freedom in the alignment to the normal direction
-to the edge. This is illustrated in Fig. 4a, where a warped
+Для особенностей, лежащих на краях градиентов интенсивности,
+двухмерное совмещение может быть
+проблематичным из-за соскальзывания &mdash;
+особенности могут произвольно смещаться вдоль края.
+Поэтому, мы ограничиваем
+степень свободы смещения направлением
+перпендикулярным к краю.
+Это показано на рис. 4a, где a warped
 reference feature patch is schematically drawn at the predicted
-position in the newest image. For features on edges, we
+position in the newest image. 
+For features on edges, we
 therefore optimize for a scalar correctionδu? ∈Rin the
 direction of the edge normalnto obtain the corresponding
 feature positionu′?in the newest frame:
