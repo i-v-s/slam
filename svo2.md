@@ -478,18 +478,18 @@ $$\delta \mathbf{u}^{\star} \in \mathbb{R}^{2}$$ &mdash; поправку
 \mathbf{u}'^{\star} = \mathbf{u}' \, + \, \delta \mathbf{u}^{\star},
 \hspace{20pt} где \hspace{20pt}
 \mathbf{u}' =
-\pi(T_{CB} T_{kr} T_{BC} \pi_{\rho}^{-1}(\mathbf{u}))
+\pi(T_{CB} \, T_{kr} \, T_{BC} \, \pi_{\rho}^{-1}(\mathbf{u}))
 \tag{4}
 \end{equation} 
 $$</div>
 
-=u′+δu?, with u′=π
-TCBTkrTBCπρ−^1 (u)
 
 ∥ICk(u′+δu+∆u)−ICr(u+A∆u)
 
-where∆uis the iterator variable that is used to compute the
-sum over the patchP. This alignment is solved using the
+где $$\Delta\mathbf{u}$$ &mdash; переменная,
+накапливающая сумму при проходе
+по области $$\mathcal{P}$$.
+This alignment is solved using the
 inverse compositional Lucas-Kanade algorithm [48].
 
 For features lying on intensity gradient edges, 2D feature
