@@ -459,16 +459,17 @@ $$
 *Рис. 4. Различные стратегии сопоставления углов и краёв. Смещение
 особенности краевого типа ограничено направлением нормали к краю $$n$$.*
 
-2D feature alignment minimizes the intensity difference
-of a small image patch $$\mathcal{P}$$ that is centered at the projected
-feature positionu′ in the newest framek with respect to
+Алгоритм двухмерного совмещения особенностей минимизирует разницу интенсивностей
+маленьких кусочков изображения $$\mathcal{P}$$, которые is centered at the projected
+feature position $$\mathbf{u}'$$ in the newest frame $$k$$ with respect to
 a reference patch from the framer where the feature was
-first observed (see Fig. 4). To improve the accuracy of the
-alignment, we apply an affine warpingAto the reference
-patch, which is computed from the estimated relative pose
-Tkrbetween the reference frame and the current frame [21].
+first observed (см. рис. 4). 
+Для увеличения точности совмещения,
+мы накладываем на эталонную область аффинное преобразование $$A$$,
+которое вычисиляется из the estimated relative pose
+Tkr between the reference frame and the current frame [21].
 For corner features, the optimization computes a correction
-δu?∈R^2 to the predicted feature position u′that minimizes
+δu?∈R^2 to the predicted feature position $$u′$$ that minimizes
 the photometric cost:
 
 =u′+δu?, with u′=π
