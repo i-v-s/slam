@@ -471,12 +471,13 @@ $$
 Для особенностей углового типа, алгоритм оптимизации вычисляет
 $$\delta \mathbf{u}^{\star} \in \mathbb{R}^{2}$$ &mdash; поправку
 к предсказываемой позиции особенности $$\mathbf{u}′$$,
-которая уменьшает фотометрическую цену:
+которая уменьшает фотометрическую целевую функцию:
 
 <div id="e4">$$
 \begin{equation}
 \mathbf{u}'^{\star} = \mathbf{u}' \, + \, \delta \mathbf{u}^{\star},
-\hspace{20pt}
+\hspace{20pt} где \hspace{20pt}
+\mathbf{u}' = 
 \forall \, u \, \in \, \mathcal{R}_{k−1}^{C},
 \tag{4}
 \end{equation} 
