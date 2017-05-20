@@ -601,13 +601,16 @@ camera pose and the 3D points separately.
 
 # VI. Построение карты
 
-In the previous section, we assumed that the depth at sparse
-feature locations in the image is known. In this section, we
-describe how the mapping thread estimates this depth for
-newly detected features. Therefore, we assume that the camera
-poses are known from the motion estimation thread.
-The depth at a single pixel is estimated from multiple
-observations by means of a recursive Bayesiandepth filter.
+В предыдущем разделе предполагалось,
+что нам известна глубина изображения 
+в отдельных местах расположения особенностей.
+В этом разделе мы описываем, как поток построения карты
+оценивает глубину вновь обнаруженных особенностей.
+Соответственно, предполагается, что положения камеры
+известны из потока оценки движения.
+
+Глубина отдельного пикселя оценивается из множества
+наблюдений с помощью рекурсивного Баесовского *фильтра глубины*.
 New depth filters are initialized at intensity corners and along
 gradient edges when the number of tracked features falls below
 some threshold and, therefore, a keyframe is selected. Every
