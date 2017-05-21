@@ -580,6 +580,10 @@ $$\mathcal{X}=\{T_{kW},\mathbf{\rho}_{i}\}$$
 \mathcal{X}^{\star} = arg \min_{\mathcal{X}}
 \sum_{k \in \mathcal{K} } \sum_{i \in \mathcal{L}_{k}^{C}}
 \frac{1}{2}
+{\left \|
+
+\right \|}^{2}
+
 
 \tag{6}
 \end{equation} 
