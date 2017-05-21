@@ -581,7 +581,7 @@ $$\mathcal{X}=\{T_{kW},\mathbf{\rho}_{i}\}$$
 \sum_{k \in \mathcal{K} } \sum_{i \in \mathcal{L}_{k}^{C}}
 \frac{1}{2}
 {\left \|
-  \mathbf{u}
+  \mathbf{u}'^{\star}_{i}
 \right \|}^{2}
 
 
