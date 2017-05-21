@@ -215,6 +215,8 @@ color: #159957;
 
 .contents-list > ul > li > a { font-size: 1.2em; }
 
+.contents-list > ul ul { background-color: #f7fff0; border-left: 2px solid #ddd; }
+
 .contents-list ul {
   list-style: none;
 }
