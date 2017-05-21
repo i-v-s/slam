@@ -564,78 +564,18 @@ I_{r}^{C}(
 начальную позицию особой точки, позволяющую, при оптимизации, напрямую
 следовать градиенту интенсивности.
 
-После сопоставления особенностей, мы получаем информацию об их соответствии
-с субпиксельной точностью. Однако, сопоставление особенностей
-violated the epipolar constraints and introduced a reprojection
-error $$\delta u$$, which is typically well below 0.5 pixels. Therefore,
-in the last step of motion estimation, we refine the camera
-poses and landmark positionsX={TkW,ρi}by minimizing
-the squared sum of reprojection errors:
+После совмещения особых точек, мы получаем информацию об их соответствии
+с субпиксельной точностью. 
+Это, однако, приводит к нарушению эпиполярных ограничений,
+и вводит ошибку репроекции $$\delta u$$,
+которая обычно менее половины пикселя.
+Далее, на последнем шаге оценки движения, 
+мы уточняем положения камеры и 
+позиции точек карты
+$$\mathcal{X}=\{T_{kW},\mathfb{\rho}_{i}\}$$
+путём минимизации суммы квадратов ошибок репроекции:
 
-```
-X?= arg min
-X
-```
-### ∑
 
-```
-k∈K
-```
-### ∑
-
-```
-i∈LCk
-```
-### 1
-
-### 2
-
-```
-‖u′
-?
-i−π
-```
-### (
-
-```
-TCBTkWρi
-```
-### )
-
-### ‖^2 (6)
-
-### +
-
-### ∑
-
-```
-k∈K
-```
-### ∑
-
-```
-i∈LEk
-```
-### 1
-
-### 2
-
-```
-‖nTi
-```
-### (
-
-```
-u′?i−π
-```
-### (
-
-```
-TCBTkWρi
-```
-### ))
-
-### ‖^2
 
 whereKis the set of all keyframes in the map,LCk the set of
 all landmarks corresponding to corner features, andLEkthe set
