@@ -58,9 +58,12 @@
           stack[h].parentElement.appendChild(li);
         } else {
           if (!stack[h - 1]) addItem(h - 1, null, '???');
-          var ul = document.createElement('ul');
-          stack[h - 1].appendChild(ul);
-          ul.appendChild(li);
+          if (h === 1) stack[0].appendChild(li);
+          else {
+            var ul = document.createElement('ul');
+            stack[h - 1].appendChild(ul);
+            ul.appendChild(li);
+          }
         }
         stack[h] = li;
         while (++h < 3) stack[h] = null;
