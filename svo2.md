@@ -40,9 +40,10 @@ the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 *[V-SLAM]: Visual Simultaneous Localization and Mapping - навигация по изображению с одновременным составлением карты
 
 ### Дополнительный материал
-[Видео экспериментов](https://youtu.be/hR8uq1RTUfA)
 
+<figure class="video">
 <iframe src="https://www.youtube.com/embed/hR8uq1RTUfA" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
 
 ## I. Введение
 
