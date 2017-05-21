@@ -508,9 +508,9 @@ I_{r}^{C}(
 \right \|}^{2},
 \end{equation}$$
 
-где $$\Delta\mathbf{u}$$ &mdash; переменная,
-накапливающая сумму при проходе
-по области $$\mathcal{P}$$.
+где $$\Delta\mathbf{u}$$ &mdash; переменная-итератор,
+используемая при проходе по области $$\mathcal{P}$$
+для расчёта суммы.
 Это совмещение рассчитывается с помощью
 обратного композиционного алгоритма 
 Лукаса-Канаде (Lucas-Kanade) [48].
@@ -522,10 +522,10 @@ I_{r}^{C}(
 Поэтому, мы ограничиваем
 степень свободы смещения направлением
 перпендикулярным к краю.
-Это показано на рис. 4a, где a warped
-reference feature patch is schematically drawn at the predicted
-position in the newest image. 
-For features on edges, we
+Это показано на рис. 4a, где схематично изображена
+искажённая исходная область особой точки
+на предсказанной позиции в новом кадре.
+Для особых точек краевого типа, we
 therefore optimize for a scalar correctionδu? ∈Rin the
 direction of the edge normalnto obtain the corresponding
 feature positionu′?in the newest frame:
