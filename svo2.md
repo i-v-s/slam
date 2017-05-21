@@ -582,7 +582,7 @@ $$\mathcal{X}=\{T_{kW},\mathbf{\rho}_{i}\}$$
 \frac{1}{2}
 {\left \|
   \mathbf{u}'^{\star}_{i} -
-  \pi(T_{CB})
+  \pi(T_{CB} \, T_{kW} \, \rho_{i})
 \right \|}^{2}
 
 
