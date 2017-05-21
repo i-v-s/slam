@@ -3,9 +3,9 @@
 
 Перевод работы [SVO: Semi-Direct Visual Odometry for Monocular and Multi-Camera Systems](http://rpg.ifi.uzh.ch/docs/TRO16_Forster-SVO.pdf)
 
-# О работе
+## О работе
 
-## Авторы
+### Авторы
 ```
 Christian Forster, Zichao Zhang, Michael Gassner, Manuel Werlberger, Davide Scaramuzza
 ```
@@ -13,7 +13,7 @@ Christian Forster, Zichao Zhang, Michael Gassner, Manuel Werlberger, Davide Scar
 Швейцарским Национальным Фондом (номер проекта 200021-143607, Рой летящих камер), Национальным центром компетенции в исследовательской робототехнике (NCCR),
 the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 
-## Краткое описание
+### Краткое описание
 
 Прямые методы визуальной одометрии (VO)
 стали весьма популярны, поскольку способны использовать информацию
@@ -39,10 +39,10 @@ the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 *[SLAM]: Simultaneous Localization and Mapping - навигация с одновременным составлением карты
 *[V-SLAM]: Visual Simultaneous Localization and Mapping - навигация по изображению с одновременным составлением карты
 
-## Дополнительный материал
+### Дополнительный материал
 [Видео экспериментов](https://youtu.be/hR8uq1RTUfA)
 
-# I. Введение
+## I. Введение
 
 На протяжении последних десятилетий очень активным полем исследования была
 оценка движения камеры с шестью степенями свободы на основании данных из видеопотока [1-6].
@@ -136,7 +136,7 @@ the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 мы предоставим некоторые новые результаты экспериментов со сравнением
 относительно предшествующих работ.
 
-# II. Связанные работы
+## II. Связанные работы
 
 Методы, реализующие одновременное определение позиции камеры и воссоздание
 структуры сцены, можно условно разделить на два класса:
@@ -260,7 +260,7 @@ pixels at corners and along image intensity gradients.
 of structure and motion where it is also possible to include
 inertial measurements, как мы показали в предыдущей работе [45].
 
-# III. Обзор программной архитектуры
+## III. Обзор программной архитектуры
 
 ![Потоки отслеживания и построения карты]({{site.baseurl}}/svo2/fig1.svg)
 *Рис. 1. Конвеер слежения и построения карты*
@@ -295,7 +295,7 @@ along intensity gradient edges. Фильтры инициализируются 
 становится достаточно мала, происходит вставка в карту новой трёхмерной точки
 для непосредственного использования при оценке движения.
 
-# IV. Принятая нотация
+## IV. Принятая нотация
 ![Изменение относительной позы]({{site.baseurl}}/svo2/fig2.png)
 
 *Рис. 2. Изменение относительного положения $$ T_{k, k − 1} $$ между текущим и предыдущим
@@ -325,14 +325,14 @@ $$k$$ в камере $$C$$. Модели проецирования извес�
 может быть спроецирована на $$k$$-тый кадр
 с помощью выражения $$ _{k} \rho = T_{kW} \;  _{W} \rho $$.
 
-# V. Оценка движения камеры
+## V. Оценка движения камеры
 
 В этом разделе мы описываем предлагаемый полупрямой подход к оценке движения,
 который предполагает, что позиции
 некоторых трёхмерных точек, соответствующих особенностям в предыдущих кадрах
 известны из прошлой оценки глубины.
 
-## A. Разрежённое совмещение изображений
+### A. Разрежённое совмещение изображений
 
 Минимизируя разницу интенсивностей пикселей (фотометрическую ошибку), принадлежащих
 одной и той же точке в пространстве, можно произвести сопоставление изображения с моделью,
@@ -439,7 +439,7 @@ $$
 проблемы наименьших квадратов, например [Левенберга — Марквардта](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%9B%D0%B5%D0%B2%D0%B5%D0%BD%D0%B1%D0%B5%D1%80%D0%B3%D0%B0_%E2%80%94_%D0%9C%D0%B0%D1%80%D0%BA%D0%B2%D0%B0%D1%80%D0%B4%D1%82%D0%B0)
 (Levenberg-Marquardt). В [приложении](#Приложение) содержится больше подробностей по оптимизации, включая найденные аналитически Якобианы.
 
-## B. Расслабление и оптимизация
+### B. Расслабление и оптимизация
 
 Разрежённое сопоставление изображений &mdash; эффективный способ оценки
 относительного движения между соседними кадрами. Но, с другой стороны,
@@ -615,7 +615,7 @@ can be extended to include inertial measurements.
 летательных аппаратов [20, 54]) достаточно оптимизировать раздельно
 последнее положение камеры и пространственные точки.
 
-# VI. Построение карты
+## VI. Построение карты
 
 В предыдущем разделе предполагалось,
 что нам известна глубина изображения 
@@ -800,7 +800,7 @@ matches are frequent.
 In [39] we demonstrate how the same depth filter can be
 used fordensemapping.
 
-# VII. Использование камер с широким углом обзора
+## VII. Использование камер с широким углом обзора
 
 To model large optical distortion, such as fisheye and
 catadioptric (see Fig. 8), we use the camera model proposed
@@ -820,7 +820,7 @@ For each sample, we apply the camera projection modelπ(·)
 to obtain the corresponding pixel coordinate on the curved
 epipolar line.
 
-# VIII. Использование нескольких камер
+## VIII. Использование нескольких камер
 
 The proposed motion estimation algorithm starts with an
 optimization of the relative poseTkk− 1. Since in Sec. V-A
@@ -861,7 +861,7 @@ refer the optimizations to a central body frame, which requires
 us to include the extrinsic calibrationTCBin the Jacobians as
 shown in the Appendix.
 
-# IX. Использование кинематических предсказаний
+## IX. Использование кинематических предсказаний
 
 В окружениях, не изобилующих деталями, во время резких движений, или в случае
 движущихся препятствий может оказаться очень полезным использование
@@ -896,7 +896,7 @@ Note that the same cost function can be added to the bundle
 adjustment step. За дополнительными деталями по решению уравнения (12),
 мы отправляем интересующихся читателей в Приложение.
 
-# X. Подробности реализации
+## X. Подробности реализации
 
 В этом разделе мы дополнительно разъясняем различные
 особенности нашей реализации.
@@ -909,7 +909,7 @@ cameras. The relative pose of each camera to the body frameTBCjis known
 from extrinsic calibration and the goal is to estimate the relative motion of
 the body frameTkk− 1.
 
-## A. Запуск
+### A. Запуск
 
 При инициализации алгоритма, для получения положения
 первых двух ключевых кадров и первичной карты
@@ -918,7 +918,7 @@ the body frameTkk− 1.
 При использовании нескольких камер,
 первичная карта создаётся путём сопоставления стереопар.
 
-## B. Разрежённое сопоставление изображения
+### B. Разрежённое сопоставление изображения
 
 For sparse image alignment, we use a patch size of 4 × 4
 pixels. In the experimental section we demonstrate that the
@@ -939,7 +939,7 @@ initialize feature alignment. To increase the robustness against
 dynamic obstacles, occlusions and reflections, we additionally
 employ a robust cost function [24, 34].
 
-## C. Сопоставление особенностей
+### C. Сопоставление особенностей
 
 Для сопоставления особенностей, мы используем
 области изображения размером 8 × 8 пикселей.
@@ -949,7 +949,7 @@ employ a robust cost function [24, 34].
 Чтобы гарантировать постоянные затраты времени на кадр,
 во всех экспериментах максимальное количество сверяемых особенностей &mdash; 180.
 
-## D. Построение карты
+### D. Построение карты
 
 В потоке построения карты, мы делим изображение на ячейки заданного
 размера (например, 32 на 32 пикселя). Для каждого ключевого кадра,
@@ -980,7 +980,7 @@ semi-dense use just the pixels with high intensity gradient, and the proposed
 sparse approach uses selected pixels at corners or along intensity gradient
 edges.
 
-# XI. Экспериментальная проверка
+## XI. Экспериментальная проверка
 
 Предлагаемая система визуальной одометрии была реализована на языке C++ и
 проверена по критериям точности, устойчивости к сбоям, и
@@ -994,7 +994,7 @@ edges.
 мы сравнили полную систему в различных конфигурациях с
 новейшими аналогами на 22-ух тестовых последовательностях.
 
-## A. Сопоставление изображения: от разрежённого к плотному
+### A. Сопоставление изображения: от разрежённого к плотному
 
 In this section we evaluate the robustness of the proposed
 sparse image alignment algorithm (Sec. V-A) and compare
@@ -1139,7 +1139,7 @@ evaluation of this trade-off would ideally incorporate the power
 consumption of both the camera and processors, which is out
 of the scope of this evaluation.
 
-B. Real and Synthetic Experiments
+### B. Real and Synthetic Experiments
 
 In this section, we compare the proposed algorithm against
 the state of the art on real and synthetic datasets. Therefore,
@@ -1511,19 +1511,18 @@ not able to initialize LSD-SLAM on this dataset. A more in-
 depth evaluation of the benefit of large FoV cameras for SVO
 is provided in [61].
 ```
-```
-XII. DISCUSSION
-In this section we discuss the proposed SVO algorithm in
-terms of efficiency, accuracy, and robustness.
-```
-```
-A. Efficiency
+
+## XII. Обсуждение
+
+В этом разделе мы обсудим предлагаемый алгоритм SVO по
+характеристикам эффективности, точности, и надёжности.
+
+### A. Эффективность
+
 Feature-based algorithms incur a constant cost of feature
 and descriptor extraction per frame. For example, ORB-SLAM
 requires 11 milliseconds per frame for ORB feature extraction
 only [22]. This constant cost per frame is a bottleneck for
-```
-
 feature-based VO algorithms. On the contrary, SVO does not
 have this constant cost per frame and benefits greatly from the
 use of high frame-rate cameras. SVO extracts features only for
@@ -1541,7 +1540,7 @@ slower. To summarize, on a laptop computer with an Intel i
 approximately 30 and 23 milliseconds respectively per frame
 while SVO requires only 2.5 milliseconds (see Table II).
 
-B. Accuracy
+### B. Точность
 
 SVO computes feature correspondence with sub-pixel accu-
 racy using direct feature alignment. Subsequently, we optimize
@@ -1572,7 +1571,7 @@ camera pose estimates. This separation of depth estimation
 and pose optimization is only optimal if each step yields the
 optimal solution.
 
-C. Robustness
+### C. Надёжность
 
 SVO is most robust when a high frame-rate camera is used
 (e.g., between 40 and 80 frames per second). This increases
@@ -1584,7 +1583,6 @@ grass or asphalt as shown in Fig. 19). The advantage of
 the proposed probabilistic depth estimation method over the
 standard approach of triangulating points from two views only
 
-```
 Fig. 19: Successful tracking in scenes of high-frequency texture.
 is that we observe far fewer outliers as every depth filter un-
 dergoes many measurements until convergence. Furthermore,
@@ -1606,9 +1604,9 @@ features are found. Our simulation experiments have shown
 that the proposed sparse image alignment approach achieves
 comparable performance as semi-dense and dense alignment
 in terms of robustness of frame-to-frame motion estimation.
-```
-```
-# XIII. CONCLUSION
+
+## XIII. Заключение
+
 In this paper, we proposed the semi-direct VO pipeline
 “SVO” that is significantly faster than the current state-of-the-
 art VO algorithms while achieving highly competitive accu-
@@ -1630,13 +1628,12 @@ fisheye and catadioptric lenses. The SVO algorithm has further
 proven successful in real-world applications such as vision-
 based flight of quadrotors [54] or 3D scanning applications
 with smartphones.
-```
 
 Acknowledgments The authors gratefully acknowledge
 Henri Rebecq for creating the “Urban Canyon” datasets that
 can be accessed here: [http://rpg.ifi.uzh.ch/fov.html](http://rpg.ifi.uzh.ch/fov.html)
 
-# Приложение
+## Приложение
 
 In this section, we derive the analytic solution to the multi-
 camera sparse-image-alignment problem with motion prior.
@@ -1646,8 +1643,6 @@ body motionTBB− 1 by minimizing the intensity residualrICi
 of corresponding pixels in subsequent images. Corresponding
 pixels are found by means of projecting a known point on the
 scene surfaceρi
-
-### .
 
 =B− 1 ρi(prefix B− 1 denotes that the point
 is expressed in the previous frame of reference) into images of
@@ -1660,12 +1655,10 @@ the iterator variable∆uto sum the intensities over a small
 patchP. We further assume that a prior of the incremental
 body motion ̃Tkk− 1
 
-### .
 
 = ( ̃R,p ̃)is given. The goal is to find the
 incremental camera rotation and translationTkk− 1
 
-### .
 
 = (R,p)
 that minimizes the sum of squared errors:
@@ -1679,38 +1672,26 @@ C(R,p), with (13)
 ```
 C(R,p) =
 ```
-### ∑
 
 ```
 C∈C
 ```
-### ∑N
 
 ```
 i=
 ```
-### ∑
 
 ```
 ∆u∈P
 ```
-### 1
-
-### 2
 
 ```
 ‖rICi,∆u‖^2 ΣI+
 ```
-### 1
-
-### 2
 
 ```
 ‖rR‖^2 ΣR+
 ```
-### 1
-
-### 2
 
 ```
 ‖rp‖^2 Σp,
@@ -1720,33 +1701,27 @@ defined the image intensity and prior residuals as:
 
 rICi,∆u=.ICk
 
-### (
 
 ```
 π(TCB(Rρi+p)) + ∆u
 ```
-### )
 
 ```
 −ICk− 1
 ```
-### (
 
 ```
 π(TCBρi) + ∆u
 ```
-### )
 
 ```
 rR
 ```
-### .
 
 ```
 = log( ̃RTR)∨
 rp
 ```
-### .
 
 ```
 =p− ̃p (14)
@@ -1788,14 +1763,11 @@ sin(‖φ‖)
 1 −cos(‖φ‖)
 ‖φ‖^2
 ```
-### (
 
 ```
 φ∧
 ```
-### ) 2
-
-### . (17)
+ . (17)
 
 ```
 The inverse relation is thelogarithm map(at the identity),
@@ -1809,15 +1781,12 @@ log(R) =
 2 sin(φ)
 withφ= cos−^1
 ```
-### (
 
 ```
 tr (R)− 1
 2
 ```
-### )
-
-### .(18)
+ .(18)
 
 ```
 Note thatlog(R)∨=aφ, whereaandφare the rotation axis
@@ -1852,85 +1821,69 @@ rp(p+Rδp) (21)
 rICi(Rexp(δφ∧)) (22)
 =ICk
 ```
-### (
 
 ```
 π(TCB(Rexp(δφ∧)ρi+p))
 ```
-### )
 
 ```
 −ICk− 1
 ```
-### (
 
 ```
 π(TCBρi)
 ```
-### )
 
 ```
 (b)
 'ICk
 ```
-### (
 
 ```
 π(TCB(Rρi+p))
 ```
-### )
 
 ```
 −ICk− 1
 ```
-### (
 
 ```
 π(TCBexp(δφ∧)−^1 ρi)
 ```
-### )
 
 ```
 (c)
 'ICk
 ```
-### (
 
 ```
 π(TCB(Rρi+p))
 ```
-### )
 
 ```
 −ICk− 1
 ```
-### (
 
 ```
 π(TCB(I−δφ∧)ρi)
 ```
-### )
 
 ```
 (d)
 =ICk
 ```
-### (
 
 ```
 π(TCB(Rρi+p))
 ```
-### )
 
 ```
 −ICk− 1
 ```
-### (
 
 ```
 π(TCBρi+TCBρ∧iδφ)
 ```
-### )
 
 ```
 (e)
@@ -1940,11 +1893,6 @@ rICi(Rexp(δφ∧)) (22)
 ∂ICk− 1 (u)
 ∂u
 ```
-### ∣
-
-### ∣
-
-### ∣
 
 ```
 u=π(cρi)
@@ -1953,12 +1901,6 @@ u=π(cρi)
 ∂π(ρ)
 ∂ρ
 ```
-### ∣
-
-### ∣
-
-### ∣
-
 ```
 ρ=cρi
 ```
@@ -1969,43 +1911,35 @@ RCBρ∧iδφ
 rICi(p+Rδp) (23)
 =ICk
 ```
-### (
 
 ```
 π(TCB(Rρi+p+Rδp))
 ```
-### )
 
 ```
 −ICk− 1
 ```
-### (
 
 ```
 π(TCBρi)
 ```
-### )
 
 ```
 (b)
 'ICk
 ```
-### (
 
 ```
 π(TCB(Rρi+p))
 ```
-### )
 
 ```
 −ICk− 1
 ```
-### (
 
 ```
 π(TCB(ρi−δp))
 ```
-### )
 
 ```
 (e)
@@ -2015,12 +1949,6 @@ rICi(p+Rδp) (23)
 ∂ICk− 1 (u)
 ∂u
 ```
-### ∣
-
-### ∣
-
-### ∣
-
 ```
 u=π(cρi)
 ```
@@ -2028,11 +1956,6 @@ u=π(cρi)
 ∂π(ρ)
 ∂ρ
 ```
-### ∣
-
-### ∣
-
-### ∣
 
 ```
 ρ=cρi
@@ -2047,12 +1970,10 @@ logarithm:
 ```
 log
 ```
-### (
 
 ```
 exp(φ∧) exp(δφ∧)
 ```
-### )∨
 
 ```
 ≈φ+J−r^1 (φ)δφ, (24)
@@ -2062,27 +1983,19 @@ inverse of theright Jacobian ofSO(3)[70, 71]:
 ```
 J−r^1 (φ) =I+
 ```
-### 1
-
-### 2
 
 ```
 φ∧+
 ```
-### (
-
-### 1
 
 ```
 ‖φ‖^2
 ```
-### +
 
 ```
 1 + cos(‖φ‖)
 2 ‖φ‖sin(‖φ‖)
 ```
-### )
 
 ```
 (φ∧)^2.
@@ -2120,15 +2033,11 @@ length(fx,fy)and camera center(cx,cy)takes the form
 ∂π(ρ)
 ∂ρ
 ```
-### =
-
-### [
 
 ```
 fxxz 0 −czx 2
 0 fyyz −czy 2
 ```
-### ]
 
 ```
 withρ= [x,y,z]T. (27)
@@ -2140,7 +2049,7 @@ To summarize, the Jacobians of the residuals are:
 ∂δφ
 ```
 
-## Список литературы
+### Список литературы
 
 1. S. Ullman. The Interpretation of Visual Motion. MIT
 Press: Cambridge, MA, 1979.
