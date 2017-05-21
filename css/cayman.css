@@ -191,3 +191,13 @@ a:hover { text-decoration: underline; }
 .site-footer-owner { display: block; font-weight: bold; }
 
 .site-footer-credits { color: #819198; }
+
+.contents-list {
+position: fixed;
+z-index: 10;
+display: block;
+top: 0;
+left: 0;
+background-color: #606c71;
+color: #fff;
+}
