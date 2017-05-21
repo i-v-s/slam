@@ -205,6 +205,6 @@ color: #fff;
 .contents-list a {
 color: #fff;
 }
-.contents-list {
+.contents-list, .contents-list ul {
   list-style: none;
 }
