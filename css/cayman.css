@@ -212,6 +212,8 @@ color: #159957;
 
 .contents-list > ul { padding-left: 1em; }
 
+.contents-list > ul > li > a { font-size: 1.4em; }
+
 .contents-list ul {
   list-style: none;
 }
