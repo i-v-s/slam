@@ -65,7 +65,7 @@
         stack[h] = li;
         while (++h < 3) stack[h] = null;
       }
-      for(var x = 0; x < content.length; x++) switch(var tag = content[x].tagName) {
+      for(var x = 0; x < content.length; x++) switch(content[x].tagName) {
         case 'H1': addItem(1, content[x].id, content[x].innerText); break;
         case 'H2': addItem(2, content[x].id, content[x].innerText); break;
         case 'H3': addItem(3, content[x].id, content[x].innerText); break;
