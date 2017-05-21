@@ -679,55 +679,18 @@ measurement arises from a uniform distribution in the interval
 [ρmini ,ρmaxi ]:
 p( ̃ρki|ρi,γi) =γiN
 
-### (
-
-```
-ρ ̃ki
-```
-### ∣
-
-```
-∣ρi,τi^2
-```
-### )
-
-```
-+(1−γi)U
-```
-### (
-
-```
-ρ ̃ki
-```
-### ∣
-
-```
-∣ρmini ,ρmaxi
-```
-### )
-
-### ,(7)
-
-```
 whereτi^2 the variance of a good measurement that can be
 computed geometrically by assuming a disparity variance of
 one pixel in the image plane [39].
 Assuming independent observations, the Bayesian estima-
 tion forρon the basis of the measurementsρ ̃r+1,...,ρ ̃kis
 given by the posterior
-```
-```
-p(ρ,γ|ρ ̃r+1,...,ρ ̃k)∝p(ρ,γ)
-```
-### ∏
 
-```
+p(ρ,γ|ρ ̃r+1,...,ρ ̃k)∝p(ρ,γ)
+
 k
-```
-```
 p( ̃ρk|ρ,γ), (8)
-```
-```
+
 withp(ρ,γ)being a prior on the true inverse depth and the
 ratio of good measurements supporting it. For incremental
 computation of the posterior, the authors of [55] show that (8)
