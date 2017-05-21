@@ -334,8 +334,8 @@ $$k$$ в камере $$C$$. Модели проецирования извес�
 
 ### A. Разрежённое совмещение изображений
 
+[svo/src/sparse_img_align.cpp, строка 43:](https://github.com/uzh-rpg/rpg_svo/blob/d6161063b47f36ce78252ee4c4fedf3f6d8f2898/svo/src/sparse_img_align.cpp#L43)
 ```cpp
-// [svo/src/sparse_img_align.cpp, строка 43](https://github.com/uzh-rpg/rpg_svo/blob/d6161063b47f36ce78252ee4c4fedf3f6d8f2898/svo/src/sparse_img_align.cpp#L43)
 size_t SparseImgAlign::run(FramePtr ref_frame, FramePtr cur_frame);
 ```
 
