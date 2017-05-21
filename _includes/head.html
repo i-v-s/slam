@@ -48,11 +48,30 @@
       }
       
       var content = document.getElementsByClassName('main-content')[0].children;
-      for(var x = 0; x < content.length; x++) {
-        var tag = content[x].tagName;
-        if (tag === 'H2' || tag === 'H1' || tag === 'H3')
-          console.log(tag + ': ' + content[x].innerText);
+      var stack = [document.createElement('ul'), null, null, null];
+      function addItem(h, id, text) {
+        var li = document.createElement('li'), a = document.createElement('a');
+        li.appendChild(a);
+        a.innerText = text;
+        if (id) a.href = '#' + id;
+        if (stack[h]) {
+          stack[h].parentElement.appendChild(li);
+        } else {
+          if (!stack[h - 1]) addItem(h - 1, null, '???');
+          var ul = document.createElement('ul');
+          stack[h - 1].appendChild(ul);
+          ul.appendChild(li);
+        }
+        stack[h] = li;
+        while (++h < 3) stack[h] = null;
       }
+      for(var x = 0; x < content.length; x++) switch(var tag = content[x].tagName) {
+        case 'H1': addItem(1, content[x].id, content[x].innerText); break;
+        case 'H2': addItem(2, content[x].id, content[x].innerText); break;
+        case 'H3': addItem(3, content[x].id, content[x].innerText); break;
+      }
+      stack[0].className = 'contents';
+      document.body.appendChild(stack[0]);
     });
   </script>
 </head>
