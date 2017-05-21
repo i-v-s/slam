@@ -50,6 +50,9 @@
       var content = document.getElementsByClassName('main-content')[0].children;
       var cl = document.createElement('div');
       var stack = [document.createElement('ul'), null, null, null];
+      var ch = document.createElement('a');
+      ch.innerText = 'Содержание';
+      cl.appenfChild(ch);
       function addItem(h, id, text) {
         var li = document.createElement('li'), a = document.createElement('a');
         li.appendChild(a);
@@ -73,9 +76,9 @@
         while (++h < 3) stack[h] = null;
       }
       for(var x = 0; x < content.length; x++) switch(content[x].tagName) {
-        case 'H1': addItem(1, content[x].id, content[x].innerText); break;
-        case 'H2': addItem(2, content[x].id, content[x].innerText); break;
-        case 'H3': addItem(3, content[x].id, content[x].innerText); break;
+        case 'H1': ch.href = '#' + content[x].id; ch.title = content[x].innerText; break;
+        case 'H2': addItem(1, content[x].id, content[x].innerText); break;
+        case 'H3': addItem(2, content[x].id, content[x].innerText); break;
       }
       cl.className = 'contents-list';
       cl.appendChild(stack[0]);
