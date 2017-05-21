@@ -208,7 +208,7 @@ width: 340px;
 color: #159957;
 }
 
-.contents-list > a { margin: 5px auto; display: block; font-size: 1.4em; }
+.contents-list > a { margin: 5px auto; display: none; font-size: 1.4em; }
 
 .contents-list ul { padding-left: 1.5em; }
 
