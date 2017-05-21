@@ -778,14 +778,11 @@ estimate. Fig. 7 shows qualitatively the importance of robust
 
 ```
 Correct match
-```
-```
+
 Epipolar line
 Reference patch
-```
-```
 Outlier match
-```
+
 Fig. 7: Illustration of the epipolar search to estimate the depth of the pixel
 in the center of the reference patch in the left image. Given the extrinsic and
 intrinsic calibration of the two images, the epipolar line that corresponds to
@@ -833,25 +830,10 @@ to add an extra summation in the cost function of Eq. (1):
 ```
 T?kk− 1 = arg min
 Tkk− 1
-```
-### ∑
-
-```
 C∈C
-```
-### ∑
-
-```
 u∈R ̄Ck− 1
-```
-### 1
-
-### 2
-
-```
 ‖rICu(Tkk− 1 )‖^2 ΣI. (11)
-```
-```
+
 The same summation is necessary in the bundle adjustment
 step to sum the reprojection errors from all cameras. The
 remaining steps of feature alignment and mapping are indepen-
