@@ -2049,7 +2049,7 @@ To summarize, the Jacobians of the residuals are:
 ∂δφ
 ```
 
-### Список литературы
+## Список литературы
 
 1. S. Ullman. The Interpretation of Visual Motion. MIT
 Press: Cambridge, MA, 1979.
