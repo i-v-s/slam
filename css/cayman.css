@@ -202,6 +202,7 @@ background-color: #FFF;
 border-right: 3px solid #606c71;
 overflow-y: auto;
 margin: 0;
+width: 340px;
 }
 .contents-list a {
 color: #159957;
