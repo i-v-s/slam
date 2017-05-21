@@ -1,4 +1,8 @@
 
+# SVO: Полупрямая визуальная одометрия для систем с одной или несколькими камерами
+
+Перевод работы [SVO: Semi-Direct Visual Odometry for Monocular and Multi-Camera Systems](http://rpg.ifi.uzh.ch/docs/TRO16_Forster-SVO.pdf)
+
 # О работе
 
 ## Авторы
