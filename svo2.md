@@ -542,8 +542,17 @@ $$</div>
 
 $$\begin{equation}
 \delta u^{\star} = arg \min_{\delta u}
-\sum_{\Delta \mathbf{u} in \mathcal{P}}
-
+\sum_{\Delta \mathbf{u} \in \mathcal{P}} \frac{1}{2}
+{\left \|
+I_{k}^{C}(
+    \mathbf{u}' +
+    \delta \mathbf{u} + 
+    \Delta \mathbf{u}
+) -
+I_{r}^{C}(
+    \mathbf{u} + A \Delta \mathbf{u} 
+)
+\right \|}^{2},
 \end{equation}$$
 
 ∆u∈P
