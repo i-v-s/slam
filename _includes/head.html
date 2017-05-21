@@ -45,21 +45,14 @@
         }
         //var rp = s.replace(/\[(\d+)\]/g, '<a href="#r$1">[$1]</a>');
         ps[x].innerHTML = a.join('[');// rp;
-      }      
-      /*var treeWalker = document.createTreeWalker(
-  	    document.body,
-        NodeFilter.SHOW_TEXT
-	  );
+      }
       
-      while(treeWalker.nextNode()) {
-        //nodeList.push(treeWalker.currentNode);
-        var s = treeWalker.currentNode.nodeValue;
-        var rp = s.replace(/\[(\d+)\]/g, '<a href="$1">[$1]</a>');
-        if (s !== rp) treeWalker.currentNode.nodeValue = rp;
-        //console.log();
-      }*/
-	  //console.log(r);
-    
+      var content = document.getElementsByClassName('main-content')[0].children;
+      for(var x = 0; x < content.length; x++) {
+        var tag = content[x].tagName;
+        if (tag === 'H2' || tag === 'H1' || tag === 'H3')
+          console.log(tag + ': ' + content[x].innerText);
+      }
     });
   </script>
 </head>
