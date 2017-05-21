@@ -198,13 +198,13 @@ z-index: 10;
 display: block;
 top: 0;
 left: 0;
-
-background-color: #606c71;
-color: #fff;
+background-color: #FFF;
+border-right: 3px solid #606c71;
 }
 .contents-list a {
-color: #fff;
+color: #159957;
 }
+
 .contents-list, .contents-list ul {
   list-style: none;
 }
