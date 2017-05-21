@@ -227,7 +227,8 @@ color: #159957;
 .video {
     float: none;
     clear: both;
-    width: 100%;
+    width: 80%;
+    margin: 5px auto;
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 25px;
