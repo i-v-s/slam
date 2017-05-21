@@ -541,8 +541,9 @@ $$</div>
 где
 
 $$\begin{equation}
-δu?= arg min
-δu
+\delta u^{\star} = arg \min_{\delta u}
+\sum_{\Delta \mathbf{u} in \mathcal{P}}
+
 \end{equation}$$
 
 ∆u∈P
