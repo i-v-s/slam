@@ -568,16 +568,24 @@ I_{r}^{C}(
 с субпиксельной точностью. 
 Это, однако, приводит к нарушению эпиполярных ограничений,
 и вводит ошибку репроекции $$\delta \mathbf{u}$$,
-которая обычно менее половины пикселя.
+которая обычно составляет менее половины пикселя.
 Далее, на последнем шаге оценки движения, 
 мы уточняем положения камеры и 
 позиции точек карты
 $$\mathcal{X}=\{T_{kW},\mathbf{\rho}_{i}\}$$
 путём минимизации суммы квадратов ошибок репроекции:
 
+<div id="e6">$$
+\begin{equation}
+\mathcal{X}^{\star} = arg \min_{\mathcal{X}}
+\sum_{k \in \mathcal{K}} \sum_{i \in \mathcal{L}_{k}^{C}}
+
+\tag{6}
+\end{equation} 
+$$</div>
 
 
-whereKis the set of all keyframes in the map,LCk the set of
+где $$\mathcal{K}$$ &mdash; множество всех ключевых кадров в карте, LCk the set of
 all landmarks corresponding to corner features, andLEkthe set
 of all edge features that were observed in thekthcamera frame.
 The reprojection error of edge features is projected along the
