@@ -200,7 +200,7 @@ top: 0;
 left: 0;
 background-color: #FFF;
 border-right: 3px solid #606c71;
-overflow-y: auto;
+overflow: auto;
 margin: 0;
 width: 340px;
 }
@@ -208,6 +208,6 @@ width: 340px;
 color: #159957;
 }
 
-.contents-list, .contents-list ul {
+.contents-list ul {
   list-style: none;
 }
