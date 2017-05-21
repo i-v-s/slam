@@ -896,7 +896,7 @@ Note that the same cost function can be added to the bundle
 adjustment step. За дополнительными деталями по решению уравнения (12),
 мы отправляем интересующихся читателей в Приложение.
 
-## X. Подробности реализации
+## X. Технические подробности реализации
 
 В этом разделе мы дополнительно разъясняем различные
 особенности нашей реализации.
@@ -907,7 +907,7 @@ Tkk− 1 Body Frame
 Рис. 9: Visual odometry with multiple rigidly attached and synchronized
 cameras. The relative pose of each camera to the body frameTBCjis known
 from extrinsic calibration and the goal is to estimate the relative motion of
-the body frameTkk− 1.
+the body frame $$T_{kk−1}$$.
 
 ### A. Запуск
 
@@ -918,7 +918,7 @@ the body frameTkk− 1.
 При использовании нескольких камер,
 первичная карта создаётся путём сопоставления стереопар.
 
-### B. Разрежённое сопоставление изображения
+### B. Разрежённое сопоставление изображения с моделью
 
 For sparse image alignment, we use a patch size of 4 × 4
 pixels. In the experimental section we demonstrate that the
