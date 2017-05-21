@@ -198,6 +198,7 @@ z-index: 10;
 display: block;
 top: 0;
 left: 0;
+bottom: 0;
 background-color: #FFF;
 border-right: 3px solid #606c71;
 overflow: auto;
