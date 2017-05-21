@@ -531,16 +531,23 @@ I_{r}^{C}(
 чтобы получить соответствующую
 позицию особой точки $$\mathbf{u}'^{\star}$$ в новом кадре:
 
-u′
-?
-=u′+δu?·n, with (5)
-```
-```
+<div id="e5">$$
+\begin{equation}
+\mathbf{u}'^{\star} = \mathbf{u}' \, + \, \delta u^{\star} \cdot \mathbf{n},
+\tag{5}
+\end{equation} 
+$$</div>
+
+где
+
+$$\begin{equation}
 δu?= arg min
 δu
+\end{equation}$$
 
 ∆u∈P
 ∥ICk(u′+δu·n+∆u)−ICr(u+A∆u)
+
 Это похоже на предыдущую работу по визуальной одометрии с краевыми особенностями,
 where
 feature correspondence is found by sampling along the normal
