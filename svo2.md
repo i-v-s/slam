@@ -546,7 +546,7 @@ $$\begin{equation}
 {\left \|
 I_{k}^{C}(
     \mathbf{u}' +
-    \delta \mathbf{u} + 
+    \delta u \cdot \mathbf{n} + 
     \Delta \mathbf{u}
 ) -
 I_{r}^{C}(
