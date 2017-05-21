@@ -525,12 +525,12 @@ I_{r}^{C}(
 Это показано на рис. 4a, где схематично изображена
 искажённая исходная область особой точки
 на предсказанной позиции в новом кадре.
-Для особых точек краевого типа, we
-therefore optimize for a scalar correctionδu? ∈Rin the
-direction of the edge normalnto obtain the corresponding
-feature positionu′?in the newest frame:
-```
-```
+Для особых точек краевого типа, мы, соответственно,
+оптимизируем скалярную поправку $$ \delta u^{\star} \in \mathbb{R} $$,
+которая смещает в направлении нормали к краю $$\mathbf{n}$$,
+чтобы получить соответствующую
+позицию особой точки $$\mathbf{u}′^{\star}$$ в новом кадре:
+
 u′
 ?
 =u′+δu?·n, with (5)
