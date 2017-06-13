@@ -24,7 +24,7 @@
       }
       
       var ps = document.getElementsByTagName('p');
-      for (var x = 0; x < d.length; x++) {
+      for (var x = 0; x < ps.length; x++) {
         var s = ps[x].innerHTML, s1 = s.replace(/ \((\d+)\)/g, ' <a href="#e$1">($1)</a>');
         var a = s1.split('['), l = a.length;
         if (l <= 1) {
