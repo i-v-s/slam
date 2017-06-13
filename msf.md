@@ -1,3 +1,4 @@
+# Устойчивый модульный фильтр, объединяющий измерения множества датчиков, для навигации летательных аппаратов
 
 Перевод работы [A Robust and Modular Multi-Sensor Fusion Approach Applied to MAV Navigation](https://github.com/ethz-asl/ethzasl_msf/raw/master/2013_IROS_lynen_modular_sensor_fusion.pdf)
 
