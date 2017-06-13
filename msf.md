@@ -90,3 +90,56 @@ $$</div>
 гироскопа $$b_{\omega}$$. Затем, могут быть добавлены дополнительные датчики,
 измеряющие относительно системы координат модуля инерционных измерений.
 
+## Список литературы
+
+1. G. Chowdhary, E. Johnson, D. Magree, D. Wu, and A. Shein. GPS-
+Denied Indoor and Outdoor Monocular Vision Aided Navigation and
+Control of Unmanned Aircraft. Journal of Field Robotics (JFR), 2013.
+2. M. A. Fischler and R. C. Bolles. Random sample consensus: a
+paradigm for model fitting with applications to image analysis and
+automated cartography. Communications of the ACM, 1981.
+3. S. Grzonka, G. Grisetti, and W. Burgard. Towards a navigation system
+for autonomous indoor flying. In Proc. of the IEEE Int. Conf. on
+Robotics and Automation (ICRA), Kobe, Japan, 2009. IEEE.
+4. R. Hartley and A. Zisserman. Multiple View Geometry in Computer
+Vision. Cambridge University Press, second edition, 2004.
+5. J. A. Hesch, D. G. Kottas, S. L. Bowman, and S. I. Roumeliotis.
+Towards consistent vision-aided inertial navigation. In Algorithmic
+Foundations of Robotics X. Springer, 2013.
+6. V. Indelman, S. Williams, M. Kaess, and F. Dellaert. Factor graph
+based incremental smoothing in inertial navigation systems. In
+Information Fusion (FUSION), 2012 15th International Conference
+on. IEEE, 2012.
+7. G. Klein. Visual Tracking for Augmented Reality. PhD thesis,
+University of Cambridge, 2006.
+8. S. Leutenegger and R. Y. Siegwart. A low-cost and fail-safe inertial
+navigation system for airplanes. In Proc. of the IEEE Int. Conf. on
+Robotics and Automation (ICRA), Karlsruhe, Germany, 2012. IEEE.
+9. M. Li and A. I. Mourikis. High-precision, consistent EKF-based
+visual–inertial odometry. The International Journal of Robotics
+Research, (IJRR), 2013.
+10. F. M. Mirzaei and S. I. Roumeliotis. A kalman filter-based algorithm
+for imu-camera calibration: Observability analysis and performance
+evaluation. Robotics, IEEE Transactions on, 24(5):1143–1156, 2008.
+11. A. Mourikis and S. Roumeliotis. A multi-state constraint Kalman filter
+for vision-aided inertial navigation. In Proc. of the IEEE Int. Conf.
+on Robotics and Automation (ICRA), 2007
+12. A. I. Mourikis, S. I. Roumeliotis, and J. W. Burdick. SC-KF mobile
+robot localization: a stochastic cloning Kalman filter for processing
+relative-state measurements. Robotics, IEEE Transactions on, 2007.
+13. S. Shen, N. Michael, and V. Kumar. Autonomous multi-floor indoor
+navigation with a computationally constrained mav. In Proc. of the
+IEEE Int. Conf. on Robotics and Automation (ICRA). IEEE, 2011.
+14. S. Shen, Y. Mulgaonkar, N. Michael, and V. Kumar. Vision-based
+state estimation and trajectory control towards aggressive flight with
+a quadrotor. In Robotics Science and Systems, 2013.
+15. S. Shen, Y. Mulgaonkar, N. Michael, and V. Kumar. Vision-based state
+estimation for autonomous rotorcraft MAVs in complex environments.
+In Proc. of the IEEE Int. Conf. on Robotics and Automation (ICRA),
+2013.
+16. S. Weiss. Vision based navigation for micro helicopters. PhD thesis,
+ETH Zurich, 2012.
+17. S. Weiss, M. W. Achtelik, S. Lynen, M. Chli, and R. Siegwart. Real-
+time onboard visual-inertial state estimation and self-calibration of
+MAVs in unknown environments. In Proc. of the IEEE Int. Conf. on
+Robotics and Automation (ICRA), 2012.
