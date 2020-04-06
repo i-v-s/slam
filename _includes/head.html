@@ -79,7 +79,19 @@
       }
       cl.className = 'contents-list';
       cl.appendChild(stack[0]);
-      document.body.appendChild(cl);
+      var clw = document.createElement('div'), button = document.createElement('div');
+      clw.className = 'contents-list-wrapper';
+      clw.appendChild(cl);
+      button.className = 'cl-button';
+      button.innerHTML = '<span>«</span>';
+      var exp = true;
+      button.onclick = () => {
+        cl.classList.toggle('hidden');
+        exp = !exp;
+        button.innerHTML = exp ? '<span>«</span>' : '<span>»</span>';
+      }
+      clw.appendChild(button);
+      document.body.appendChild(clw);
     });
   </script>
 </head>
