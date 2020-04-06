@@ -128,9 +128,9 @@ the UZH Forschungskredit, and the SNSF-ERC Starting Grant.
 только разрежённую реконструкцию окружения.
 
 Данная работа расширяет предыдущую [20], которая была
-опубликована вместе с [открытым исходным кодом](http://github.com/uzh-rpg/rpg_svo) реализации. Новизна настоящей работы
+опубликована вместе с [исходным кодом](http://github.com/uzh-rpg/rpg_svo). Новизна настоящей работы
 заключается в 
-- обобщении метода на объективы с широким углом обзора ([раздел VII](#vii-Использование-камер-с-широким-углом-обзора "Использование камер с широким углом обзора")) и
+- обобщении метода на широкоугольные объективы ([раздел VII](#vii-применение-широкоугольных-камер "Применение широкоугольных камер")) и
 - многокамерные системы (раздел VIII),
 - применении кинематических предсказаний (раздел IX) и
 - использовании особых точек краевого типа. 
@@ -808,7 +808,7 @@ matches are frequent.
 In [39] we demonstrate how the same depth filter can be
 used fordensemapping.
 
-## VII. Использование камер с широким углом обзора
+## VII. Применение широкоугольных камер
 
 To model large optical distortion, such as fisheye and
 catadioptric (see Fig. 8), we use the camera model proposed
@@ -828,7 +828,7 @@ For each sample, we apply the camera projection modelπ(·)
 to obtain the corresponding pixel coordinate on the curved
 epipolar line.
 
-## VIII. Использование нескольких камер
+## VIII. Применение нескольких камер
 
 The proposed motion estimation algorithm starts with an
 optimization of the relative poseTkk− 1. Since in Sec. V-A
